@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="manifest" href="manifest.json">
+    <link type="text/css" rel="stylesheet" href="public/css/main-style.css">
+    <link type="text/css" rel="stylesheet" href="public/css/fontello.css">
+    <link rel="shortcut icon" href="public/img/icon.png" type="image/x-icon">
+    <script type="module" src="public/js/main.js" defer></script>
+
+    <title>Países del mundo | PWA Demo</title>
+</head>
+
+<body>
+    <div id="my-container">
+        <main>
+            <header style="display:flex">
+                <div>
+                    <h1 class="text-muted" style="margin:5px 0">Demo PWA</h1>
+                    <p id="pantalla-lbl" class="text-muted" style="margin: 5px 0;"></p>
+                    <p style="margin:1em 5px 0 0">
+                        <small id="salir-txt"><i class="icon-logout"></i>Salir de la App</small>
+                        <small id="install-txt" style="display:none">
+                            | <i class="icon-download"></i> Instalar aplicación
+                        </small>
+                    </p>
+                </div>
+                <div style="margin-top:0.5em;">
+                    <input type="text" name="filtrar" id="filtro" placeholder="Buscar pais">
+                    <i id="buscar-ico" class="icon-search"></i>
+                    <i id="limpiar-filtro-ico" class="icon-trash"></i>
+                </div>
+            </header>
+            <hr>
+            <div style="margin:2em 0 1em 0;text-align: center;">
+                <h2 class="text-muted" style="margin: 5px 0;">Países del mundo</h2>
+                <small style="color: #999">
+                    Fuente: https://restcountries.com/
+                    <br>
+                    Paises indexados: <span id="conteo-paises" style="color:darkcyan">0</span>
+                </small>
+            </div>
+            <div id="contenido">
+                <!-- Contenido -->
+                <div style="width:100%;margin:20vh 0;text-align: center;">
+                    <img src="public/img/preloader.gif" alt="Preloader img">
+                </div>
+            </div>
+            <!-- BOTON PARA SUBIR AL INICIO -->
+            <i id="go-top" class="icon-up-big"></i>
+
+        </main>
+
+        <footer>
+            Copyright © 2023, Responsive PWA By Railer Ch. - FullStack Developer | All Rights Reserved.
+        </footer>
+    </div>
+</body>
+
+</html>

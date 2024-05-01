@@ -1,0 +1,138 @@
+/* PALETA DE COLORES */
+:root {
+    --parrafos-color: #f2f2f2;
+    --encabezados: lightgray;
+    --decoradores1: #00b3ff;
+    --decoradores2: #0078ff;
+    --decoradores3: #ff00ff;
+    --color-fondo-1: #111111;
+    --color-fondo-2: #181c1f;
+}
+
+/* ESTILOS GENERALES */
+body,
+.modal-body {
+    background-color: var(--color-fondo-1) !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    color: var(--parrafos-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--encabezados) !important;
+}
+
+hr {
+    color: var(--decoradores) !important;
+}
+
+/* IMAGENES */
+#nav-bar-logo {
+    height: 75px;
+}
+
+.img-div {
+    text-align: center;
+}
+
+/* MENU PRINCIPAL */
+#navbarSupportedContent .nav-link {
+    cursor: pointer;
+}
+
+/* SECCIONES */
+section {
+    display: flex;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section:nth-child(odd) {
+    background-color: var(--color-fondo-2);
+}
+
+/* MODAL PORTAFOLIO*/
+.modal-dialog {
+    max-width: 90% !important;
+}
+
+.modal-body {
+    min-height: 350px;
+    max-height: 75vh;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portafolio-card {
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #333333;
+    background-color: var(--color-fondo-2);
+    color: var(--parrafos-color);
+    text-align: center;
+}
+
+.portafolio-card * {
+    margin-top: 5px;
+}
+
+/* FOOTER */
+footer a {
+    color: var(--parrafos-color) !important;
+}
+
+footer i {
+    font-size: 2em;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: font-size 0.5s;
+}
+
+footer i:hover {
+    font-size: 1.7em;
+    text-shadow: 0 0 5px #fff;
+}
+
+/* BOTONES */
+.botones-app {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid var(--decoradores1);
+    color: var(--parrafos-color);
+}
+
+.botones-app:hover {
+    background-color: var(--decoradores2);
+    color: #ffffff;
+    box-shadow: 0 0 6px var(--decoradores3);
+}
+
+.btn-close {
+    color: var(--decoradores1) !important;
+}

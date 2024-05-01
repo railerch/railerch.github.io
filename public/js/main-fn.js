@@ -1,0 +1,1 @@
+export const testFn = () => console.log("Main FN script OK!")
