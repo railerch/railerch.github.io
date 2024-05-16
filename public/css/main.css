@@ -2,24 +2,44 @@
 :root {
     --parrafos-color: #f2f2f2;
     --encabezados: lightgray;
-    --decoradores1: #00b3ff;
-    --decoradores2: #0078ff;
-    --decoradores3: #ff00ff;
-    --color-fondo-1: #111111;
+    --enlaces: #00b3ff;
+    --resaltador: #ff00ff;
+    --color-fondo-1: #131419;
     --color-fondo-2: #181c1f;
 }
 
 /* ESTILOS GENERALES */
-body,
-.modal-body {
-    background-color: var(--color-fondo-1) !important;
+body {
+    background-color: var(--color-fondo-2) !important;
+    background-image: url("../img/main-bg.jpg");
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a {
     text-decoration: none !important;
 }
 
-p {
+img {
+    border-radius: 10px;
+    max-height: 350px;
+}
+
+.resaltar {
+    color: var(--resaltador);
+}
+
+.enlaces {
+    color: var(--enlaces);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p,
+ul,
+ol,
+figcaption {
     color: var(--parrafos-color);
 }
 
@@ -33,65 +53,162 @@ h6 {
 }
 
 hr {
-    color: var(--decoradores) !important;
+    width: 30%;
+    color: var(--resaltador) !important;
+}
+
+/* MENU PRINCIPAL */
+header {
+    box-shadow: 0 3px 5px #000;
+}
+
+#navbarSupportedContent .nav-link {
+    cursor: pointer;
+}
+
+#navbarSupportedContent .nav-link:hover {
+    color: var(--resaltador);
 }
 
 /* IMAGENES */
+#foto-perfil {
+    max-width: 30%;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+#logos-tech {
+    width: 100%;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+}
+
+#front-end-logos img,
+#back-end-logos img {
+    height: 50px;
+}
+
+#front-end-logos a:nth-child(1n+2),
+#back-end-logos a:nth-child(1n+2) {
+    margin-left: 1em;
+}
+
 #nav-bar-logo {
     height: 75px;
 }
 
-.img-div {
-    text-align: center;
+
+/* CAROUSELS */
+section .carousel-inner {
+    border-radius: 10px !important;
 }
 
-/* MENU PRINCIPAL */
-#navbarSupportedContent .nav-link {
-    cursor: pointer;
+section .carousel-item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #00000050;
+    border-radius: 3px;
+}
+
+#carouselLogos img {
+    height: 100px;
+    width: auto;
 }
 
 /* SECCIONES */
 section {
     display: flex;
     align-items: center;
+    padding: 1em;
 }
 
 article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1em;
     align-items: center;
     width: 90%;
     margin: 0 auto;
 }
 
-section:nth-child(odd) {
+#sobre-mi,
+#back-end,
+#contacto {
+    background-color: var(--color-fondo-1);
+}
+
+#portafolio-sub img {
+    max-height: 150px;
+    cursor: pointer;
+}
+
+/* CONTENEDORES DE TEXTO 
+.texto-div {
+    padding: 0 7px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.texto-div::-webkit-scrollbar {
+    width: 5px !important;
     background-color: var(--color-fondo-2);
 }
 
-/* MODAL PORTAFOLIO*/
-.modal-dialog {
+.texto-div::-webkit-scrollbar-thumb {
+    background-color: var(--resaltador);
+}
+*/
+
+/* VENTANAS MODAL*/
+#modal-ui-carousel .modal-dialog {
+    max-width: 40% !important;
+}
+
+#modal-resumen-profesional .modal-dialog {
+    max-width: 50%;
+}
+
+#modal-portafolio .modal-dialog {
     max-width: 90% !important;
+}
+
+#modal-por-que-codigo-plano .modal-dialog {
+    max-width: 60% !important;
+}
+
+#modal-por-que-codigo-plano li b {
+    color: var(--resaltador);
 }
 
 .modal-body {
     min-height: 350px;
     max-height: 75vh;
     overflow-y: auto;
+    background-color: var(--color-fondo-2) !important;
+}
+
+.modal-body #proyectos {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .portafolio-card {
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 5px;
-    box-shadow: 0 0 10px #333333;
     background-color: var(--color-fondo-2);
     color: var(--parrafos-color);
     text-align: center;
@@ -101,21 +218,26 @@ section:nth-child(odd) {
     margin-top: 5px;
 }
 
-/* FOOTER */
-footer a {
+/* REDES SOCIALES */
+#social-icons a {
     color: var(--parrafos-color) !important;
 }
 
-footer i {
+#social-icons i {
     font-size: 2em;
     margin: 0 5px;
     cursor: pointer;
     transition: font-size 0.5s;
 }
 
-footer i:hover {
+#social-icons i:hover {
     font-size: 1.7em;
     text-shadow: 0 0 5px #fff;
+}
+
+/* FOOTER */
+footer {
+    color: var(--parrafos-color) !important;
 }
 
 /* BOTONES */
@@ -123,16 +245,59 @@ footer i:hover {
     padding: 10px;
     border-radius: 6px;
     background-color: transparent;
-    border: 1px solid var(--decoradores1);
+    border: 1px solid var(--enlaces);
     color: var(--parrafos-color);
 }
 
 .botones-app:hover {
     background-color: var(--decoradores2);
     color: #ffffff;
-    box-shadow: 0 0 6px var(--decoradores3);
+    box-shadow: 0 0 6px var(--resaltador);
 }
 
 .btn-close {
-    color: var(--decoradores1) !important;
+    color: var(--enlaces) !important;
+}
+
+@media (max-width: 480px) {
+    #modal-ui-carousel .modal-dialog {
+        min-height: auto !important;
+        max-width: 100% !important;
+    }
+
+    .modal-body {
+        min-height: auto !important;
+    }
+
+    #logos-tech img {
+        height: 30px;
+    }
+
+    #modal-resumen-profesional .modal-dialog {
+        max-width: 100%;
+    }
+
+    #modal-portafolio .modal-dialog {
+        max-width: 100% !important;
+    }
+
+    #modal-por-que-codigo-plano .modal-dialog {
+        max-width: 100% !important;
+    }
+
+    #front-end-logos,
+    #back-end-logos {
+        text-align: center;
+    }
+
+    #front-end-logos img,
+    #back-end-logos img {
+        height: 30px;
+
+    }
+
+    #front-end-logos a:nth-child(1n+2),
+    #back-end-logos a:nth-child(1n+2) {
+        margin-left: 0.5em;
+    }
 }
