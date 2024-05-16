@@ -40,10 +40,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <p class="nav-link active" aria-current="page" data-section="inicio">Inicio</p>
+                            <p class="nav-link" data-section="sobre-mi">Sobre mi</p>
                         </li>
                         <li class="nav-item">
-                            <p class="nav-link" data-section="quien-soy">Quien soy</p>
+                            <p class="nav-link" aria-current="page" data-section="experiencia">Experiencia</p>
                         </li>
                         <li class="nav-item">
                             <p class="nav-link" data-section="portafolio">Portafolio</p>
@@ -59,86 +59,351 @@
 
     <!-- CONTENIDO -->
     <main>
-
-        <!-- INICIO -->
-        <section id="inicio">
-            <article>
-                <div class="col-6 txt-div">
-                    <h2><i class="bi bi-window-stack"></i> Front End</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus aperiam obcaecati
-                        voluptatum nihil aut dolorem eos, tempora temporibus magni veritatis non facere nemo dolor
-                        quasi
-                        in quidem mollitia. Ab enim, magnam modi minus nostrum dicta nisi itaque nulla reiciendis
-                        dolores, reprehenderit repellat autem ratione perspiciatis placeat pariatur asperiores sunt!
-                    </p>
-                </div>
-                <div class="col-6 img-div">
-                    <img src="public/img/demo-img.png" alt="">
-                </div>
-            </article>
-        </section>
-
         <!-- SOBRE MI -->
-        <section id="quien-soy">
-            <article>
-                <div class="col-6 img-div">
-                    <img src="public/img/demo-img.png" alt="">
+        <section id="sobre-mi">
+            <article class="d-flex flex-wrap justify-content-center">
+                <div class="col-12 col-md-6 text-center section-img">
+                    <img class="img-fluid" src="public/img/sobre-mi.png" alt="Foto perfil"
+                        title="Clic para ver foto real">
                 </div>
-                <div class="col-6 txt-div">
+                <div class="col-12 col-md-6 px-0 px-md-3 pt-3 pt-md-0">
                     <h2><i class="bi bi-person"></i> Sobre mi</h2>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus aperiam obcaecati
-                        voluptatum nihil aut dolorem eos, tempora temporibus magni veritatis non facere nemo dolor
-                        quasi
-                        in quidem mollitia. Ab enim, magnam modi minus nostrum dicta nisi itaque nulla reiciendis
-                        dolores, reprehenderit repellat autem ratione perspiciatis placeat pariatur asperiores sunt!
-                    </p>
+                    <div class="texto-div">
+                        <p>
+                            Soy Técnico profesional, autodidacta, metódico, responsable y proactivo con más de cuatro
+                            (4) años de experiencia laboral en diseño, maquetación y desarrollo web.
+                        </p>
+                        <ul>
+                            <li>
+                                <b class="resaltar">Conocimientos avanzados:</b> HTML, CSS, Javascript, Node, PHP;
+                            </li>
+                            <li>
+                                <b class="resaltar">Conocimientos generales:</b> Python, Laravel, React, Docker, PM2,
+                                MySQL, SQLite, MongoDB.
+                            </li>
+                            <li>
+                                <b class="resaltar">Habilidades blandas:</b> comunicacion asertiva, liderazgo, trabajo
+                                en equipo, capacidad analitica, resolución de problemas, autodidacta, adaptabilidad.
+                            </li>
+                        </ul>
+                        <p>
+                            Tu que estas leyendo estas lineas, si estas interesado en mis servicios, puedo ayudarte
+                            a ti o a tu equipo a cumplir sus objetivos ofreciendo soluciones efectivas y escalables
+                            desarrollando proyectos que permitan un manejo eficiente de la información y cumplan con los
+                            objetivos solicitados, todo esto bajo el marco del compromiso, el respeto y la comunicación.
+
+                            <span class="enlaces" data-bs-toggle="modal"
+                                data-bs-target="#modal-resumen-profesional">Resumen profesional <i
+                                    class="bi bi-box-arrow-up-right"></i></span>
+                        </p>
+                    </div>
                 </div>
             </article>
         </section>
+
+        <!-- EXPERIENCIA -->
+        <div id="experiencia">
+            <!-- front-end -->
+            <section id="front-end">
+                <article class="d-flex flex-wrap-reverse justify-content-center">
+                    <div class="col-12 col-md-6 px-0 px-md-3 pt-3 pt-md-0">
+                        <h2><i class="bi bi-window-stack"></i> Front End</h2>
+                        <hr>
+                        <p>Como desarrollador full stack apunto a la especialización en Front-end, profundizando cada
+                            vez mas mis conocimientos en Javascript puro (vanilla JS), de esta forma he
+                            podido aplicar y desarrollar soluciones eficientes con interacciones fluidas, UI eficaces
+                            e intuitivas sin dejar de lado la experiencia de usuario. <br>
+                            <span class="enlaces" data-bs-toggle="modal" data-bs-target="#modal-ui-carousel">Capturas de
+                                proyectos
+                                <i class="bi bi-box-arrow-up-right"></i></span>
+                            <br><br>
+
+                            <b>Por que no usar React o Angular?</b> <br>
+                            He explorado ambas tecnologias, sin embargo considero que lo que ofrecen se puede hacer de
+                            manera mas facil y personalizada, puedo crear componentes web, manejar estados,
+                            interacciones y eventos de forma manual, peticiones HTTP avanzadas mediante Fetch API, etc.
+                            sin necesidad de hacer uso de las librerias ya mencionadas. <br>
+                            <span class="enlaces" data-bs-toggle="modal"
+                                data-bs-target="#modal-por-que-codigo-plano">Mas razones para usar
+                                codigo plano! <i class="bi bi-box-arrow-up-right"></i></a>
+                        </p>
+
+                        <!-- front-end logos -->
+                        <div id="front-end-logos">
+                            <a href="https://html.spec.whatwg.org/multipage/" target="_blank">
+                                <img src="public/img/logos-150px/_150px_html.png" alt="HTML logo">
+                            </a>
+                            <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
+                                <img src="public/img/logos-150px/_150px_css.png" alt="CSS logo">
+                            </a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                                <img src="public/img/logos-150px/_150px_javascript.png" alt="Javascript logo">
+                            </a>
+                            <a href="https://react.dev/" target="_blank">
+                                <img src="public/img/logos-150px/_150px_react.png" alt="React logo">
+                            </a>
+                            <a href="https://angular.io/" target="_blank">
+                                <img src="public/img/logos-150px/_150px_angular.png" alt="Angular logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center section-img">
+                        <img class="img-fluid" src="public/img/frontend.png">
+                    </div>
+                </article>
+            </section>
+
+            <!-- Back-end -->
+            <section id="back-end">
+                <article class="d-flex flex-wrap justify-content-center">
+                    <div class="col-12 col-md-6 text-center section-img">
+                        <img class="img-fluid" src="public/img/backend.png" class="d-block " alt="Back-end developer"
+                            style="margin:0 auto">
+                    </div>
+
+                    <div class="col-12 col-md-6 px-0 px-md-3 pt-3 pt-md-0">
+                        <h2><i class="bi bi-pc-display"></i> Back End</h2>
+                        <hr>
+                        <div class="texto-div">
+                            <p>Mi filosofía de trabajo se enfoca en la proactividad, eficiencia y
+                                compromiso con cada proyecto, generar un código limpio, ordenado, escalable y funcional
+                                es parte importante en cada desarrollo para cumplir con lo solicitado. <br><br>
+
+                                Asi como en Front-end, en Back-end tambien suelo trabajar con el lenguaje puro o codigo
+                                plano, sin frameworks y haciendo uso de librerias en casos muy puntuales y necesarios,
+                                de esta forma tengo mejor control del codigo evitando la carga de clases o
+                                funcionalidades innecesarias que puedan desmejorar el rendimiento u ocasionar
+                                fallos en la aplicación, todo esto sin dejar de lado las buenas practicas y la
+                                seguridad.
+                            </p>
+
+                            <!-- back-end logos -->
+                            <div id="back-end-logos">
+                                <a href="https://vuejs.org/" target="_blank">
+                                    <img src="public/img/logos-150px/_150px_vue.png" alt="VUE logo">
+                                </a>
+                                <a href="https://nodejs.org/en" target="_blank">
+                                    <img src="public/img/logos-150px/_150px_node.png" alt="Node logo">
+                                </a>
+                                <a href="https://www.php.net/" target="_blank">
+                                    <img src="public/img/logos-150px/_150px_php.png" alt="PHP logo">
+                                </a>
+                                <a href="https://laravel.com/" target="_blank">
+                                    <img src="public/img/logos-150px/_150px_laravel.png" alt="Laravel logo">
+                                </a>
+                                <a href="https://www.docker.com/" target="_blank">
+                                    <img src="public/img/logos-150px/_150px_docker.png" alt="Docker logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
 
         <!-- PORTAFOLIO -->
         <section id="portafolio">
             <article>
-                <div class="col-6 txt-div">
-                    <h2><i class="bi bi-layers"></i> Portafolio</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus aperiam obcaecati
-                        voluptatum nihil aut dolorem eos, tempora temporibus magni veritatis non facere nemo dolor
-                        quasi
-                        in quidem mollitia. Ab enim, magnam modi minus nostrum dicta nisi itaque nulla reiciendis
-                        dolores, reprehenderit repellat autem ratione perspiciatis placeat pariatur asperiores sunt!
+                <div class="text-center px-0 px-md-3">
+                    <h2><i class="bi bi-briefcase"></i> Portafolio</h2>
+                    <hr style="margin: 1em auto;">
+                    <p>A continuación presento una serie de proyectos demo basados solo en desarrollo Front-end,
+                        implementando tecnicas y tecnologias como geolocalización, Aplicación Web progresiva
+                        ó PWA, consumo de REST API, Integracion con IA, Demo con React, Angular, Vue, CRUD con
+                        almacenamiento en el navegador, API Canvas, etc.
                     </p>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div id="portafolio-sub" class="d-flex flex-wrap justify-content-center d-grid gap-3 py-4">
+                        <div class="">
+                            <a href="" target="_blank">
+                                <img src="public/img/projects-img/demo-img.png" alt="Imagen del proyecto">
+                            </a>
+                            <a href="" target="_blank">
+                                <img src="public/img/projects-img/demo-img.png" alt="Imagen del proyecto">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="" target="_blank">
+                                <img src="public/img/projects-img/demo-img.png" alt="Imagen del proyecto">
+                            </a>
+                            <a href="" target="_blank">
+                                <img src="public/img/projects-img/demo-img.png" alt="Imagen del proyecto">
+                            </a>
+                        </div>
+
+                    </div>
                     <button id="btn-portafolio" type="button" class="botones-app" data-bs-toggle="modal"
                         data-bs-target="#modal-portafolio">
-                        Ver demo
+                        Mas proyectos
                     </button>
-                </div>
-                <div class="col-6 img-div">
-                    <img src="public/img/demo-img.png" alt="">
                 </div>
             </article>
         </section>
 
         <!-- CONTACTO -->
         <section id="contacto">
-            <article>
-                <div class="col-6 img-div">
-                    <img src="public/img/demo-img.png" alt="">
+            <article class="d-flex flex-wrap justify-content-center">
+                <div class="col-12 col-md-6 text-center section-img">
+                    <img class="img-fluid" src="public/img/contacto.png" alt="">
                 </div>
-                <div class="col-6 txt-div">
-                    <h2> <i class="bi bi-headset"></i> Contácto</h2>
+
+                <div class="col-12 col-md-6 px-0 px-md-3 pt-3 pt-md-0">
+                    <h2> <i class="bi bi-headset"></i> Contáctame</h2>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus aperiam obcaecati
-                        voluptatum nihil aut dolorem eos, tempora temporibus magni veritatis non facere nemo dolor
-                        quasi
-                        in quidem mollitia. Ab enim, magnam modi minus nostrum dicta nisi itaque nulla reiciendis
-                        dolores, reprehenderit repellat autem ratione perspiciatis placeat pariatur asperiores sunt!
+                    <p>Si estas interesado en contratar mis servicios no dudes en comunicarte conmigo a traves de mis
+                        redes sociales. <br>
+                        Gracias por tomarte el tiempo para ver mi portal hasta el final. <br>
+                        Saludos!!
                     </p>
+                    <div id="social-icons">
+                        <a href="https://www.linkedin.com/in/railer-chalbaud/" target="_blank" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/railerch" target="_blank" title="GitHub">
+                            <i class="bi bi-git"></i>
+                        </a>
+                        <a href="https://www.instagram.com/railer.ch_dev/" target="_blank" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://t.me/railerch" target="_blank" title="Telegram">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                    </div>
                 </div>
             </article>
         </section>
+
+        <!-- MODAL CAPTURAS UI -->
+        <div class="modal fade" id="modal-ui-carousel" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                        <h5 class="modal-title" id="modalTitleId">
+                            <i class="bi bi-fullscreen"></i> Capturas de algunos trabajos realizados <br>
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="public/img/projects-img/arnica-intervit.jpg" class="w-100 d-block"
+                                        alt="First slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/projects-img/crm-lior.jpg" class="w-100 d-block"
+                                        alt="Second slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/projects-img/sistema-tickets.jpg" class="w-100 d-block"
+                                        alt="Third slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/projects-img/cotizacion-intervit.jpg" class="w-100 d-block"
+                                        alt="Fourth slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/projects-img/sky-devices-web.jpg" class="w-100 d-block"
+                                        alt="Fourth slide" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/projects-img/healinghar-web.jpg" class="w-100 d-block"
+                                        alt="Fourth slide" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer bg-dark p-2">
+                        <button type="button" class="btn btn-secondary sm-btn" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL RESUMEN PROFESIONAL -->
+        <div class="modal fade" id="modal-resumen-profesional" tabindex="-1" data-bs-backdrop="static"
+            data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                        <h5 class="modal-title" id="modalTitleId">
+                            <i class="bi bi-person-lines-fill"></i> Resumen profesional
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+
+                        <p>
+                            <img id="foto-perfil" src="public/img/foto-perfil.jpg" alt="Foto perfil">
+                            Soy técnico en Redes y Soporte certificado del Instituto de Capacitación Técnica KEYS, con
+                            experiencia de un año como capacitador en el area de estructura del computador y mas de 10
+                            como técnico de campo en instalación, mantenimiento y administración de redes, CCTV y
+                            soporte a equipos, desde el 2017 dedicandome al diseño, maquetación y desarrollo de sitios
+                            web.
+                        </p>
+
+                        <p>
+                            Me especializo en JS y PHP con codigo puro, haciendo uso de paradigmas como el estructurado
+                            y POO desarrollo mis propias soluciones y funcionalidades mientras el tiempo y la dificultad
+                            de lo solicitado lo permitan, sin embargo no me rehuso a implementar algun framework o
+                            libreria que un determinado proyecto requiera. <br><br>
+
+                            Como programador trato de organizar lo mejor posible mi codigo teniendo en
+                            cuenta las buenas practicas, patrones de diseño, principios SOLID, filosofia DRY, de esta
+                            forma disminuyo la deuda técnica que pueda tener con el codigo motivado a los cortos tiempos
+                            de entrega y asi refactorizar lo menos posible.
+                        </p>
+
+                        <figure>
+                            <img class="img-fluid" src="public/img/modal-banners/banner02.jpg" alt="">
+                        </figure>
+
+                        <p>
+                            He creado proyectos desde cero partiendo del levantamiento del requerimiento seguido de la
+                            etapa diseño, desarrollo, testeo, puesta en producción, monitoreo y actualización de
+                            aplicaciones, he trabajado bajo metodología SCRUM, he liderado proyectos y equipos de
+                            desarrollo apostando a la buena comunicación y el respeto para lograr la eficiencia y
+                            eficacia deseadas.
+                        </p>
+
+                        <p>
+                            He desarrollado soluciones con JS, PHP y Node + express, diseñando y maquetando interfaces
+                            de usuario modernas, intuitivas y adaptables en interacción con bases de datos
+                            SQLite, MySQL, SQL server (en este caso a traves de un analista de datos para mineria
+                            basadas en modelo de negocios), MongoDB en modo practico y personal, todo esto
+                            segun las necesidades de cada proyecto. <br><br>
+
+                            Cuento con el conocimiento y la capacidad de configurar e implementar servidores web
+                            como XAMPP, WAMP y Laragon, asi como tambien hacer uso de tecnologias como Docker y PM2,
+                            ya sea con acceso solo LAN o desde la WAN mediante DNS y el redireccionamiento de
+                            puertos desde el router de entrada de la red local, puedo hacer que cada proyecto sea
+                            accesible tanto local como de forma remota.
+                        </p>
+                    </div>
+                    <div class="modal-footer bg-dark p-2">
+                        <button type="button" class="btn btn-secondary sm-btn" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- MODAL PORTAFOLIO -->
         <div class="modal fade" id="modal-portafolio" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -147,27 +412,104 @@
                 <div class="modal-content">
                     <div class="modal-header bg-dark">
                         <h5 class="modal-title" id="modalTitleId">
-                            <i class="bi bi-layers"></i> Portafolio de muestra
+                            <i class="bi bi-briefcase"></i> Portafolio de muestra
                         </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <!-- TARJETAS DE PROYECTOS -->
+                        <div id="proyectos">
+                            <!-- TARJETAS DE PROYECTOS -->
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-dark p-2">
+                        <button type="button" class="btn btn-secondary sm-btn" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- MODAL CODIGO PLANO -->
+        <div class="modal fade" id="modal-por-que-codigo-plano" tabindex="-1" data-bs-backdrop="static"
+            data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                        <h5 class="modal-title" id="modalTitleId">
+                            <i class="bi bi-hand-thumbs-down"></i> Por que no usar Frameworks o librerias?
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img class="img-fluid" src="public/img/modal-banners/banner01.jpg" alt="">
+                        </figure>
+
+                        <p>Hay muchas razones para decidir usar codigo puro sin un framework en particular. Las
+                            principales razones para elegir usar Vanilla JS o PHP simple y plano son:
+                        </p>
+                        <ol>
+                            <li>
+                                <b>Performance:</b> Un framework esta hecho para soportar una multitud de casos de uso y
+                                contiene muchas librerías que se cargan al inicio de cada petición. El solo hecho de
+                                cargarlas para generar una respuesta rápida no hace sentido. Es como salir a comprar a
+                                la esquina en automóvil.
+                            </li>
+                            <li>
+                                <b>Control:</b> El “casarse” con un framework también implica perder una parte del
+                                control sobre la implementación.
+                            </li>
+                            <li>
+                                <b>Detección de errores y fallas:</b>
+                                Es mas difícil detectar fallos si estos pueden ser provocados a nivel de framework
+                                (externos) y se hace difícil detectarlos y darles seguimiento.
+                            </li>
+                            <li>
+                                <b>Seguridad:</b>
+                                Es posible que un framework tenga fallos de seguridad, y que tarden en ser corregidos.
+                                Normalmente uno debería preocuparse de sus propios problemas de seguridad y controlarlos
+                                directamente.
+                            </li>
+                            <li>
+                                <b>Costo de actualización:</b>
+                                Cada actualización del framework involucra futuras revisiones en el código y como
+                                afectan los cambios externos. Muchas veces, se puede decidir optar por crear un
+                                framework propio para tener todo bajo control. A veces un bug o funcionalidades
+                                esperadas no pueden esperar un nuevo release.
+                            </li>
+                            <li>
+                                <b>Elección adecuada:</b>
+                                Cada framework apunta a ciertas funcionalidades y puede que no soporten todo lo que
+                                deseamos realizar. A veces hasta podría legar a usarse una combinación de ellos. Por
+                                ello, algunas compañías prefieren usar sus propias implementaciones ad-hoc.
+                            </li>
+                            <li>
+                                <b>Especialización</b>
+                                Se requiere mayor especialización para usar un framework, La forma de
+                                trabajo y la estructura de código es particular de cada uno, esto implica invertir
+                                tiempo de desarrollo en el aprendizaje de esa nueva tecnologia para implementarla de
+                                manera eficiente en caso de no poseer conocimientos de la misma.
+                            </li>
+                            <li>
+                                <b>Aprendizaje:</b>
+                                Cuando estas aprendiendo o deseas tener mayor control sobre el detalle de
+                                la implementación, es mejor trabajar desde el mas bajo nivel posible.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!-- FOOTER -->
     <footer class="text-center text-light bg-dark p-3">
-        <div>
-            <a href="/#">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-git"></i>
-        </div>
         <p class="m-0">Copyright © 2024, Railer Chalbaud, Todos los derechos reservados.</p>
     </footer>
 </body>

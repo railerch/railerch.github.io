@@ -16,13 +16,17 @@ const alturaImagenes = alturaSecciones * 0.75;
 // ==========> FIJAR ALTO DE SECCIONES
 /* Estas deben encajar de forma ajustada en el viewport */
 Array.from(document.querySelectorAll("section")).forEach(sec => {
-    sec.style.height = `${alturaSecciones}px`;
+    if (window.innerWidth > 720) {
+        sec.style.height = `${alturaSecciones}px`;
+    }
 })
 
 // ==========> FIJAR TAMAÑO DE IMAGENES EN SECCIONES
-document.querySelectorAll("section img").forEach(img => {
-    img.style.height = `${alturaImagenes}px`;
-    img.style.width = "auto";
+document.querySelectorAll(".section-img img").forEach(img => {
+    if (window.innerWidth > 720) {
+        img.style.height = `${alturaImagenes}px`;
+        img.style.width = "auto";
+    }
 })
 
 // ==========> SCROLL TOP AL RECARGAR LA PAGINA
@@ -48,7 +52,8 @@ document.querySelectorAll("#navbarSupportedContent .nav-link").forEach(link => {
 
 // ==========> GENERAR ENTRADAS PARA EL PORTAFOLIO
 document.getElementById("btn-portafolio").addEventListener("click", (evt) => {
-    const modalBody = document.querySelector(".modal-body");
+    const modalBodyProyectos = document.querySelector(".modal-body #proyectos");
+    modalBodyProyectos.innerHTML = "";
     for (let x = 0; x < 10; x++) {
         // =====> Contenedor
         let div = document.createElement("div");
@@ -72,7 +77,7 @@ document.getElementById("btn-portafolio").addEventListener("click", (evt) => {
         div.appendChild(img);
         div.appendChild(descripcion);
         div.appendChild(btn);
-        modalBody.appendChild(div)
+        modalBodyProyectos.appendChild(div)
     }
 
 
