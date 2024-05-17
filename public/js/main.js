@@ -31,8 +31,8 @@ document.querySelectorAll(".section-img img").forEach(img => {
 
 // ==========> SCROLL TOP AL RECARGAR LA PAGINA
 /* Calcular la altura del body para hacer scroll hasta la parte superior */
-const pxHastElTope = parseInt(document.querySelector("body").getBoundingClientRect().y);
-window.scrollBy(0, pxHastElTope);
+const pxHastaElTope = parseInt(document.querySelector("body").getBoundingClientRect().y);
+window.scrollBy(0, pxHastaElTope);
 
 // ==========> MARGEN SUPERIOR PARA SECCIONES AL HACER SCROLL
 /* Se calcula el margen superior a cada seccion para que no se solape con el header
@@ -57,12 +57,15 @@ document.getElementById("btn-portafolio").addEventListener("click", (evt) => {
     for (let x = 0; x < 10; x++) {
         // =====> Contenedor
         let div = document.createElement("div");
-        div.classList.add("portafolio-card")
+        div.classList.add("col-5");
+        div.classList.add("col-md-2");
+        div.classList.add("portafolio-card");
 
         // =====> Imagen
         let img = document.createElement("img");
         img.setAttribute("src", "public/img/projects-img/demo-img.png");
         img.setAttribute("alt", "Imagen del proyecto")
+        img.classList.add("img-fluid");
 
         // =====> Descripcion
         let descripcion = document.createElement("p");
@@ -79,8 +82,6 @@ document.getElementById("btn-portafolio").addEventListener("click", (evt) => {
         div.appendChild(btn);
         modalBodyProyectos.appendChild(div)
     }
-
-
 })
 
 

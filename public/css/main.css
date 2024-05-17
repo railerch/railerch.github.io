@@ -26,16 +26,6 @@ img {
     max-height: 350px;
 }
 
-.resaltar {
-    color: var(--resaltador);
-}
-
-.enlaces {
-    color: var(--enlaces);
-    text-decoration: none;
-    cursor: pointer;
-}
-
 p,
 ul,
 ol,
@@ -57,17 +47,42 @@ hr {
     color: var(--resaltador) !important;
 }
 
-/* MENU PRINCIPAL */
-header {
-    box-shadow: 0 3px 5px #000;
-}
-
+/* ENLACES */
 #navbarSupportedContent .nav-link {
     cursor: pointer;
 }
 
 #navbarSupportedContent .nav-link:hover {
     color: var(--resaltador);
+}
+
+.resaltar {
+    color: var(--resaltador);
+}
+
+.enlaces {
+    color: var(--enlaces);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* BOTONES */
+.botones-app {
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid var(--enlaces);
+    color: var(--parrafos-color);
+}
+
+.botones-app:hover {
+    background-color: var(--decoradores2);
+    color: #ffffff;
+    box-shadow: 0 0 6px var(--resaltador);
+}
+
+.btn-close {
+    color: var(--enlaces) !important;
 }
 
 /* IMAGENES */
@@ -99,30 +114,21 @@ header {
     height: 75px;
 }
 
-
-/* CAROUSELS */
-section .carousel-inner {
-    border-radius: 10px !important;
-}
-
-section .carousel-item {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #00000050;
-    border-radius: 3px;
-}
-
 #carouselLogos img {
     height: 100px;
     width: auto;
 }
 
+#portafolio-sec-img img {
+    max-height: 150px;
+    cursor: pointer;
+}
+
 /* SECCIONES */
+header {
+    box-shadow: 0 3px 5px #000;
+}
+
 section {
     display: flex;
     align-items: center;
@@ -130,12 +136,12 @@ section {
 }
 
 article {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    width: 90%;
-    margin: 0 auto;
 }
 
 #sobre-mi,
@@ -144,29 +150,14 @@ article {
     background-color: var(--color-fondo-1);
 }
 
-#portafolio-sub img {
-    max-height: 150px;
-    cursor: pointer;
-}
-
-/* CONTENEDORES DE TEXTO 
-.texto-div {
-    padding: 0 7px;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.texto-div::-webkit-scrollbar {
-    width: 5px !important;
-    background-color: var(--color-fondo-2);
-}
-
-.texto-div::-webkit-scrollbar-thumb {
-    background-color: var(--resaltador);
-}
-*/
-
 /* VENTANAS MODAL*/
+.modal-body {
+    min-height: 350px;
+    max-height: 75vh;
+    overflow-y: auto;
+    background-color: var(--color-fondo-2) !important;
+}
+
 #modal-ui-carousel .modal-dialog {
     max-width: 40% !important;
 }
@@ -187,29 +178,21 @@ article {
     color: var(--resaltador);
 }
 
-.modal-body {
-    min-height: 350px;
-    max-height: 75vh;
-    overflow-y: auto;
-    background-color: var(--color-fondo-2) !important;
-}
-
 .modal-body #proyectos {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    width: 90%;
+    justify-content: space-around;
 }
 
 .portafolio-card {
-    padding: 10px;
-    margin: 10px;
-    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 5px;
+    padding: 7px;
+    box-sizing: border-box;
     border-radius: 5px;
-    background-color: var(--color-fondo-2);
+    background-color: var(--color-fondo-1);
     color: var(--parrafos-color);
     text-align: center;
 }
@@ -218,7 +201,12 @@ article {
     margin-top: 5px;
 }
 
-/* REDES SOCIALES */
+/* FOOTER */
+footer {
+    color: var(--parrafos-color) !important;
+}
+
+/* Redes sociales */
 #social-icons a {
     color: var(--parrafos-color) !important;
 }
@@ -235,42 +223,17 @@ article {
     text-shadow: 0 0 5px #fff;
 }
 
-/* FOOTER */
-footer {
-    color: var(--parrafos-color) !important;
-}
-
-/* BOTONES */
-.botones-app {
-    padding: 10px;
-    border-radius: 6px;
-    background-color: transparent;
-    border: 1px solid var(--enlaces);
-    color: var(--parrafos-color);
-}
-
-.botones-app:hover {
-    background-color: var(--decoradores2);
-    color: #ffffff;
-    box-shadow: 0 0 6px var(--resaltador);
-}
-
-.btn-close {
-    color: var(--enlaces) !important;
-}
-
+/* MEDIA QUERIES */
 @media (max-width: 480px) {
-    #modal-ui-carousel .modal-dialog {
-        min-height: auto !important;
-        max-width: 100% !important;
-    }
 
+    /* VENTANAS MODAL */
     .modal-body {
         min-height: auto !important;
     }
 
-    #logos-tech img {
-        height: 30px;
+    #modal-ui-carousel .modal-dialog {
+        min-height: auto !important;
+        max-width: 100% !important;
     }
 
     #modal-resumen-profesional .modal-dialog {
@@ -285,6 +248,7 @@ footer {
         max-width: 100% !important;
     }
 
+    /* IMAGENES */
     #front-end-logos,
     #back-end-logos {
         text-align: center;
