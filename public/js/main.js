@@ -54,7 +54,7 @@ document.querySelectorAll("#navbarSupportedContent .nav-link").forEach(link => {
 document.getElementById("btn-portafolio").addEventListener("click", (evt) => {
     const modalBodyProyectos = document.querySelector(".modal-body #proyectos");
     modalBodyProyectos.innerHTML = "";
-    for (let x = 0; x < 10; x++) {
+    config.proyectos.forEach(proyecto => {
         // =====> Contenedor
         let div = document.createElement("div");
         div.classList.add("col-5");
@@ -63,25 +63,28 @@ document.getElementById("btn-portafolio").addEventListener("click", (evt) => {
 
         // =====> Imagen
         let img = document.createElement("img");
-        img.setAttribute("src", "public/img/projects-img/demo-img.png");
-        img.setAttribute("alt", "Imagen del proyecto")
+        img.setAttribute("src", proyecto.img);
+        img.setAttribute("alt", "Imagen del proyecto");
         img.classList.add("img-fluid");
 
         // =====> Descripcion
         let descripcion = document.createElement("p");
-        descripcion.classList.add("mb-0")
-        descripcion.innerText = "Lorem ipsum dolor sit amet";
+        descripcion.classList.add("mb-0");
+        descripcion.innerText = proyecto.nombre;
 
         // =====> Boton
-        let btn = document.createElement("button");
-        btn.classList.add("botones-app")
-        btn.innerText = "Ver demo";
+        let link = document.createElement("a");
+        link.classList.add("botones-app");
+        link.setAttribute("href", proyecto.url);
+        link.setAttribute("target", "_blank");
+        link.innerText = "Ver demo";
 
         div.appendChild(img);
         div.appendChild(descripcion);
-        div.appendChild(btn);
+        div.appendChild(link);
         modalBodyProyectos.appendChild(div)
-    }
+    })
+
 })
 
 
