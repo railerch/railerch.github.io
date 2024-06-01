@@ -1,5 +1,5 @@
-import MyDataBase from "./_DataBase.js";
-import Table from "./_Table.js";
+import MyDataBase from "./DataBase.js";
+import Table from "./Table.js";
 
 window.addEventListener("load", function (evt) {
     const createDbBtn = this.document.getElementById("create-db");

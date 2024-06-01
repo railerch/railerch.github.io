@@ -1,5 +1,5 @@
 
-import Form from "./_Form.js";
+import Form from "./Form.js";
 
 export default class MyDataBase {
     constructor() {
