@@ -50,41 +50,16 @@ document.querySelectorAll("#navbarSupportedContent .nav-link").forEach(link => {
     })
 })
 
-// ==========> GENERAR ENTRADAS PARA EL PORTAFOLIO
+// ==========> PROYECTOS EN PAGINA DE INICIO PORTAFOLIO
+let seccionPortafolio = document.getElementById("portafolio-sec-img");
+for (let i = 0; i < 4; i++) {
+    fn.proyectos(config, seccionPortafolio);
+}
+
+// ==========> PROYECTOS EN VENTANA MODAL PORTAFOLIO 
 document.getElementById("btn-portafolio").addEventListener("click", (evt) => {
     const modalBodyProyectos = document.querySelector(".modal-body #proyectos");
-    modalBodyProyectos.innerHTML = "";
-    config.proyectos.forEach(proyecto => {
-        // =====> Contenedor
-        let div = document.createElement("div");
-        div.classList.add("col-5");
-        div.classList.add("col-md-2");
-        div.classList.add("portafolio-card");
-
-        // =====> Imagen
-        let img = document.createElement("img");
-        img.setAttribute("src", proyecto.img);
-        img.setAttribute("alt", "Imagen del proyecto");
-        img.classList.add("img-fluid");
-
-        // =====> Descripcion
-        let descripcion = document.createElement("p");
-        descripcion.classList.add("mb-0");
-        descripcion.innerText = proyecto.nombre;
-
-        // =====> Boton
-        let link = document.createElement("a");
-        link.classList.add("botones-app");
-        link.setAttribute("href", proyecto.url);
-        link.setAttribute("target", "_blank");
-        link.innerText = "Ver demo";
-
-        div.appendChild(img);
-        div.appendChild(descripcion);
-        div.appendChild(link);
-        modalBodyProyectos.appendChild(div)
-    })
-
+    fn.proyectos(config, modalBodyProyectos);
 })
 
 
