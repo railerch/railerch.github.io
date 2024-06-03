@@ -62,4 +62,20 @@ document.getElementById("btn-portafolio").addEventListener("click", (evt) => {
     fn.proyectos(config, modalBodyProyectos);
 })
 
+// ==========> ENLACES A REDES SOCIALES
+const redesSocialesDiv = document.getElementById("redes-sociales-div")
+config.redesSociales.forEach(red => {
 
+    // Link
+    let a = document.createElement("a");
+    a.href = red.nombre == "Whatsapp" ? `${red.link}&text=${red.mensaje}` : red.link;
+    a.target = "_blank";
+    a.title = red.nombre
+
+    // Icon
+    let i = document.createElement("i");
+    i.setAttribute("class", red.icono);
+
+    a.append(i);
+    redesSocialesDiv.append(a);
+})
