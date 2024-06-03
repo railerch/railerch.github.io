@@ -1,267 +1,208 @@
-/* PALETA DE COLORES */
-:root {
-    --parrafos-color: #f2f2f2;
-    --encabezados: lightgray;
-    --enlaces: #00b3ff;
-    --resaltador: #ff00ff;
-    --color-fondo-1: #131419;
-    --color-fondo-2: #181c1f;
-}
-
-/* ESTILOS GENERALES */
+@import url("./media-queries.css");
+/* ===================================================================== PALETA DE COLORES */
+/* ===================================================================== ESTILOS GENERALES */
 body {
-    background-color: var(--color-fondo-2) !important;
-    background-image: url("../img/main-bg.jpg");
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    background-size: cover;
+  background-color: #181c1f !important;
+  background-image: url("../img/main-bg.jpg");
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body a {
+  text-decoration: none !important;
+}
+body img {
+  border-radius: 10px;
+  max-height: 350px;
+}
+body p,
+body ul,
+body ol,
+body figcaption {
+  color: #f2f2f2;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: lightgray !important;
+}
+body hr {
+  width: 30%;
+  color: #ff00ff !important;
 }
 
-a {
-    text-decoration: none !important;
-}
-
-img {
-    border-radius: 10px;
-    max-height: 350px;
-}
-
-p,
-ul,
-ol,
-figcaption {
-    color: var(--parrafos-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--encabezados) !important;
-}
-
-hr {
-    width: 30%;
-    color: var(--resaltador) !important;
-}
-
-/* ENLACES */
+/* ===================================================================== ENLACES */
 #navbarSupportedContent .nav-link {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 #navbarSupportedContent .nav-link:hover {
-    color: var(--resaltador);
+  color: #ff00ff;
 }
 
 .resaltar {
-    color: var(--resaltador);
+  color: #ff00ff;
 }
 
 .enlaces {
-    color: var(--enlaces);
-    text-decoration: none;
-    cursor: pointer;
+  color: #00b3ff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* BOTONES */
+/* ===================================================================== BOTONES */
 .botones-app {
-    padding: 5px 10px;
-    border-radius: 6px;
-    background-color: transparent;
-    border: 1px solid var(--enlaces);
-    color: var(--parrafos-color);
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid #00b3ff;
+  color: #f2f2f2;
 }
-
 .botones-app:hover {
-    background-color: var(--decoradores2);
-    color: #ffffff;
-    box-shadow: 0 0 6px var(--resaltador);
+  background-color: #ff00ff;
+  color: #ffffff;
+  box-shadow: 0 0 6px #ff00ff;
 }
 
 .btn-close {
-    color: var(--enlaces) !important;
+  color: #00b3ff !important;
 }
 
-/* IMAGENES */
+/* ===================================================================== IMAGENES */
 #foto-perfil {
-    max-width: 30%;
-    float: left;
-    margin: 0 15px 15px 0;
-}
-
-#logos-tech {
-    width: 100%;
-    padding: 1em 0;
-    display: flex;
-    justify-content: space-around;
-    overflow-x: auto;
-}
-
-#front-end-logos img,
-#back-end-logos img {
-    height: 50px;
-}
-
-#front-end-logos a:nth-child(1n+2),
-#back-end-logos a:nth-child(1n+2) {
-    margin-left: 1em;
+  max-width: 30%;
+  float: left;
+  margin: 0 15px 15px 0;
 }
 
 #nav-bar-logo {
-    height: 75px;
-}
-
-#carouselLogos img {
-    height: 100px;
-    width: auto;
+  height: 75px;
 }
 
 #portafolio-sec-img img {
-    max-height: 150px;
-    cursor: pointer;
+  max-height: 150px;
+  cursor: pointer;
 }
 
-/* SECCIONES */
+/* ===================================================================== SECCIONES */
 header {
-    box-shadow: 0 3px 5px #000;
+  box-shadow: 0 3px 5px #000;
 }
 
 section {
-    display: flex;
-    align-items: center;
-    padding: 1em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
 }
 
 article {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-#sobre-mi,
+#front-end,
 #back-end,
 #contacto {
-    background-color: var(--color-fondo-1);
+  background-color: #131419;
 }
 
-/* VENTANAS MODAL*/
+/* Tech slider */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide-track .slide {
+  height: 100px;
+  width: 250px;
+}
+
+/* ===================================================================== VENTANAS MODAL*/
 .modal-body {
-    min-height: 350px;
-    max-height: 75vh;
-    overflow-y: auto;
-    background-color: var(--color-fondo-2) !important;
+  min-height: 350px;
+  max-height: 75vh;
+  overflow-y: auto;
+  background-color: #181c1f !important;
 }
-
-#modal-ui-carousel .modal-dialog {
-    max-width: 40% !important;
-}
-
-#modal-resumen-profesional .modal-dialog {
-    max-width: 50%;
-}
-
-#modal-portafolio .modal-dialog {
-    max-width: 90% !important;
-}
-
-#modal-por-que-codigo-plano .modal-dialog {
-    max-width: 60% !important;
-}
-
-#modal-por-que-codigo-plano li b {
-    color: var(--resaltador);
-}
-
 .modal-body #proyectos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .portafolio-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 5px;
-    padding: 7px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background-color: var(--color-fondo-1);
-    color: var(--parrafos-color);
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #131419;
+  color: #f2f2f2;
+  text-align: center;
 }
-
 .portafolio-card * {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
-/* FOOTER */
+#modal-ui-carousel .modal-dialog {
+  max-width: 40% !important;
+}
+
+#modal-resumen-profesional .modal-dialog {
+  max-width: 50%;
+}
+
+#modal-portafolio .modal-dialog {
+  max-width: 90% !important;
+}
+
+#modal-por-que-codigo-plano .modal-dialog {
+  max-width: 60% !important;
+}
+
+#modal-por-que-codigo-plano li b {
+  color: #ff00ff;
+}
+
+/* ===================================================================== FOOTER */
 footer {
-    color: var(--parrafos-color) !important;
+  color: #f2f2f2 !important;
 }
 
 /* Redes sociales */
-#social-icons a {
-    color: var(--parrafos-color) !important;
+#redes-sociales-div a {
+  color: #f2f2f2 !important;
 }
-
-#social-icons i {
-    font-size: 2em;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: font-size 0.5s;
+#redes-sociales-div i {
+  font-size: 2em;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: font-size 0.5s;
 }
-
-#social-icons i:hover {
-    font-size: 1.7em;
-    text-shadow: 0 0 5px #fff;
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 480px) {
-
-    /* VENTANAS MODAL */
-    .modal-body {
-        min-height: auto !important;
-    }
-
-    #modal-ui-carousel .modal-dialog {
-        min-height: auto !important;
-        max-width: 100% !important;
-    }
-
-    #modal-resumen-profesional .modal-dialog {
-        max-width: 100%;
-    }
-
-    #modal-portafolio .modal-dialog {
-        max-width: 100% !important;
-    }
-
-    #modal-por-que-codigo-plano .modal-dialog {
-        max-width: 100% !important;
-    }
-
-    /* IMAGENES */
-    #front-end-logos,
-    #back-end-logos {
-        text-align: center;
-    }
-
-    #front-end-logos img,
-    #back-end-logos img {
-        height: 30px;
-
-    }
-
-    #front-end-logos a:nth-child(1n+2),
-    #back-end-logos a:nth-child(1n+2) {
-        margin-left: 0.5em;
-    }
-}
+#redes-sociales-div i:hover {
+  font-size: 1.7em;
+  text-shadow: 0 0 5px #fff;
+}/*# sourceMappingURL=main.css.map */
