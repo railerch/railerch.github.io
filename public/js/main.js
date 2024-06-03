@@ -50,13 +50,13 @@ document.querySelectorAll("#navbarSupportedContent .nav-link").forEach(link => {
     })
 })
 
-// ==========> PROYECTOS EN PAGINA DE INICIO PORTAFOLIO
+// ==========> ENLACES Y MINIATURAS DE PROYECTOS EN PAGINA DE INICIO PORTAFOLIO
 let seccionPortafolio = document.getElementById("portafolio-sec-img");
 for (let i = 0; i < 4; i++) {
     fn.proyectos(config, seccionPortafolio);
 }
 
-// ==========> PROYECTOS EN VENTANA MODAL PORTAFOLIO 
+// ==========> ENLACES Y MINIATURAS DE PROYECTOS EN VENTANA MODAL PORTAFOLIO 
 document.getElementById("btn-portafolio").addEventListener("click", (evt) => {
     const modalBodyProyectos = document.querySelector(".modal-body #proyectos");
     fn.proyectos(config, modalBodyProyectos);
