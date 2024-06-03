@@ -7,7 +7,7 @@ fn.testFn();
 console.log("Main JS script OK!");
 console.log(config.test);
 
-// ==========> VALORES DINAMICOS CONSTANTES
+// ==========> CONSTANTES PARA CALCULO DE PROPORCIONES ADAPTABLES
 const alturaViewport = window.innerHeight;
 const alturaHeader = document.querySelector("header").getBoundingClientRect().height;
 const alturaSecciones = alturaViewport - alturaHeader;
@@ -79,3 +79,27 @@ config.redesSociales.forEach(red => {
     a.append(i);
     redesSocialesDiv.append(a);
 })
+
+// ==========> SLIDER DE LOGOS
+const sliderTrack = document.querySelector(".slide-track");
+let x = 1;
+for (let i = 0; i < 13; i++) {
+    const slide = config.logoSlider;
+
+    // Contenedor
+    const div = document.createElement("div");
+    div.classList.add("slide")
+
+    // Imagen
+    const img = document.createElement("img");
+    img.src = slide[x].imagen;
+    img.width = slide[x].ancho;
+    img.height = slide[x].alto;
+    img.alt = slide[x].nombre;
+
+    div.appendChild(img);
+    sliderTrack.appendChild(div);
+
+    x++;
+    if (x == 7) x = 0;
+}

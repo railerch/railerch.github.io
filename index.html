@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/main.css.map">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script type="module" src="public/js/main.js" defer></script>
 
@@ -18,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
     -->
 
-    <!-- BOOTSTRAP LOCAL -->
+    <!-- BOOTSTRAP INCORPORADO -->
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <script src="public/js/bootstrap.bundle.js" defer></script>
     <title>RailerCh Web | Inicio</title>
@@ -134,31 +135,19 @@
                                 data-bs-target="#modal-por-que-codigo-plano">Algunas razones para usar
                                 codigo plano! <i class="bi bi-box-arrow-up-right"></i></a>
                         </p>
-
-                        <!-- front-end logos -->
-                        <div id="front-end-logos">
-                            <a href="https://html.spec.whatwg.org/multipage/" target="_blank">
-                                <img src="public/img/logos150px/html.png" alt="HTML logo">
-                            </a>
-                            <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
-                                <img src="public/img/logos150px/css.png" alt="CSS logo">
-                            </a>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                                <img src="public/img/logos150px/javascript.png" alt="Javascript logo">
-                            </a>
-                            <a href="https://react.dev/" target="_blank">
-                                <img src="public/img/logos150px/react.png" alt="React logo">
-                            </a>
-                            <a href="https://angular.io/" target="_blank">
-                                <img src="public/img/logos150px/angular.png" alt="Angular logo">
-                            </a>
-                        </div>
                     </div>
                     <div class="col-12 col-md-6 text-center section-img">
                         <img class="img-fluid" src="public/img/frontend.png">
                     </div>
                 </article>
             </section>
+
+            <!-- Slider de logos -->
+            <div class="slider">
+                <div class="slide-track">
+                    <!-- SLIDES DESDE JS -->
+                </div>
+            </div>
 
             <!-- Back-end -->
             <section id="back-end">
@@ -185,25 +174,6 @@
                                 seguridad.
 
                             </p>
-
-                            <!-- back-end logos -->
-                            <div id="back-end-logos">
-                                <a href="https://vuejs.org/" target="_blank">
-                                    <img src="public/img/logos150px/vue.png" alt="VUE logo">
-                                </a>
-                                <a href="https://nodejs.org/en" target="_blank">
-                                    <img src="public/img/logos150px/node.png" alt="Node logo">
-                                </a>
-                                <a href="https://www.php.net/" target="_blank">
-                                    <img src="public/img/logos150px/php.png" alt="PHP logo">
-                                </a>
-                                <a href="https://laravel.com/" target="_blank">
-                                    <img src="public/img/logos150px/laravel.png" alt="Laravel logo">
-                                </a>
-                                <a href="https://www.docker.com/" target="_blank">
-                                    <img src="public/img/logos150px/docker.png" alt="Docker logo">
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </article>
@@ -227,26 +197,7 @@
                 <div class="col-12 text-center">
                     <div id="portafolio-sec-img"
                         class="d-flex flex-wrap justify-content-center d-grid gap-2 gap-md-3 py-4">
-                        <!--
-                        <a href="projects/01demoPWA/index.html" target="_blank">
-                            <figure>
-                                <img src="projects/01demoPWA/thumbnail.jpg" alt="Imagen del proyecto">
-                                <figcaption>PWA</figcaption>
-                            </figure>
-                        </a>
-                        <a href="projects/02DragDrop/index.html" target="_blank">
-                            <figure>
-                                <img src="projects/02DragDrop/thumbnail.jpg" alt="Imagen del proyecto">
-                                <figcaption>Drag & Drop</figcaption>
-                            </figure>
-                        </a>
-                        <a href="projects/03browserCRUD/index.html" target="_blank">
-                            <figure>
-                                <img src="projects/03browserCRUD/thumbnail.jpg" alt="Imagen del proyecto">
-                                <figcaption>IndexedDB API</figcaption>
-                            </figure>
-                        </a>
-                        -->
+                        <!-- PROYECTOS DESDE JS-->
                     </div>
                     <button id="btn-portafolio" type="button" class="botones-app" data-bs-toggle="modal"
                         data-bs-target="#modal-portafolio">
@@ -505,7 +456,6 @@
                 </div>
             </div>
         </div>
-
     </main>
 
     <!-- FOOTER -->

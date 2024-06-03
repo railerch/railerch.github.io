@@ -45,6 +45,50 @@ const config = {
             link: "https://api.whatsapp.com/send/?phone=584129880890",
             mensaje: "Hola, gracias por contactarme, en que puedo ayudarte?"
         },
+    ],
+    logoSlider: [
+        {
+            nombre: "HTML",
+            imagen: "public/img/tech-slider/html.png",
+            ancho: 250,
+            alto: 100
+        },
+        {   
+            nombre: "CSS",
+            imagen: "public/img/tech-slider/css.png",
+            ancho: 250,
+            alto: 100
+        },
+        {   
+            nombre: "Javascript",
+            imagen: "public/img/tech-slider/javascript.png",
+            ancho: 250,
+            alto: 100
+        },
+        {   
+            nombre: "React",
+            imagen: "public/img/tech-slider/react.png",
+            ancho: 250,
+            alto: 100
+        },
+        {   
+            nombre: "Node",
+            imagen: "public/img/tech-slider/node.png",
+            ancho: 250,
+            alto: 100
+        },
+        {   
+            nombre: "PHP",
+            imagen: "public/img/tech-slider/php.png",
+            ancho: 250,
+            alto: 100
+        },
+        {   
+            nombre: "Laravel",
+            imagen: "public/img/tech-slider/laravel.png",
+            ancho: 250,
+            alto: 100
+        }
     ]
 }
 
