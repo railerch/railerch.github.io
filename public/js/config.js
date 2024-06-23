@@ -7,7 +7,7 @@ const config = {
             img: "projects/01demoPWA/thumbnail.jpg"
         },
         {
-            nombre: "Drag & Drop",
+            nombre: "Kanban",
             url: "projects/02DragDrop/index.html",
             img: "projects/02DragDrop/thumbnail.jpg"
         },
