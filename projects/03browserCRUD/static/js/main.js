@@ -251,8 +251,11 @@ window.addEventListener("load", function (evt) {
                     // Eliminar el registro indicado
                     const request = almacen.delete(registroId);
 
+                    // Eliminar la fila en la tabla
+                    evt.target.parentElement.parentElement.remove();
+
                     // Aviso 
-                    transaccion.addEventListener("complete", () => this.alert("Datos eliminados correctamente!"));
+                    // transaccion.addEventListener("complete", () => this.alert("Datos eliminados correctamente!"));
                 })
             })
 
