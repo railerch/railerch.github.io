@@ -190,7 +190,7 @@
             ]
         },
         {
-            "estatus": "online",
+            "estatus": "offline",
             "tipo": "capturas",
             "nombre": "Sistema CRM",
             "url_demo": "",
