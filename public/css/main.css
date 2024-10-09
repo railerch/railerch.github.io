@@ -1,0 +1,233 @@
+/* ===================================================================== ESTILOS GENERALES */
+body {
+  background-color: #181c1f !important;
+  background-image: url("../img/main-bg.jpg");
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body a {
+  text-decoration: none !important;
+}
+body img {
+  border-radius: 10px;
+  max-height: 350px;
+}
+body p,
+body ul,
+body dl,
+body ol,
+body figcaption {
+  color: #f2f2f2;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: lightgray !important;
+}
+body hr {
+  width: 30%;
+  color: #ff00ff !important;
+}
+
+/* ===================================================================== ENLACES */
+#navbarSupportedContent .nav-link {
+  cursor: pointer;
+}
+#navbarSupportedContent .nav-link:hover {
+  color: #ff00ff;
+}
+
+.resaltar {
+  color: #ff00ff;
+}
+
+.enlaces {
+  color: #00b3ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ===================================================================== BOTONES */
+.botones-app {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid #00b3ff;
+  color: #f2f2f2;
+}
+.botones-app:hover {
+  background-color: #ff00ff;
+  color: #ffffff;
+  box-shadow: 0 0 6px #ff00ff;
+}
+
+.btn-close {
+  color: #00b3ff !important;
+}
+
+/* ===================================================================== IMAGENES */
+#foto-perfil {
+  max-width: 30%;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+#nav-bar-logo {
+  height: 75px;
+}
+
+#portafolio-sec-img img {
+  max-height: 150px;
+  cursor: pointer;
+}
+
+/* ===================================================================== SECCIONES */
+header {
+  box-shadow: 0 3px 5px #000;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+article {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ===================================================================== SLIDER LOGOS */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  background-color: #131419;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide-track .slide {
+  height: 100px;
+  width: 250px;
+}
+
+/* ===================================================================== VENTANAS MODAL*/
+.modal-body {
+  background-color: #181c1f !important;
+}
+
+#modal-portafolio .modal-body {
+  min-height: 350px;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+#modal-portafolio .modal-body #proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portafolio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #f2f2f2;
+  text-align: center;
+}
+.portafolio-card * {
+  margin-top: 5px;
+}
+
+.modal:not(#modal-portafolio) .modal-dialog {
+  max-width: 50%;
+}
+
+#modal-portafolio .modal-dialog {
+  max-width: 90% !important;
+  margin: 0 auto !important;
+}
+
+/* ===================================================================== FOOTER */
+footer {
+  color: #f2f2f2 !important;
+}
+
+/* Redes sociales */
+#redes-sociales-div a {
+  color: #f2f2f2 !important;
+}
+#redes-sociales-div i {
+  font-size: 2em;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: font-size 0.5s;
+}
+#redes-sociales-div i:hover {
+  font-size: 1.7em;
+  text-shadow: 0 0 5px #fff;
+}
+
+/* ===================================================================== MEDIA QUERIES */
+@media (max-width: 480px) {
+  /* =================== VENTANAS MODAL */
+  .modal-body {
+    min-height: auto !important;
+  }
+  .modal .modal-dialog {
+    max-width: 100% !important;
+  }
+  #modal-portafolio .modal-dialog {
+    max-width: 95% !important;
+  }
+  #modal-capturas-ui .modal-dialog {
+    min-height: auto !important;
+    max-width: 100% !important;
+  }
+  #modal-por-que-codigo-plano .modal-dialog {
+    max-width: 100% !important;
+  }
+  /* =================== IMAGENES */
+  #front-end-logos {
+    text-align: center;
+  }
+  #front-end-logos img {
+    height: 30px;
+  }
+  #back-end-logos {
+    text-align: center;
+  }
+  #back-end-logos img {
+    height: 30px;
+  }
+  #front-end-logos a:nth-child(1n+2) {
+    margin-left: 0.5em;
+  }
+  #back-end-logos a:nth-child(1n+2) {
+    margin-left: 0.5em;
+  }
+}/*# sourceMappingURL=main.css.map */

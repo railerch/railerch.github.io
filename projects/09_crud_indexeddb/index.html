@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/bootstrap-icons.css">
+    <script type="module" src="static/js/main.js" defer></script>
+    <title>IndexedDB</title>
+</head>
+
+<body>
+    <main>
+        <img src="static/img/banner.png" alt="Banner">
+        <h2>IndexedDB - Bases de Datos<br>con Javascript</h2>
+        <br>
+        <form id="data-frm">
+            <div>
+                <p style="color:#555">Los campos se crearan una vez definida la BD.</p>
+            </div>
+            <div id="div-btn">
+                <button id="create-db" type="button"><i class="bi bi-arrows-angle-contract"></i> DB create |
+                    connect</button>
+                <div>
+                    <button id="delete-db" type="button"><i class="bi bi-trash"></i> DB delete</button>
+                    <button id="show-dbs" type="button"><i class="bi bi-eye"></i> Show Databases</button>
+                    <button id="save-data" type="button"><i class="bi bi-save"></i> Save data</button>
+                    <button id="show-table" type="button"><i class="bi bi-table"></i> Show records</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="table-div">
+            <h3>Datos registrados</h3>
+            <div id="records-tbl-div">
+                <!-- TABLA DE DATOS -->
+                <p style="margin: 2em;color:#555">Debe conectarse a una BD para visualizar los registros.</p>
+            </div>
+
+            <!-- FORMULARIO DE EDICION DE DATOS -->
+            <div id="edit-record-div"></div>
+
+            <button id="show-form" type="submit"><i class="bi bi-window-stack"></i> Show form</button>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

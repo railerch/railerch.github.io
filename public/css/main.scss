@@ -1,0 +1,229 @@
+$parrafos-color: #f2f2f2;
+$encabezados: lightgray;
+$enlaces: #00b3ff;
+$resaltador: #ff00ff;
+$color-fondo-1: #131419;
+$color-fondo-2: #181c1f;
+
+/* ===================================================================== ESTILOS GENERALES */
+body {
+    background: {
+        color: $color-fondo-2 !important;
+        image: url("../img/main-bg.jpg");
+        blend-mode: multiply;
+        attachment: fixed;
+        size: cover;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    img {
+        border-radius: 10px;
+        max-height: 350px;
+    }
+
+    p,
+    ul,
+    dl,
+    ol,
+    figcaption {
+        color: $parrafos-color;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $encabezados !important;
+    }
+
+    hr {
+        width: 30%;
+        color: $resaltador !important;
+    }
+}
+
+/* ===================================================================== ENLACES */
+#navbarSupportedContent {
+    .nav-link {
+        cursor: pointer;
+        &:hover {
+            color: $resaltador;
+        }
+    }
+}
+
+.resaltar {
+    color: $resaltador;
+}
+
+.enlaces {
+    color: $enlaces;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ===================================================================== BOTONES */
+.botones-app {
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid $enlaces;
+    color: $parrafos-color;
+
+    &:hover {
+        background-color: $resaltador;
+        color: #ffffff;
+        box-shadow: 0 0 6px $resaltador;
+    }
+}
+
+.btn-close {
+    color: $enlaces !important;
+}
+
+/* ===================================================================== IMAGENES */
+#foto-perfil {
+    max-width: 30%;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+#nav-bar-logo {
+    height: 75px;
+}
+
+#portafolio-sec-img {
+    img {
+        max-height: 150px;
+        cursor: pointer;
+    }
+}
+
+/* ===================================================================== SECCIONES */
+header {
+    box-shadow: 0 3px 5px #000;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+article {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ===================================================================== SLIDER LOGOS */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    background-color: $color-fondo-1;
+    .slide-track {
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+
+        .slide {
+            height: 100px;
+            width: 250px;
+        }
+    }
+}
+
+/* ===================================================================== VENTANAS MODAL*/
+
+.modal-body {
+    background-color: $color-fondo-2 !important;
+}
+
+#modal-portafolio .modal-body {
+    min-height: 350px;
+    max-height: 75vh;
+    overflow-y: auto;
+
+    #proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.portafolio-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: $parrafos-color;
+    text-align: center;
+
+    * {
+        margin-top: 5px;
+    }
+}
+
+.modal:not(#modal-portafolio) {
+    .modal-dialog {
+        max-width: 50%;
+    }
+}
+
+#modal-portafolio {
+    .modal-dialog {
+        max-width: 90% !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* ===================================================================== FOOTER */
+footer {
+    color: $parrafos-color !important;
+}
+
+/* Redes sociales */
+#redes-sociales-div {
+    a {
+        color: $parrafos-color !important;
+    }
+
+    i {
+        font-size: 2em;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: font-size 0.5s;
+
+        &:hover {
+            font-size: 1.7em;
+            text-shadow: 0 0 5px #fff;
+        }
+    }
+}
+
+/* ===================================================================== MEDIA QUERIES */
+@import "media-queries";

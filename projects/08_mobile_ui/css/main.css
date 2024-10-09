@@ -1,0 +1,85 @@
+/* ESTILOS PERSONALIZADOS*/
+
+body,
+.container {
+    min-height: 100vh;
+    min-width: 300px;
+}
+
+body {
+    background: lightgray;
+}
+
+#login-header {
+    height: 40vh;
+    background-color: #000;
+    background-image: url("../img/Login_bg_blur.png");
+    background-position: center;
+    background-size: cover;
+    text-shadow: 1px 1px 3px #000;
+}
+
+#logo {
+    width: 50%;
+}
+
+#admin-ui,
+#client-ui {
+    box-shadow: 0 0 10px #000;
+}
+
+#tipo-usuario,
+#id-usuario {
+    color: #333;
+}
+
+#co-cli {
+    max-width: 50%;
+}
+
+#montos,
+.accordion-button,
+.modal-header {
+    background-image: linear-gradient(to bottom, #555, #222);
+    color: #fff;
+}
+
+.accordion-button h4,
+.modal-header {
+    color: #fff;
+}
+
+.modal-footer {
+    background-color: #333;
+}
+
+.accordion-body {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.accordion-body,
+.modal-body {
+    background-color: #333;
+    color: #fff;
+}
+
+.table {
+    box-shadow: 2px 2px 5px #000;
+    color: #fff;
+}
+
+.table tr {
+    cursor: pointer;
+    user-select: none;
+}
+
+#preloader-modal .modal-dialog {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.card * {
+    user-select: none;
+    cursor: pointer;
+}

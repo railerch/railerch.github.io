@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>JBPassport | Registrarse</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-content-center">
+            <div class="col-10 col-md-6 text-center shadow border rounded">
+                <i id="login-logo" class="icon-user"></i>
+                <h4 class="text-muted">Crear cuenta</h4>
+                <div class="mb-3">
+                    <input type="hidden" id="cliente" name="cliente" value="0">
+                    <input type="text" name="nombre-completo" id="nombre" class="form-control"
+                        placeholder="Nombre completo">
+                    <input type="text" name="nombre-completo" id="nombre" class="form-control mt-1"
+                        placeholder="Nº Cedula">
+                    <input type="text" name="nombre-completo" id="nombre" class="form-control mt-1"
+                        placeholder="Nombre de usuario">
+                    <input type="password" name="clave" id="clave" class="form-control mt-1" placeholder="Clave">
+                    <input type="password" name="clave" id="clave-confirmacion" class="form-control mt-1"
+                        placeholder="Confirmar clave">
+                    <button class="btn btn-primary mt-3"><i class="icon-ok"></i> Crear una cuenta</button>
+                </div>
+                <p><a href="login.php" target="_self"><i class="icon-login"></i> Iniciar Sesión</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AVISO MODAL -->
+    <div class="modal fade" id="aviso-modal" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">
+                        <!-- TITULO -->
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- MENSAJE -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRELOADER MODAL -->
+    <div class="modal" id="preloader-modal" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0 m-0">
+                    <img src="./img/preloader.gif" alt="Preloader">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="module" src="js/main.js"></script>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+/* GENERAL */
+body {
+    height: 90vh;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: gray;
+}
+
+/* MAIN */
+main {
+    width: fit-content;
+    max-width: 480px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    border: 5px solid gray;
+    border-radius: 10px;
+    border-style: inset;
+    background-color: #222;
+    box-shadow: 5px 5px 10px #000000;
+    box-shadow: inset;
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+}
+
+main hr {
+    margin: 10px;
+}
+
+
+/* FORMULARIO */
+form>div {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+form #div-btn {
+    margin: 0.5em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form input {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid gray;
+    border-style: inset;
+    background-color: #222;
+    box-shadow: 2px 2px 3px #000;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+form input[type=email]:invalid {
+    border-color: red;
+    box-shadow: 0 0 5px red;
+}
+
+form input:hover {
+    background-color: #000;
+}
+
+/* BOTONES */
+button {
+    width: fit-content;
+    margin: 5px auto;
+    padding: 1em;
+    border-radius: 50% 10%;
+    background-color: #222;
+    border-color: blue;
+    box-shadow: 2px 2px 3px #000;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.5s, border-color 0.5s;
+}
+
+button:hover {
+    background-color: #000;
+    border-color: magenta;
+}
+
+.btn {
+    padding: 3px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn.editar {
+    background-color: cyan;
+}
+
+.btn.eliminar {
+    background-color: crimson;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+#save-data {
+    display: none;
+}
+
+/* TABLA DE DATOS */
+#table-div {
+    display: none;
+}
+
+#records-tbl-div {
+    min-height: 100px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 1em auto;
+}

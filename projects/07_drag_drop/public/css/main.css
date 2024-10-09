@@ -1,0 +1,196 @@
+body,
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+span,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    user-select: none;
+    pointer-events: none;
+}
+
+/* ==============================================  MSG DIV TOP */
+#msg-div {
+    width: 45%;
+    margin: 0 auto;
+    padding-left: 2em !important;
+    display: none;
+    font-size: 0.8em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.1em 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* ==============================================  HEADER */
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+header span {
+    font-size: 2em;
+}
+
+/* ==============================================  MAIN */
+
+main {
+    padding: 0 2em;
+    box-sizing: border-box;
+}
+
+/* =============== Form */
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#form .input-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#form .input-group:nth-child(1n + 2) {
+    margin-left: 10px;
+}
+
+#form .input-group input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+button {
+    border: 0;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.clear {
+    background-color: orange;
+}
+
+.create {
+    background-color: green;
+}
+
+button:hover {
+    box-shadow: 1px 1px 5px #000000;
+}
+
+/* =============== Cards */
+
+.task {
+    max-width: 200px;
+    margin: 2px;
+    padding: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #00000075;
+    color: white;
+    text-align: left;
+    transition: background-color 0.5s;
+    cursor: grab;
+}
+
+.del-task {
+    cursor: pointer;
+}
+
+.task:hover {
+    border-color: red;
+    transition: background-color 0.2s;
+}
+
+.task:active {
+    background-color: white;
+}
+
+
+/* =============== Containers */
+#backlog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 45vh;
+    overflow-y: auto;
+    background-color: darkslategrey;
+}
+
+#backlog>h1 {
+    font-size: 5vw;
+    pointer-events: none;
+    color: #ffffff50;
+    position: absolute;
+}
+
+#containers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.container {
+    width: 25%;
+    padding-top: 10px;
+    color: #333;
+}
+
+.container>h3 {
+    text-align: center;
+}
+
+.stage {
+    height: 30vh;
+    padding: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #fff;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0.5em;
+    }
+
+    main {
+        padding: 0.5em;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    #form .input-group {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    #form .input-group:nth-child(1n + 2) {
+        margin-top: 5px;
+        margin-left: 0 !important;
+    }
+}

@@ -1,0 +1,305 @@
+{
+    "test": "Config Obj loaded.",
+    "hosting_type": "html",
+    "proyectos": [
+        {
+            "estatus": "online",
+            "tipo": "demo",
+            "nombre": "Web Olympia EU",
+            "url_demo": "https://olympiaeu.com/inicio.php",
+            "url_tmp": "",
+            "img": "../projects/03_olympia_web/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "JSON",
+                "PHP",
+                "MySQL"
+            ]
+        },
+        {
+            "estatus": "online",
+            "tipo": "demo",
+            "nombre": "Web APP (PWA)",
+            "url_demo": "../projects/06_demo_pwa/index.html",
+            "url_tmp": "",
+            "img": "../projects/06_demo_pwa/thumbnail.jpg",
+            "descripcion": "Lorem ipsum dolor sit amet",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "JSON"
+            ]
+        },
+        {
+            "estatus": "online",
+            "tipo": "demo",
+            "nombre": "Kanban demo",
+            "url_demo": "../projects/07_drag_drop/index.html",
+            "url_tmp": "",
+            "img": "../projects/07_drag_drop/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "estatus": "online",
+            "tipo": "demo",
+            "nombre": "Front APP movil",
+            "url_demo": "../projects/08_mobile_ui/index.html",
+            "url_tmp": "",
+            "img": "../projects/08_mobile_ui/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatable",
+                "JSON"
+            ]
+        },
+        {
+            "estatus": "online",
+            "tipo": "demo",
+            "nombre": "CRUD en navegador",
+            "url_demo": "../projects/09_crud_indexeddb/index.html",
+            "url_tmp": "",
+            "img": "../projects/09_crud_indexeddb/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "JSON",
+                "IndexedDB API"
+            ]
+        },
+        {
+            "estatus": "online",
+            "tipo": "demo",
+            "nombre": "Generador QR",
+            "url_demo": "../projects/10_generador_qr/index.html",
+            "url_tmp": "",
+            "img": "../projects/10_generador_qr/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "SCSS",
+                "Bootstrap",
+                "JavaScript"
+            ]
+        },
+        {
+            "estatus": "offline",
+            "tipo": "capturas",
+            "nombre": "Sistema Cloud Storage",
+            "url_demo": "../projects/04_drive_app/index.php",
+            "url_tmp": "../projects/00_tmp/index.html",
+            "img": "../projects/04_drive_app/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "PHP"
+            ]
+        },
+        {
+            "estatus": "offline",
+            "tipo": "capturas",
+            "nombre": "Sistema de tickets",
+            "url_demo": "../projects/01_tickets_app/index.php",
+            "url_tmp": "../projects/00_tmp/index.html",
+            "img": "../projects/01_tickets_app/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "jQuery",
+                "Datatables",
+                "Ajax",
+                "PHP",
+                "MySQL"
+            ]
+        },
+        {
+            "estatus": "offline",
+            "tipo": "capturas",
+            "nombre": "Web CasaMia",
+            "url_demo": "../projects/02_casamia_web/index.php",
+            "url_tmp": "../projects/00_tmp/index.html",
+            "img": "../projects/02_casamia_web/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "jQuery",
+                "PHP",
+                "MySQL"
+            ]
+        },
+        {
+            "estatus": "offline",
+            "tipo": "capturas",
+            "nombre": "Sistema consulta CNE",
+            "url_demo": "../projects/05_cne/index.php",
+            "url_tmp": "../projects/00_tmp/index.html",
+            "img": "../projects/05_cne/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatable",
+                "JSON",
+                "PHP"
+            ]
+        },
+        {
+            "estatus": "offline",
+            "tipo": "capturas",
+            "nombre": "Sistema de reservas",
+            "url_demo": "",
+            "url_tmp": "../projects/11_sistema_arnica/index.html",
+            "img": "../projects/11_sistema_arnica/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatable",
+                "Node",
+                "PM2"
+            ]
+        },
+        {
+            "estatus": "online",
+            "tipo": "capturas",
+            "nombre": "Sistema CRM",
+            "url_demo": "",
+            "url_tmp": "../projects/13_crm_bosto/index.html",
+            "img": "../projects/13_crm_bosto/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": []
+        },
+        {
+            "estatus": "offline",
+            "tipo": "capturas",
+            "nombre": "Pantalla de pedidos (Profit)",
+            "url_demo": "",
+            "url_tmp": "../projects/14_pantalla_pedidos_intervit/index.html",
+            "img": "../projects/14_pantalla_pedidos_intervit/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": []
+        },
+        {
+            "estatus": "offline",
+            "tipo": "capturas",
+            "nombre": "Punto de venta (API BNC)",
+            "url_demo": "",
+            "url_tmp": "../projects/15_sistema_vpos/index.html",
+            "img": "../projects/15_sistema_vpos/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": []
+        },
+        {
+            "estatus": "offline",
+            "tipo": "capturas",
+            "nombre": "Sistema de tokens",
+            "url_demo": "",
+            "url_tmp": "../projects/16_sistema_tokens/index.html",
+            "img": "../projects/16_sistema_tokens/thumbnail.jpg",
+            "descripcion": "",
+            "tecnologias": []
+        }
+    ],
+    "logoSlider": [
+        {
+            "nombre": "HTML",
+            "imagen": "public/img/tech-slider/html.png",
+            "ancho": 250,
+            "alto": 100
+        },
+        {
+            "nombre": "CSS",
+            "imagen": "public/img/tech-slider/css.png",
+            "ancho": 250,
+            "alto": 100
+        },
+        {
+            "nombre": "Javascript",
+            "imagen": "public/img/tech-slider/javascript.png",
+            "ancho": 250,
+            "alto": 100
+        },
+        {
+            "nombre": "React",
+            "imagen": "public/img/tech-slider/react.png",
+            "ancho": 250,
+            "alto": 100
+        },
+        {
+            "nombre": "Node",
+            "imagen": "public/img/tech-slider/node.png",
+            "ancho": 250,
+            "alto": 100
+        },
+        {
+            "nombre": "PHP",
+            "imagen": "public/img/tech-slider/php.png",
+            "ancho": 250,
+            "alto": 100
+        },
+        {
+            "nombre": "Laravel",
+            "imagen": "public/img/tech-slider/laravel.png",
+            "ancho": 250,
+            "alto": 100
+        }
+    ],
+    "redesSociales": [
+        {
+            "nombre": "LinkedIn",
+            "icono": "bi bi-linkedin",
+            "link": "https://www.linkedin.com/in/railer-chalbaud/"
+        },
+        {
+            "nombre": "GitHub",
+            "icono": "bi bi-git",
+            "link": "https://github.com/railerch"
+        },
+        {
+            "nombre": "Instagram",
+            "icono": "bi bi-instagram",
+            "link": "https://www.instagram.com/railer.ch_dev/"
+        },
+        {
+            "nombre": "Telegram",
+            "icono": "bi bi-telegram",
+            "link": "https://t.me/railerch"
+        },
+        {
+            "nombre": "Whatsapp",
+            "icono": "bi bi-whatsapp",
+            "link": "https://api.whatsapp.com/send/?phone=584129880890",
+            "mensaje": "Hola, gracias por contactarme, en que puedo ayudarte?"
+        }
+    ]
+}

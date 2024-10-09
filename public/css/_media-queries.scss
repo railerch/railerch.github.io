@@ -1,0 +1,58 @@
+@media (max-width: 480px) {
+    /* =================== VENTANAS MODAL */
+    .modal-body {
+        min-height: auto !important;
+    }
+
+    .modal {
+        .modal-dialog {
+            max-width: 100% !important;
+        }
+    }
+
+    #modal-portafolio {
+        .modal-dialog {
+            max-width: 95% !important;
+        }
+    }
+
+    #modal-capturas-ui {
+        .modal-dialog {
+            min-height: auto !important;
+            max-width: 100% !important;
+        }
+    }
+
+    #modal-por-que-codigo-plano {
+        .modal-dialog {
+            max-width: 100% !important;
+        }
+    }
+
+    /* =================== IMAGENES */
+    #front-end-logos {
+        text-align: center;
+        img {
+            height: 30px;
+        }
+    }
+
+    #back-end-logos {
+        text-align: center;
+        img {
+            height: 30px;
+        }
+    }
+
+    #front-end-logos {
+        a:nth-child(1n + 2) {
+            margin-left: 0.5em;
+        }
+    }
+
+    #back-end-logos {
+        a:nth-child(1n + 2) {
+            margin-left: 0.5em;
+        }
+    }
+}

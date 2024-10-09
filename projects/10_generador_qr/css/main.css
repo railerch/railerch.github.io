@@ -1,0 +1,89 @@
+@import "mediaqueries.css";
+html {
+  font-family: sans-serif;
+}
+html * {
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+html body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-45deg, cyan, purple);
+}
+html body #my-container {
+  width: 90%;
+  height: 95vh;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 15px;
+}
+html body #my-container main {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+html body #my-container main form {
+  max-height: 75vh;
+  overflow-y: auto;
+}
+html body #my-container main #canvas-div {
+  max-height: 75vh;
+  text-align: center;
+  overflow: auto;
+  padding: 1em;
+  background-color: #f3f3f3;
+}
+html body #my-container main #canvas-div #qrcode-svg {
+  width: 30em;
+  height: 30em;
+  padding: 1em;
+  background-color: #e8e8e8;
+}
+html body #my-container h1 {
+  text-align: center;
+  color: darkcyan;
+}
+html body #my-container p {
+  margin-bottom: 5px !important;
+}
+html body #my-container table {
+  border-collapse: collapse;
+}
+html body #my-container td {
+  vertical-align: top;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+html body #my-container td:first-child {
+  white-space: pre;
+  padding-right: 0.5em;
+}
+html body #my-container input[type=number],
+html body #my-container input[type=text],
+html body #my-container textarea {
+  font-size: inherit;
+  font-family: inherit;
+  resize: none !important;
+}
+html body #my-container input[type=radio],
+html body #my-container input[type=checkbox] {
+  margin: 0em;
+  padding: 0em;
+}
+html body #my-container input[type=radio] + label,
+html body #my-container input[type=checkbox] + label {
+  margin-right: 0.8em;
+  padding-left: 0.2em;
+}
+html body #my-container hr {
+  width: 50%;
+  margin: 1em auto;
+  border: none;
+  border-top: 0.1em solid darkcyan;
+}/*# sourceMappingURL=main.css.map */
