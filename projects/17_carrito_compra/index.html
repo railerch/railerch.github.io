@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Test</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="public/img/favicon.png" type="image/x-icon">
+    <script type="text/javascript" src="public/js/bootstrap.bundle.min.js" defer></script>
+    <script type="module" src="public/js/main.js" defer></script>
+    <!-- Stripe -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</head>
+
+<body>
+    <nav class=" navbar navbar-expand navbar-light bg-light mb-3">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link active" href="/" aria-current="page">
+                <h3 class="text-muted">
+                    <i class="bi bi-shop"></i> Ecommerce Test
+                </h3>
+            </a>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <div class="container mb-3">
+        <!-- Confirmacion de pago -->
+        <div id="confirmacion-pago" style="display:none">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <strong>Pago confirmado!</strong> Gracias por probar la aplicacion.
+            </div>
+        </div>
+
+        <!-- Descuento -->
+        <div class="col-12 col-md-5 my-3">
+            <div class="input-group">
+                <label class="input-group-text" for="descuento">Descuento global %</label>
+                <input type="number" step="0.1" class="form-control" id="porcentaje-descuento" placeholder="0.00"
+                    value="0.00" />
+            </div>
+        </div>
+
+        <!-- Aviso de recargar pagina -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <strong>Importante:</strong> no refrescar la pagina para no perder los datos.
+        </div>
+
+        <!-- Datos de prueba -->
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            <strong>Datos de prueba:</strong>
+            <ul>
+                <li>Número de tarjeta <b>4242 4242 4242 4242</b>, introduce este número en el formulario de pago.</li>
+                <li>Usa una fecha futura válida, como <b>12/34</b></li>
+                <li>Usa cualquier <b>CVC</b> de tres dígitos (cuatro dígitos si usas una tarjeta American Express)</li>
+                <li>Usa cualquier valor para los demás campos del formulario.</li>
+            </ul>
+        </div>
+
+        <!-- PRODUCTOS / CARRITO -->
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+            <!-- Productos disponibles -->
+            <div id="products" class="card col-12 col-md-7 mb-3 mb-md-0">
+                <div class="card-header d-flex flex-wrap justify-content-between">
+                    <h4 class="d-inline text-muted">
+                        <i class="bi bi-basket"></i> Productos disponibles
+                    </h4>
+
+                    <div id="info-stock-alert" class="d-inline">
+                        <span class="badge bg-secondary"><strong>Articulo:</strong> <span id="info-nombre-articulo"
+                                class="ms-1">--</span></span>
+                        <span class="badge bg-secondary"><strong class="ms-3">Stock:</strong> <span
+                                id="info-stock-articulo" class="ms-1">0</span></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- Productos desde JS -->
+                </div>
+            </div>
+
+            <!-- Carrito -->
+            <div id="cart" class="card col-12 col-md-4">
+                <div class="card-header">
+                    <h4 class="text-muted">
+                        <i class="bi bi-cart"></i> Carrito
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Productos</h4>
+                    <div id="cart-products">
+                        <!-- Productos del carrito -->
+                    </div>
+
+                    <hr>
+
+                    <!-- Total de la compra -->
+                    <h4 class="text-muted ">Total</h4>
+                    <div class="style-none rounded border shadow mb-3">
+                        <ul class="list-group text-end">
+                            <li class="list-group-item"><b>Sub-total</b> $<span id="sub-total">0.00</span></li>
+                            <li class="list-group-item"><b>Descuento</b> $<span id="descuento">0.00</span></li>
+                            <li class="list-group-item"><b>Total</b> $<span id="total">0.00</span></li>
+                        </ul>
+                    </div>
+                    <button id="pago-btn" type="button" class="btn btn-success float-end" data-bs-toggle="modal"
+                        data-bs-target="#forma-pago-modal" disabled>
+                        Pagar <i class="bi bi-check"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL PAGO -->
+        <div class="modal fade" id="forma-pago-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            <i class="bi bi-cash-coin"></i> Forma de pago
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-around">
+                        <img src="public/img/stripe.png" class="img-fluid rounded-top btn w-50" id="pago-stripe"
+                            alt="Stripe" data-bs-toggle="modal" data-bs-target="#stripe-modal" />
+
+                        <img src="public/img/paypal.png" class="img-fluid rounded-top btn w-50" id="pago-paypal"
+                            alt="Paypal" data-bs-toggle="modal" data-bs-target="#paypal-modal" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL STRIPE -->
+        <div class="modal fade" id="stripe-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document"
+                style="width:fit-content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            <h3 style="color:#635bff;font-weight:bold">stripe</h3>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <stripe-buy-button data-amount="2" buy-button-id="buy_btn_1Q8QWFAjMye4z7rLPMcc7GaK"
+                            publishable-key="pk_test_51Hu7q7AjMye4z7rLy8cBfXxHhyb5bD7gcZbCChxtt6ias0sWBUMWhXeM6sbfzZKKNen09SplSCG4zetHgfpLH5pf0067uoYpr2">
+                        </stripe-buy-button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                            data-bs-target="#forma-pago-modal"><i class="bi bi-arrow-left"></i> Atras</button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+                            <i class="bi bi-check"></i> Procesar pago
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL PAYPAL -->
+        <div class="modal fade" id="paypal-modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            <h3 style="font-weight: bold;font-style: italic;">
+                                <span style="color:#232c65">Pay</span><span style="color:#139ad6">Pal</span>
+                            </h3>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-warning" role="alert">
+                            <strong>Disculpe!</strong> metodo de pago no disponible.
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                            data-bs-target="#forma-pago-modal"><i class="bi bi-arrow-left"></i> Atras</button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+                            <i class="bi bi-check"></i> Procesar pago
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

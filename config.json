@@ -228,6 +228,23 @@
             "img": "../projects/16_sistema_tokens/thumbnail.jpg",
             "descripcion": "",
             "tecnologias": []
+        },
+        {
+            "estatus": "online",
+            "tipo": "demo",
+            "nombre": "Carrito de compra",
+            "url_demo": "../projects/17_carrito_compra/index.html",
+            "url_tmp": "",
+            "img": "../projects/17_carrito_compra/thumbnail.jpg",
+            "descripcion": "Lorem ipsum dolor sit amet",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "JSON",
+                "Stripe"
+            ]
         }
     ],
     "logoSlider": [

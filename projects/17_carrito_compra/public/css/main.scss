@@ -1,0 +1,38 @@
+#products {
+    max-height: 500px;
+    .card-body {
+        overflow-y: auto;
+    }
+    .product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2px;
+        padding: 1%;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #00000025;
+
+        img {
+            max-width: 75px;
+        }
+        .description {
+            color: gray;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+    }
+}
+
+#cart {
+    max-height: 500px;
+
+    #cart-products {
+        max-height: 130px;
+        overflow-y: auto;
+    }
+}
+

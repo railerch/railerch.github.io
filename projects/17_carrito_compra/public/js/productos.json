@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "categoria": "limpieza",
+        "nombre": "Jabon liquido",
+        "precio": 2.5,
+        "imagen": "public/img/jabon-liquido.png",
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "categoria": "alimentos",
+        "nombre": "Atun",
+        "precio": 1.5,
+        "imagen": "public/img/atun.png",
+        "stock": 10
+    },
+    {
+        "id": 3,
+        "categoria": "alimentos",
+        "nombre": "Cereal",
+        "precio": 3.2,
+        "imagen": "public/img/cereal.png",
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "categoria": "bebidas",
+        "nombre": "Refresco",
+        "precio": 1.4,
+        "imagen": "public/img/refresco.png",
+        "stock": 10
+    },
+    {
+        "id": 5,
+        "categoria": "frutas",
+        "nombre": "Manzana",
+        "precio": 1,
+        "imagen": "public/img/manzana.png",
+        "stock": 10
+    },
+    {
+        "id": 6,
+        "categoria": "frutas",
+        "nombre": "Pera",
+        "precio": 1.5,
+        "imagen": "public/img/pera.png",
+        "stock": 10
+    }
+]
