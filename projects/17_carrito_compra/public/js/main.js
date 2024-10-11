@@ -61,6 +61,11 @@ cargarProductos.then(() => {
 // Validar redireccion desde stripe
 if (document.location.search.includes("confirmado")) {
     document.getElementById("confirmacion-pago").style.display = "block";
+
+    // Actualizar navegador para eliminar el parametro 'confirmado' de la URL
+    setTimeout(() => {
+        window.location.replace("index.html");
+    }, 3000);
 }
 
 
