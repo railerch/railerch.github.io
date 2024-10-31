@@ -5,7 +5,7 @@ export function proyectos(config, nodoContenedor, index = false) {
 
     // Filtrar solo proyectos activos para mostrar
     const proyectos = config.proyectos.filter(p => {
-        if (p.estatus == "online") return p;
+        if (p.mostrar) return p;
     });
 
     // Limitar los proyectos a 4 para la pagina de inicio
@@ -21,7 +21,7 @@ export function proyectos(config, nodoContenedor, index = false) {
         // =====> Imagen
         let figure = document.createElement("figure");
         let img = document.createElement("img");
-        img.setAttribute("src", proyectos[i].img);
+        img.setAttribute("src", proyectos[i].thumb);
         img.setAttribute("alt", "Imagen del proyecto");
         img.classList.add("img-fluid");
         figure.appendChild(img);
@@ -33,49 +33,70 @@ export function proyectos(config, nodoContenedor, index = false) {
 
         // =====> Boton
         let btn;
-        if (proyectos[i].tipo == "demo") {
-            btn = document.createElement("button");
-            btn.setAttribute("data-bs-toggle", "modal");
-            btn.setAttribute("data-bs-target", "#modal-descripcion-proyecto");
+        btn = document.createElement("button");
+        btn.setAttribute("data-bs-toggle", "modal");
+        btn.setAttribute("data-bs-target", "#modal-descripcion-proyecto");
 
-            // Detalles en modal
-            btn.addEventListener("click", evt => {
-                // Retornar al modal de portafolio en caso de haber accedido al detalle desde alli
-                const cerrar = document.querySelector("#modal-descripcion-proyecto #cerrar");
+        // Detalles en modal
+        btn.addEventListener("click", evt => {
+            // Retornar al modal de portafolio en caso de haber accedido al detalle desde alli
+            const cerrar = document.querySelector("#modal-descripcion-proyecto #cerrar");
+            const modal = document.getElementById("modal-descripcion-proyecto");
 
-                if (sessionStorage.getItem("proyectos")) {
-                    cerrar.removeAttribute("data-bs-dismiss");
-                    cerrar.setAttribute("data-bs-toggle", "modal");
-                    cerrar.setAttribute("data-bs-target", "#modal-portafolio");
-                } else {
-                    cerrar.setAttribute("data-bs-dismiss", "modal");
-                    cerrar.removeAttribute("data-bs-toggle");
-                    cerrar.removeAttribute("data-bs-target");
-                }
+            if (sessionStorage.getItem("proyectos")) {
+                cerrar.removeAttribute("data-bs-dismiss");
+                cerrar.setAttribute("data-bs-toggle", "modal");
+                cerrar.setAttribute("data-bs-target", "#modal-portafolio");
+            } else {
+                cerrar.setAttribute("data-bs-dismiss", "modal");
+                cerrar.removeAttribute("data-bs-toggle");
+                cerrar.removeAttribute("data-bs-target");
+            }
 
-                document.querySelector("#modal-descripcion-proyecto #thumbnail")
-                    .src = proyectos[i].img;
+            modal.querySelector("#thumbnail")
+                .src = proyectos[i].thumb;
 
-                document.querySelector("#modal-descripcion-proyecto #thumbnail")
-                    .alt = proyectos[i].nombre;
+            modal.querySelector("#thumbnail")
+                .alt = proyectos[i].nombre;
 
-                document.querySelector("#modal-descripcion-proyecto #nombre")
-                    .textContent = proyectos[i].nombre != "" ? proyectos[i].nombre : "Sin definir...";
+            modal.querySelector("#nombre")
+                .textContent = proyectos[i].nombre != "" ? proyectos[i].nombre : "Sin definir...";
 
-                document.querySelector("#modal-descripcion-proyecto #descripcion")
-                    .textContent = proyectos[i].descripcion != "" ? proyectos[i].descripcion : "Sin definir...";
+            modal.querySelector("#descripcion")
+                .textContent = proyectos[i].descripcion != "" ? proyectos[i].descripcion : "Sin definir...";
 
-                document.querySelector("#modal-descripcion-proyecto #tecnologias")
-                    .textContent = proyectos[i].tecnologias != "" ? proyectos[i].tecnologias : "Sin definir...";
+            modal.querySelector("#tecnologias")
+                .textContent = proyectos[i].tecnologias != "" ? proyectos[i].tecnologias : "Sin definir...";
 
+            modal.querySelector("#tipo-proyecto")
+                .textContent = proyectos[i].tipo_proyecto != "" ? proyectos[i].tipo_proyecto : "Sin definir...";
+
+            modal.querySelector("#estatus")
+                .textContent = proyectos[i].estatus != "" ? proyectos[i].estatus : "Sin definir...";
+
+            modal.querySelector("#continuar")
+                .href = proyectos[i].url + `?id=${proyectos[i].id}`;
+
+            // Si el detalle se abrio desde el index el boton cerrar del modal esta por defecto
+            // Si el detalle se abre desde la modal de mas proyectos, el boton cerrar de la modal
+            // de detalles pasa a ser un boton para retroceder
+            if (index) {
+                document.querySelector("#modal-descripcion-proyecto #cerrar")
+                    .innerHTML = "Cerrar <i class='bi bi-x-circle'></i>"
+            } else {
+                document.querySelector("#modal-descripcion-proyecto #cerrar")
+                    .innerHTML = "<i class='bi bi-arrow-left-circle'></i> Atras"
+            }
+
+            // Cambiar el texto del boton en funcion a si son capturas o es un demo
+            if (proyectos[i].demo) {
                 document.querySelector("#modal-descripcion-proyecto #continuar")
-                    .href = proyectos[i].url_demo;
-            })
-        } else {
-            btn = document.createElement("a");
-            btn.setAttribute("href", proyectos[i].url_tmp);
-            btn.setAttribute("target", "_blank");
-        }
+                    .innerHTML = "Ver demo <i class='bi bi-search'></i>";
+            } else {
+                document.querySelector("#modal-descripcion-proyecto #continuar")
+                    .innerHTML = "Ver capturas <i class='bi bi-search'></i>";
+            }
+        })
 
         btn.classList.add("botones-app");
         btn.innerHTML = "Abrir <i class='bi bi-box-arrow-up-right'></i>";

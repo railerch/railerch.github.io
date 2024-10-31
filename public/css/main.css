@@ -105,6 +105,25 @@ article {
   align-items: center;
 }
 
+/* ===================================================================== CAPTURAS INDEX */
+#capturas-index {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+#capturas-index header,
+#capturas-index footer {
+  background-color: hsl(230, 14%, 9%);
+}
+#capturas-index main {
+  overflow-y: auto;
+}
+#capturas-index main img {
+  max-width: 100%;
+  max-height: 10000px;
+}
+
 /* ===================================================================== SLIDER LOGOS */
 @keyframes scroll {
   0% {
@@ -120,7 +139,7 @@ article {
   overflow: hidden;
   position: relative;
   width: auto;
-  background-color: #131419;
+  background-color: hsl(230, 14%, 9%);
 }
 .slider .slide-track {
   animation: scroll 40s linear infinite;

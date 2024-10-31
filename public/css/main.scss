@@ -2,7 +2,7 @@ $parrafos-color: #f2f2f2;
 $encabezados: lightgray;
 $enlaces: #00b3ff;
 $resaltador: #ff00ff;
-$color-fondo-1: #131419;
+$color-fondo-1: hsl(230, 14%, 9%);
 $color-fondo-2: #181c1f;
 
 /* ===================================================================== ESTILOS GENERALES */
@@ -51,6 +51,7 @@ body {
 #navbarSupportedContent {
     .nav-link {
         cursor: pointer;
+
         &:hover {
             color: $resaltador;
         }
@@ -124,6 +125,28 @@ article {
     align-items: center;
 }
 
+/* ===================================================================== CAPTURAS INDEX */
+
+#capturas-index {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    header,
+    footer {
+        background-color: $color-fondo-1;
+    }
+
+    main {
+        overflow-y: auto;
+        img {
+            max-width: 100%;
+            max-height: 10000px;
+        }
+    }
+}
+
 /* ===================================================================== SLIDER LOGOS */
 @keyframes scroll {
     0% {
@@ -142,6 +165,7 @@ article {
     position: relative;
     width: auto;
     background-color: $color-fondo-1;
+
     .slide-track {
         animation: scroll 40s linear infinite;
         display: flex;

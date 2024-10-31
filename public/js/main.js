@@ -28,6 +28,9 @@ fetch("modal.html")
         // para eliminar el indicador ya mencionado
         document.querySelector("#modal-portafolio #cerrar")
             .addEventListener("click", evt => sessionStorage.removeItem("proyectos"));
+
+        // Activar listener para el boton continuar en la ventana modal 'modal-descripcion-proyecto', esto para
+        // mostrar o no el slider de capturas si no es un demo
     });
 
 // ==========> FIJAR ALTO DE SECCIONES

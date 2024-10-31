@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <script type="text/javascript" src="assets/js/index.js" defer></script>
+    <title>App clima movil</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-light"><i class="bi bi-cloud-sun"></i> My weather App</h1>
+        <!-- Activacion de localizacion dinamica -->
+
+        <details class="text-light" style="display:none">
+            <summary><button id="loc-dinamica-btn" class="btn inactive inline">Start dinamic localization</button>
+            </summary>
+            <p class="text-light">Dynamic location allows the app to update weather data based on your location as you
+                move.</p>
+        </details>
+
+        <hr>
+
+        <!-- Aviso al usiario -->
+        <div id="aviso-no-geo" class="alert danger" style="display: none;">
+            <p>
+                <strong>Error!</strong>
+                Tu navegador no soporta geolocalización.
+            </p>
+        </div>
+
+        <!-- Resultados de la consulta -->
+        <div id="tags-div">
+            <div class="tag cyan">
+                <div>
+                    <div>
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <h4 id="origin"></h4>
+                </div>
+            </div>
+
+            <div class="tag slateblue2">
+                <div>
+                    <div>
+                        <i class="bi bi-thermometer-half"></i>
+                    </div>
+                    <h3><span id="temp"></span> °C</h3>
+                </div>
+            </div>
+
+            <div class="tag slateblue">
+                <div>
+                    <img id="icon" class="pulso" src="" alt="Icono">
+                    <small id="desc" class="d-block"></small>
+                </div>
+            </div>
+
+            <div class="tag darkblue">
+                <div>
+                    <div>
+                        <i class="bi bi-wind"></i>
+                    </div>
+                    <p>Wind Speed</b>
+                    <h3>
+                        <span id="windSp">24</span>m/s
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
