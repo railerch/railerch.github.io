@@ -24,6 +24,7 @@ export function proyectos(config, nodoContenedor, index = false) {
         img.setAttribute("src", proyectos[i].thumb);
         img.setAttribute("alt", "Imagen del proyecto");
         img.classList.add("img-fluid");
+
         figure.appendChild(img);
 
         // =====> Descripcion
@@ -77,24 +78,32 @@ export function proyectos(config, nodoContenedor, index = false) {
             modal.querySelector("#continuar")
                 .href = proyectos[i].url + `?id=${proyectos[i].id}`;
 
+            /* Verificar el ancho del display para determinar si es un dispositivo movil para asi 
+            aperturar el demo o las capturas en la misma pestaña o en una individual */
+            const dWidth = window.innerWidth;
+            if (dWidth < 500) {
+                console.log(`Mobile display: ${dWidth}px`);
+                modal.querySelector("#continuar").target = "_self"
+            }
+
             // Si el detalle se abrio desde el index el boton cerrar del modal esta por defecto
             // Si el detalle se abre desde la modal de mas proyectos, el boton cerrar de la modal
             // de detalles pasa a ser un boton para retroceder
             if (index) {
                 document.querySelector("#modal-descripcion-proyecto #cerrar")
-                    .innerHTML = "Cerrar <i class='bi bi-x-circle'></i>"
+                    .innerHTML = "Cerrar"
             } else {
                 document.querySelector("#modal-descripcion-proyecto #cerrar")
-                    .innerHTML = "<i class='bi bi-arrow-left-circle'></i> Atras"
+                    .innerHTML = "Atras"
             }
 
             // Cambiar el texto del boton en funcion a si son capturas o es un demo
             if (proyectos[i].demo) {
                 document.querySelector("#modal-descripcion-proyecto #continuar")
-                    .innerHTML = "Ver demo <i class='bi bi-search'></i>";
+                    .innerHTML = "Ver demo";
             } else {
                 document.querySelector("#modal-descripcion-proyecto #continuar")
-                    .innerHTML = "Ver capturas <i class='bi bi-search'></i>";
+                    .innerHTML = "Ver capturas";
             }
         })
 

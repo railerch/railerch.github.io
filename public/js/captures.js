@@ -33,6 +33,19 @@ document.getElementById("atras").addEventListener("click", evt => {
     }
 })
 
+// BOTON REGRESAR AL PORTAFOLIO
+// Si se esta visualizando desde un dispositivo movil se habilitara este boton debido a que la 
+//ventana de capturas se abrira en la misma pestaña que el portafolio
+const dWidth = window.innerWidth;
+if (dWidth < 500) {
+    console.log(`Mobile display: ${dWidth}px`);
+    const atrasBtn = document.getElementById("atras");
+    const div = document.createElement("div")
+    div.classList = "btn btn-outline-light";
+    div.innerHTML = '<a class="text-light m-0" href="/" target="_self"><i class="bi bi-window"></i> Volver al portafolio</a>';
+    atrasBtn.after(div)
+}
+
 // ANIMACION FADE-IN PARA IMAGENES
 function animacion(img) {
     let opa = 0;
