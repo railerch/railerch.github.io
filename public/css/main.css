@@ -6,6 +6,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+body * {
+  box-sizing: border-box;
+}
 body a {
   text-decoration: none !important;
 }
@@ -31,6 +34,11 @@ body h6 {
 body hr {
   width: 30%;
   color: #ff00ff !important;
+}
+
+/* ===================================================================== TEXTOS */
+.spacer {
+  letter-spacing: 2em;
 }
 
 /* ===================================================================== ENLACES */
@@ -69,49 +77,6 @@ body hr {
   color: #00b3ff !important;
 }
 
-/* ===================================================================== IMAGENES */
-#foto-perfil {
-  max-width: 30%;
-  float: left;
-  margin: 0 15px 15px 0;
-}
-
-#nav-bar-logo {
-  height: 75px;
-}
-
-#portafolio-sec-img img {
-  max-height: 150px;
-  cursor: pointer;
-}
-
-#main-banner {
-  background-image: url("../img/main-banner.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-/* ===================================================================== SECCIONES */
-header {
-  box-shadow: 0 3px 5px #000;
-}
-
-section {
-  display: flex;
-  align-items: center;
-  padding: 1em;
-  box-sizing: border-box;
-}
-
-article {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 @keyframes arrowpulse {
   0% {
     position: relative;
@@ -148,6 +113,49 @@ article {
   background-color: #ff00ff;
   border-color: #fff;
   color: #fff;
+}
+
+/* ===================================================================== IMAGENES */
+#foto-perfil {
+  max-width: 30%;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+#nav-bar-logo {
+  height: 75px;
+}
+
+#portafolio-sec-img img {
+  max-height: 150px;
+  cursor: pointer;
+}
+
+#main-banner {
+  background-image: url("../img/main-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* ===================================================================== SECCIONES */
+header {
+  box-shadow: 0 3px 5px #000;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+article {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* ===================================================================== CAPTURAS INDEX */
@@ -294,8 +302,16 @@ footer {
   #back-end-logos a:nth-child(1n+2) {
     margin-left: 0.5em;
   }
+  /* =================== BOTONES */
+  .arrow-down {
+    display: none;
+  }
   #go-top {
     top: 90vh;
     left: 85vw;
+  }
+  /* =================== TEXTOS */
+  .spacer {
+    letter-spacing: 1em;
   }
 }/*# sourceMappingURL=main.css.map */

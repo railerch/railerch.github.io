@@ -7,6 +7,7 @@ $color-fondo-2: #181c1f;
 
 /* ===================================================================== ESTILOS GENERALES */
 
+
 body {
     background: {
         color: $color-fondo-2 !important;
@@ -14,6 +15,10 @@ body {
         blend-mode: multiply;
         attachment: fixed;
         size: cover;
+    }
+
+    * {
+        box-sizing: border-box;
     }
 
     a {
@@ -49,6 +54,12 @@ body {
 }
 
 
+/* ===================================================================== TEXTOS */
+
+.spacer{
+    letter-spacing: 2em;
+}
+
 /* ===================================================================== ENLACES */
 
 #navbarSupportedContent {
@@ -71,7 +82,6 @@ body {
     cursor: pointer;
 }
 
-
 /* ===================================================================== BOTONES */
 
 .botones-app {
@@ -90,55 +100,6 @@ body {
 
 .btn-close {
     color: $enlaces !important;
-}
-
-
-/* ===================================================================== IMAGENES */
-
-#foto-perfil {
-    max-width: 30%;
-    float: left;
-    margin: 0 15px 15px 0;
-}
-
-#nav-bar-logo {
-    height: 75px;
-}
-
-#portafolio-sec-img {
-    img {
-        max-height: 150px;
-        cursor: pointer;
-    }
-}
-
-#main-banner {
-    background-image: url("../img/main-banner.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-
-/* ===================================================================== SECCIONES */
-
-header {
-    box-shadow: 0 3px 5px #000;
-}
-
-section {
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    box-sizing: border-box;
-}
-
-article {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 @keyframes arrowpulse {
@@ -178,13 +139,63 @@ article {
     border-radius: 10px;
     color: $enlaces;
     cursor: pointer;
-    
+
     &:hover {
         background-color: $resaltador;
         border-color: #fff;
         color: #fff;
     }
 }
+
+/* ===================================================================== IMAGENES */
+
+#foto-perfil {
+    max-width: 30%;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+#nav-bar-logo {
+    height: 75px;
+}
+
+#portafolio-sec-img {
+    img {
+        max-height: 150px;
+        cursor: pointer;
+    }
+}
+
+#main-banner {
+    background-image: url("../img/main-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+/* ===================================================================== SECCIONES */
+
+header {
+    box-shadow: 0 3px 5px #000;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+article {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
 
 /* ===================================================================== CAPTURAS INDEX */
 

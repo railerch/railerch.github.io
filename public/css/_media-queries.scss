@@ -59,8 +59,20 @@
         }
     }
 
+    /* =================== BOTONES */
+    
+    .arrow-down {
+        display: none;
+    }
+    
     #go-top {
         top: 90vh;
         left: 85vw;
     }
+    
+    /* =================== TEXTOS */
+    .spacer{
+        letter-spacing: 1em;
+    }
+    
 }
