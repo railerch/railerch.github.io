@@ -125,3 +125,42 @@ for (let i = 0; i < 13; i++) {
     x++;
     if (x == 7) x = 0;
 }
+
+// ==========> SCROLL TOP
+window.scrollTo();
+let goTopBtn = document.getElementById("go-top");
+
+// =====> Posicion por defecto
+goTopBtn.style.top = window.scrollY + (window.innerHeight * 90 / 100);
+
+// =====> Hacer scroll con el documento
+window.addEventListener("scroll", function () {
+    let btnPos = window.scrollY + (window.innerHeight * 90 / 100);
+    goTopBtn.style.top = `${btnPos}px`
+})
+
+// =====> Hacer scroll hasta el inicio
+goTopBtn.addEventListener("click", function () {
+    // Posicion actual del tope de la ventana
+    let top = window.scrollY;
+
+    // Razon de aceleracion del scroll
+    let R = 1;
+
+    // Animacion del scroll
+    let scrollTimer = setInterval(() => {
+        top = top - (100 * R);
+        window.scrollTo({
+            top: top
+        });
+
+        // Si el tope de la ventana es menor a cero se cancela el timer
+        if (top < 0) {
+            clearInterval(scrollTimer);
+        }
+
+        // Aumentar la razon de aceleracion
+        R++;
+
+    }, 10)
+})

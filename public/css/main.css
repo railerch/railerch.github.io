@@ -85,6 +85,12 @@ body hr {
   cursor: pointer;
 }
 
+#main-banner {
+  background-image: url("../img/main-banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* ===================================================================== SECCIONES */
 header {
   box-shadow: 0 3px 5px #000;
@@ -94,6 +100,7 @@ section {
   display: flex;
   align-items: center;
   padding: 1em;
+  box-sizing: border-box;
 }
 
 article {
@@ -103,6 +110,44 @@ article {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+}
+
+@keyframes arrowpulse {
+  0% {
+    position: relative;
+    top: 0px;
+    color: #00b3ff;
+  }
+  25% {
+    top: -10px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+    color: #ff00ff;
+  }
+}
+.arrow-down {
+  font-size: 2.5em;
+  animation: arrowpulse 1s linear infinite;
+}
+
+#go-top {
+  position: absolute;
+  top: 90vh;
+  left: 95vw;
+  padding: 0.5em 0.8em;
+  border: 1px solid #00b3ff;
+  border-radius: 10px;
+  color: #00b3ff;
+  cursor: pointer;
+}
+#go-top:hover {
+  background-color: #ff00ff;
+  border-color: #fff;
+  color: #fff;
 }
 
 /* ===================================================================== CAPTURAS INDEX */
@@ -248,5 +293,9 @@ footer {
   }
   #back-end-logos a:nth-child(1n+2) {
     margin-left: 0.5em;
+  }
+  #go-top {
+    top: 90vh;
+    left: 85vw;
   }
 }/*# sourceMappingURL=main.css.map */

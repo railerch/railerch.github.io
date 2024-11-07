@@ -6,6 +6,7 @@ $color-fondo-1: hsl(230, 14%, 9%);
 $color-fondo-2: #181c1f;
 
 /* ===================================================================== ESTILOS GENERALES */
+
 body {
     background: {
         color: $color-fondo-2 !important;
@@ -47,7 +48,9 @@ body {
     }
 }
 
+
 /* ===================================================================== ENLACES */
+
 #navbarSupportedContent {
     .nav-link {
         cursor: pointer;
@@ -68,7 +71,9 @@ body {
     cursor: pointer;
 }
 
+
 /* ===================================================================== BOTONES */
+
 .botones-app {
     padding: 5px 10px;
     border-radius: 6px;
@@ -87,7 +92,9 @@ body {
     color: $enlaces !important;
 }
 
+
 /* ===================================================================== IMAGENES */
+
 #foto-perfil {
     max-width: 30%;
     float: left;
@@ -105,7 +112,15 @@ body {
     }
 }
 
+#main-banner {
+    background-image: url("../img/main-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
 /* ===================================================================== SECCIONES */
+
 header {
     box-shadow: 0 3px 5px #000;
 }
@@ -114,6 +129,7 @@ section {
     display: flex;
     align-items: center;
     padding: 1em;
+    box-sizing: border-box;
 }
 
 article {
@@ -123,6 +139,51 @@ article {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+}
+
+@keyframes arrowpulse {
+    0% {
+        position: relative;
+        top: 0px;
+        color: $enlaces;
+    }
+
+    25% {
+        top: -10px;
+
+    }
+
+    50% {
+        top: 10px;
+
+    }
+
+    100% {
+        top: 0px;
+        color: $resaltador;
+    }
+}
+
+.arrow-down {
+    font-size: 2.5em;
+    animation: arrowpulse 1s linear infinite;
+}
+
+#go-top {
+    position: absolute;
+    top: 90vh;
+    left: 95vw;
+    padding: 0.5em 0.8em;
+    border: 1px solid $enlaces;
+    border-radius: 10px;
+    color: $enlaces;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $resaltador;
+        border-color: #fff;
+        color: #fff;
+    }
 }
 
 /* ===================================================================== CAPTURAS INDEX */
@@ -140,6 +201,7 @@ article {
 
     main {
         overflow-y: auto;
+
         img {
             max-width: 100%;
             max-height: 10000px;
@@ -147,7 +209,9 @@ article {
     }
 }
 
+
 /* ===================================================================== SLIDER LOGOS */
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -177,6 +241,7 @@ article {
         }
     }
 }
+
 
 /* ===================================================================== VENTANAS MODAL*/
 
@@ -225,12 +290,16 @@ article {
     }
 }
 
+
 /* ===================================================================== FOOTER */
+
 footer {
     color: $parrafos-color !important;
 }
 
+
 /* Redes sociales */
+
 #redes-sociales-div {
     a {
         color: $parrafos-color !important;
@@ -249,5 +318,7 @@ footer {
     }
 }
 
+
 /* ===================================================================== MEDIA QUERIES */
+
 @import "media-queries";
