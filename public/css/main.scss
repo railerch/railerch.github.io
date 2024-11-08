@@ -56,7 +56,7 @@ body {
 
 /* ===================================================================== TEXTOS */
 
-.spacer{
+.spacer {
     letter-spacing: 2em;
 }
 
@@ -166,11 +166,50 @@ body {
     }
 }
 
+@keyframes animacion-bg {
+    0% {
+        background-image: url("../img/main-banner1.jpg");
+    }
+
+    30% {
+        background-image: url("../img/main-banner1.jpg");
+    }
+
+    35% {
+        background-image: url("../img/main-banner2.jpg");
+    }
+
+    60% {
+        background-image: url("../img/main-banner2.jpg");
+    }
+    65% {
+        background-image: url("../img/main-banner3.jpg");
+    }
+    95% {
+        background-image: url("../img/main-banner3.jpg");
+    }
+
+    100% {
+        background-image: url("../img/main-banner1.jpg");
+    }
+
+}
+
 #main-banner {
-    background-image: url("../img/main-banner.jpg");
+    // background-image: url("../img/main-banner.jpg");
+    animation: animacion-bg 20s linear infinite;
     background-size: cover;
     background-position: center;
     overflow: hidden;
+}
+
+#parallax-banner{
+    min-height: 30vh;
+    padding: 1em;
+    background-image: url("../img/parallax-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
