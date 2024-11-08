@@ -78,14 +78,6 @@ export function proyectos(config, nodoContenedor, index = false) {
             modal.querySelector("#continuar")
                 .href = proyectos[i].url + `?id=${proyectos[i].id}`;
 
-            /* Verificar el ancho del display para determinar si es un dispositivo movil para asi 
-            aperturar el demo o las capturas en la misma pestaña o en una individual */
-            const dWidth = window.innerWidth;
-            if (dWidth < 500) {
-                console.log(`Mobile display: ${dWidth}px`);
-                modal.querySelector("#continuar").target = "_self"
-            }
-
             // Si el detalle se abrio desde el index el boton cerrar del modal esta por defecto
             // Si el detalle se abre desde la modal de mas proyectos, el boton cerrar de la modal
             // de detalles pasa a ser un boton para retroceder
