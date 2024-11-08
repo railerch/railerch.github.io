@@ -38,7 +38,7 @@ const atrasBtn = document.getElementById("atras");
 const div = document.createElement("div")
 div.classList = "btn btn-outline-light";
 div.textContent = "Cerrar ventana";
-atrasBtn.after(div)
+atrasBtn.after(div);
 
 div.addEventListener("click", evt => {
     window.close();

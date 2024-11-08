@@ -22,7 +22,7 @@ fetch("modal.html")
 
         // Remover indicador de apertura de modal de proyectos
         // El indicador se activa al hacer clic en el btn 'Mas Proyectos' - ID: btn-mas-proyectos
-        sessionStorage.removeItem("proyectos")
+        sessionStorage.removeItem("proyectos");
 
         // Activar listener con el boton de cierre de la ventana de proyectos 
         // para eliminar el indicador ya mencionado
@@ -92,7 +92,7 @@ config.redesSociales.forEach(red => {
     let a = document.createElement("a");
     a.href = red.nombre == "Whatsapp" ? `${red.link}&text=${red.mensaje}` : red.link;
     a.target = "_blank";
-    a.title = red.nombre
+    a.title = red.nombre;
 
     // Icon
     let i = document.createElement("i");
@@ -110,7 +110,7 @@ for (let i = 0; i < 13; i++) {
 
     // Contenedor
     const div = document.createElement("div");
-    div.classList.add("slide")
+    div.classList.add("slide");
 
     // Imagen
     const img = document.createElement("img");
@@ -136,7 +136,7 @@ goTopBtn.style.top = window.scrollY + (window.innerHeight * 90 / 100);
 // =====> Hacer scroll con el documento
 window.addEventListener("scroll", function () {
     let btnPos = window.scrollY + (window.innerHeight * 90 / 100);
-    goTopBtn.style.top = `${btnPos}px`
+    goTopBtn.style.top = `${btnPos}px`;
 })
 
 // =====> Hacer scroll hasta el inicio

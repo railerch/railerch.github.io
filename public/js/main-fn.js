@@ -10,7 +10,7 @@ export function proyectos(config, nodoContenedor, index = false) {
 
     // Limitar los proyectos a 4 para la pagina de inicio
     const L = index ? 4 : proyectos.length;
-    console.log("Online: " + L)
+
     for (let i = 0; i < L; i++) {
         // =====> Contenedor
         let div = document.createElement("div");
@@ -83,10 +83,10 @@ export function proyectos(config, nodoContenedor, index = false) {
             // de detalles pasa a ser un boton para retroceder
             if (index) {
                 document.querySelector("#modal-descripcion-proyecto #cerrar")
-                    .innerHTML = "Cerrar"
+                    .innerHTML = "Cerrar";
             } else {
                 document.querySelector("#modal-descripcion-proyecto #cerrar")
-                    .innerHTML = "Atras"
+                    .innerHTML = "Atras";
             }
 
             // Cambiar el texto del boton en funcion a si son capturas o es un demo
@@ -105,6 +105,6 @@ export function proyectos(config, nodoContenedor, index = false) {
         div.appendChild(figure);
         div.appendChild(descripcion);
         div.appendChild(btn);
-        nodoContenedor.appendChild(div)
+        nodoContenedor.appendChild(div);
     }
 }
