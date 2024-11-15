@@ -94,7 +94,7 @@ config.redesSociales.forEach(red => {
 
     // Link
     let a = document.createElement("a");
-    a.href = red.nombre == "Whatsapp" ? `${red.link}&text=${red.mensaje}` : red.link;
+    a.href = red.nombre == "Whatsapp" ? `https://api.whatsapp.com/send/?phone=${config.whatsapp_num}&text=${red.whatsapp_mensaje}` : red.link;
     a.target = "_blank";
     a.title = red.nombre;
 

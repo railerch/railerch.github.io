@@ -111,6 +111,7 @@ export function proyectos(config, nodoContenedor, index = false) {
 
 export function servicios(config, nodoContenedor) {
     const servicios = config.tienda.servicios;
+    const whatsappNum = config.whatsapp_num;
     const serviciosAcctivos = [];
     servicios.forEach(srv => {
         let contenido = "";
@@ -128,7 +129,7 @@ export function servicios(config, nodoContenedor) {
                             <ul class="text-start mt-2 mb-4">
                                 ${contenido}
                             </ul>
-                            <a href="https://api.whatsapp.com/send/?phone=584129880890&text=Hola, gracias por contactarme, en que puedo ayudarte?" target="_blank" class="botones-app" role="button">
+                            <a href="https://api.whatsapp.com/send/?phone=${whatsappNum}&text=${srv.whatsapp_mensaje}" target="_blank" class="botones-app" role="button">
                                 <i class="bi bi-whatsapp"></i> Solicitar servicio
                             </a>
                         </div>

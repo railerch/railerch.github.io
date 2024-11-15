@@ -1,6 +1,7 @@
 {
     "test": "Config Obj loaded.",
     "hosting_type": "html",
+    "whatsapp_num": 584129880890,
     "proyectos": [
         {
             "id": 1,
@@ -408,8 +409,7 @@
         {
             "nombre": "Whatsapp",
             "icono": "bi bi-whatsapp",
-            "link": "https://api.whatsapp.com/send/?phone=584129880890",
-            "mensaje": "Hola, gracias por contactarme, en que puedo ayudarte?"
+            "whatsapp_mensaje": "Hola, te escribo desde tu web para obtener mas información acerca de tus servicios, gracias!"
         }
     ],
     "tienda": {
@@ -425,7 +425,8 @@
                     "Código fuente al finalizar",
                     "1 semana de soporte gratuito"
                 ],
-                "costo_hora": 20.00
+                "costo_hora": 20.00,
+                "whatsapp_mensaje": "Hola, me gustaría recibir información sobre el servicio de 'Desarrollo web', gracias!"
             },
             {
                 "activo": true,
@@ -438,7 +439,8 @@
                     "Buenas practicas",
                     "Implementación"
                 ],
-                "costo_hora": 15.00
+                "costo_hora": 15.00,
+                "whatsapp_mensaje": "Hola, me gustaría recibir información sobre el servicio de 'Asesoría y Consultoría', gracias!"
             }
         ],
         "aplicaciones": [
