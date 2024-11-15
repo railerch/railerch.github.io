@@ -168,7 +168,7 @@
             "url": "../projects/casamia_ecommerce/index.html",
             "thumb": "../projects/casamia_ecommerce/thumbnail.jpg",
             "capturas": 7,
-            "descripcion": "Portal de tipo Ecommerce, desarrollado para el bodegon Casa Mia cuando solo contaba con una sucursal (2021).",
+            "descripcion": "Portal de tipo Ecommerce, desarrollado para el bodegon Casa Mia cuando solo contaba con una sucursal (2021). Los articulos y datos que vera en las capturas son de producción ya que eran de la base de datos activa en aquel entonces",
             "estatus": "Offline",
             "tipo_proyecto": "Laboral",
             "tecnologias": [
@@ -393,7 +393,7 @@
         {
             "nombre": "Instagram",
             "icono": "bi bi-instagram",
-            "link": "https://www.instagram.com/railer.ch_dev/"
+            "link": "https://www.instagram.com/railerch_dev/"
         },
         {
             "nombre": "Telegram",
@@ -401,10 +401,92 @@
             "link": "https://t.me/railerch"
         },
         {
+            "nombre": "YouTube",
+            "icono": "bi bi-youtube",
+            "link": "https://www.youtube.com/@railerch"
+        },
+        {
             "nombre": "Whatsapp",
             "icono": "bi bi-whatsapp",
             "link": "https://api.whatsapp.com/send/?phone=584129880890",
             "mensaje": "Hola, gracias por contactarme, en que puedo ayudarte?"
         }
-    ]
+    ],
+    "tienda": {
+        "servicios": {
+            "desarrollo": {
+                "basico": {
+                    "descripcion": "Lorem ipsum dolor sit amet",
+                    "contenido": [
+                        "Beneficio #1",
+                        "Beneficio #2",
+                        "Beneficio #3",
+                        "Beneficio #4",
+                        "Beneficio #5",
+                        "Beneficio #6"
+                    ],
+                    "precio": 0.00
+                },
+                "premium": {
+                    "descripcion": "Lorem ipsum dolor sit amet",
+                    "contenido": [
+                        "Beneficio #1",
+                        "Beneficio #2",
+                        "Beneficio #3",
+                        "Beneficio #4",
+                        "Beneficio #5",
+                        "Beneficio #6"
+                    ],
+                    "precio": 0.00
+                }
+            },
+            "asesoria_consultoria": {
+                "basico": {
+                    "descripcion": "Lorem ipsum dolor sit amet",
+                    "contenido": [
+                        "Beneficio #1",
+                        "Beneficio #2",
+                        "Beneficio #3",
+                        "Beneficio #4",
+                        "Beneficio #5",
+                        "Beneficio #6"
+                    ],
+                    "precio": 0.00
+                },
+                "premium": {
+                    "descripcion": "Lorem ipsum dolor sit amet",
+                    "contenido": [
+                        "Beneficio #1",
+                        "Beneficio #2",
+                        "Beneficio #3",
+                        "Beneficio #4",
+                        "Beneficio #5",
+                        "Beneficio #6"
+                    ],
+                    "precio": 0.00
+                }
+            }
+        },
+        "aplicaciones": {
+            "sistema_tickets": {
+                "nombre": "Ticket System",
+                "descripcion": "",
+                "tecnologias": [],
+                "beneficios": [],
+                "precio": 0.00
+            },
+            "sistema_reservas": {
+                "descripcion": "Sistema de reservas Online",
+                "beneficios": [],
+                "tecnologias": [],
+                "precio": 0.00
+            },
+            "custom_landing_page": {
+                "descripcion": "Landing Page personalizable",
+                "beneficios": [],
+                "tecnologias": [],
+                "precio": 0.00
+            }
+        }
+    }
 }

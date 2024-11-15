@@ -4,9 +4,9 @@ $enlaces: #00b3ff;
 $resaltador: #ff00ff;
 $color-fondo-1: hsl(230, 14%, 9%);
 $color-fondo-2: #181c1f;
+$bg-color-cards: #2a323950;
 
 /* ===================================================================== ESTILOS GENERALES */
-
 
 body {
     background: {
@@ -156,7 +156,7 @@ body {
 }
 
 #nav-bar-logo {
-    height: 75px;
+    height: 50px;
 }
 
 #portafolio-sec-img {
@@ -182,9 +182,11 @@ body {
     60% {
         background-image: url("../img/main-banner2.jpg");
     }
+
     65% {
         background-image: url("../img/main-banner3.jpg");
     }
+
     95% {
         background-image: url("../img/main-banner3.jpg");
     }
@@ -203,7 +205,7 @@ body {
     overflow: hidden;
 }
 
-#parallax-banner{
+#parallax-banner {
     min-height: 30vh;
     padding: 1em;
     background-image: url("../img/parallax-banner.jpg");
@@ -316,15 +318,20 @@ article {
     flex-direction: column;
     justify-content: space-between;
     margin: 5px;
-    padding: 7px;
+    padding: 10px;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 10px;
     color: $parrafos-color;
     text-align: center;
+    background-color: $bg-color-cards;
 
     * {
         margin-top: 5px;
     }
+}
+
+.servicios-card {
+    background-color: $bg-color-cards;
 }
 
 .modal:not(#modal-portafolio) {

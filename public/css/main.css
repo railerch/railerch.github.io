@@ -123,7 +123,7 @@ body hr {
 }
 
 #nav-bar-logo {
-  height: 75px;
+  height: 50px;
 }
 
 #portafolio-sec-img img {
@@ -257,14 +257,19 @@ article {
   flex-direction: column;
   justify-content: space-between;
   margin: 5px;
-  padding: 7px;
+  padding: 10px;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #f2f2f2;
   text-align: center;
+  background-color: rgba(42, 50, 57, 0.3137254902);
 }
 .portafolio-card * {
   margin-top: 5px;
+}
+
+.servicios-card {
+  background-color: rgba(42, 50, 57, 0.3137254902);
 }
 
 .modal:not(#modal-portafolio) .modal-dialog {
