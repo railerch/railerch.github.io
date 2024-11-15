@@ -413,80 +413,54 @@
         }
     ],
     "tienda": {
-        "servicios": {
-            "desarrollo": {
-                "basico": {
-                    "descripcion": "Lorem ipsum dolor sit amet",
-                    "contenido": [
-                        "Beneficio #1",
-                        "Beneficio #2",
-                        "Beneficio #3",
-                        "Beneficio #4",
-                        "Beneficio #5",
-                        "Beneficio #6"
-                    ],
-                    "precio": 0.00
-                },
-                "premium": {
-                    "descripcion": "Lorem ipsum dolor sit amet",
-                    "contenido": [
-                        "Beneficio #1",
-                        "Beneficio #2",
-                        "Beneficio #3",
-                        "Beneficio #4",
-                        "Beneficio #5",
-                        "Beneficio #6"
-                    ],
-                    "precio": 0.00
-                }
+        "servicios": [
+            {
+                "activo": true,
+                "nombre": "Desarrollo web",
+                "imagen": "public/img/services/web-development.jpg",
+                "contenido": [
+                    "Diseño y planificación",
+                    "Tiempo minimo 7 días",
+                    "Reportes de avance",
+                    "Código fuente al finalizar",
+                    "1 semana de soporte gratuito"
+                ],
+                "costo_hora": 20.00
             },
-            "asesoria_consultoria": {
-                "basico": {
-                    "descripcion": "Lorem ipsum dolor sit amet",
-                    "contenido": [
-                        "Beneficio #1",
-                        "Beneficio #2",
-                        "Beneficio #3",
-                        "Beneficio #4",
-                        "Beneficio #5",
-                        "Beneficio #6"
-                    ],
-                    "precio": 0.00
-                },
-                "premium": {
-                    "descripcion": "Lorem ipsum dolor sit amet",
-                    "contenido": [
-                        "Beneficio #1",
-                        "Beneficio #2",
-                        "Beneficio #3",
-                        "Beneficio #4",
-                        "Beneficio #5",
-                        "Beneficio #6"
-                    ],
-                    "precio": 0.00
-                }
+            {
+                "activo": true,
+                "nombre": "Asesoría y Consultoría",
+                "imagen": "public/img/services/audit-consulting.jpg",
+                "contenido": [
+                    "Diseño y planificación",
+                    "Estructura del proyecto",
+                    "Código fuente",
+                    "Buenas practicas",
+                    "Implementación"
+                ],
+                "costo_hora": 15.00
             }
-        },
-        "aplicaciones": {
-            "sistema_tickets": {
+        ],
+        "aplicaciones": [
+            {
                 "nombre": "Ticket System",
                 "descripcion": "",
                 "tecnologias": [],
                 "beneficios": [],
-                "precio": 0.00
+                "precio": 600.00
             },
-            "sistema_reservas": {
+            {
                 "descripcion": "Sistema de reservas Online",
                 "beneficios": [],
                 "tecnologias": [],
-                "precio": 0.00
+                "precio": 450.00
             },
-            "custom_landing_page": {
+            {
                 "descripcion": "Landing Page personalizable",
                 "beneficios": [],
                 "tecnologias": [],
-                "precio": 0.00
+                "precio": 400.00
             }
-        }
+        ]
     }
 }

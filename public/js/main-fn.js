@@ -108,3 +108,33 @@ export function proyectos(config, nodoContenedor, index = false) {
         nodoContenedor.appendChild(div);
     }
 }
+
+export function servicios(config, nodoContenedor) {
+    const servicios = config.tienda.servicios;
+    const serviciosAcctivos = [];
+    servicios.forEach(srv => {
+        let contenido = "";
+        srv.contenido.forEach(x => {
+            contenido += `<li class="list-group-item">${x}<i class="bi bi-check-lg text-success float-end"></i></li>`;
+        });
+
+        serviciosAcctivos.push(`
+                    <div class="p-3 servicios-card rounded-3">
+                        <img class="card-img-top img-fluid" src="${srv.imagen}"
+                            alt="Card image cap" />
+                        <div class="card-body my-3">
+                            <h4 class="card-title">${srv.nombre}</h4>
+                            <p class="card-text bg-secondary rounded my-2">Costo $<span><b>${srv.costo_hora}</b></span>/Hora</p>
+                            <ul class="text-start my-2">
+                                ${contenido}
+                            </ul>
+                            <button type="button" class="botones-app mt-2">
+                                <i class="bi bi-whatsapp"></i> Solicitar servicio
+                            </button>
+                        </div>
+                    </div>
+        `);
+
+        nodoContenedor.innerHTML = serviciosAcctivos;
+    });
+}

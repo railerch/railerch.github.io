@@ -74,6 +74,10 @@ document.querySelectorAll("#navbarSupportedContent .nav-link").forEach(link => {
 let seccionPortafolio = document.getElementById("portafolio-sec-img");
 fn.proyectos(config, seccionPortafolio, true);
 
+// ==========> SERVICIOS
+let seccionServicios = document.getElementById("servicios-activos");
+fn.servicios(config, seccionServicios);
+
 // ==========> ENLACES Y MINIATURAS DE PROYECTOS EN VENTANA MODAL PORTAFOLIO 
 document.getElementById("btn-mas-proyectos").addEventListener("click", (evt) => {
     const modalBodyProyectos = document.querySelector(".modal-body #proyectos");
