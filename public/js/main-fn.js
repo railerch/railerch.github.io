@@ -125,12 +125,12 @@ export function servicios(config, nodoContenedor) {
                         <div class="card-body my-3">
                             <h4 class="card-title">${srv.nombre}</h4>
                             <p class="card-text bg-secondary rounded my-2">Costo $<span><b>${srv.costo_hora}</b></span>/Hora</p>
-                            <ul class="text-start my-2">
+                            <ul class="text-start mt-2 mb-4">
                                 ${contenido}
                             </ul>
-                            <button type="button" class="botones-app mt-2">
+                            <a href="https://api.whatsapp.com/send/?phone=584129880890&text=Hola, gracias por contactarme, en que puedo ayudarte?" target="_blank" class="botones-app" role="button">
                                 <i class="bi bi-whatsapp"></i> Solicitar servicio
-                            </button>
+                            </a>
                         </div>
                     </div>
         `);
