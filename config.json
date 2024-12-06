@@ -334,6 +334,24 @@
                 "JSON",
                 "Stripe"
             ]
+        },
+        {
+            "id": 17,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "View-timeline CSS",
+            "url": "../projects/view_timeLine_css/index.html",
+            "thumb": "../projects/view_timeLine_css/thumbnail.jpg",
+            "capturas": 0,
+            "descripcion": "Proyecto realizado para testear animación de imágenes basada en desplazamiento mediante la propiedad 'view-timeline' de CSS.",
+            "estatus": "Demo activo",
+            "tipo_proyecto": "Portafolio",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript"
+            ]
         }
     ],
     "logoSlider": [
