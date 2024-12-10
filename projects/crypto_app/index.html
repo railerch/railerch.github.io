@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/bootstrap-icons.css">
+    <script src="public/js/index.js" defer></script>
+    <title>Crypto APP</title>
+</head>
+
+<body>
+    <header>
+        <i class="bi bi-currency-bitcoin"></i>
+        <h2>Criptocotización global</h2>
+    </header>
+    <main class="container">
+
+        <!-- HORA -->
+        <div id="hora-header-div"><i class="bi bi-clock"> Hora local</i></div>
+        <div id="hora-div">
+            <div id="horas" class="tiempo">12</div>
+            <div id="minutos" class="tiempo">00</div>
+            <div id="segundos" class="tiempo">00</div>
+        </div>
+
+        <!-- ACTUALIZAR -->
+        <div id="actializar-div">
+            <input type="checkbox" name="actualizar" id="actualizar-chkbox"> <span>Actualizar cada 1 seg</span>
+        </div>
+        <hr>
+
+        <!-- PRELOADER -->
+        <div id="preloader-div">
+            <img src="public/img/spinner.gif" alt="Spinner">
+            <h3>Conectando</h3>
+        </div>
+
+        <!-- TABLA -->
+        <div id="tabla-div" style="display: none">
+            <!-- FILTRO -->
+            <div id="filtro-div">
+                <div>
+                    <span><i class="bi bi-filter"></i> Filtro</span>
+                </div>
+                <input type="text" id="filtro-in" placeholder="Criptomoneda">
+                <i class="bi bi-trash" id="limpiar-filtro-btn"></i>
+            </div>
+            <div id="tabla-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Moneda</th>
+                            <th>Cotización</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p>Registros totales: <span id="coincidencias-totales-lbl">0</span>/<span
+                        id="registros-totales-lbl">0</span></p>
+            </div>
+        </div>
+
+        <!-- ERROR MSG -->
+        <div id="msg-div" style="display: none;">
+            <i class="bi bi-exclamation-triangle"></i> <span id="mensaje"></span>
+        </div>
+
+    </main>
+    <footer>
+        Desarrolado por Railer Chalbaud
+    </footer>
+</body>
+
+</html>

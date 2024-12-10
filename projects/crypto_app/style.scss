@@ -1,0 +1,196 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    color: #fff;
+
+    p {
+        color: #fff;
+    }
+
+    header {
+        margin-bottom: 1em;
+        padding: 5px 1em;
+        display: flex;
+        align-items: center;
+        background-color: orange;
+        color: #fff;
+
+        i {
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    main {
+        width: 60%;
+        margin: 0 auto;
+
+        hr {
+            margin: 1em auto;
+        }
+
+        #hora-header-div {
+            margin-bottom: 10px;
+            text-align: center;
+
+            i {
+                font-size: 1.2em
+            }
+        }
+
+        #hora-div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .tiempo {
+                width: 15%;
+                padding: 15px;
+                box-shadow: 2px 2px 5px #00000050;
+                border: 1px solid gray;
+                border-radius: 10px;
+                text-align: center;
+
+                &:nth-child(1) {
+                    background-color: orange;
+                    color: #fff;
+                }
+
+                &:nth-child(2) {
+                    background-color: #fdb124;
+                    color: #fff;
+                }
+
+                &:nth-child(3) {
+                    background-color: #ffc04b;
+                    color: #fff;
+                }
+            }
+
+        }
+
+        #actializar-div {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #preloader-div {
+            text-align: center;
+            color: #fff;
+
+            img {
+                width: 75px;
+            }
+
+            h3 {
+                margin-top: 5px;
+            }
+        }
+
+        #filtro-div {
+            display: flex;
+            margin: 10px 0;
+
+            div {
+                width: fit-content;
+                margin-right: 10px;
+            }
+
+            #filtro-in {
+                border: 0;
+                width: 50%;
+                height: 1.3em;
+                flex-grow: 1;
+                border-radius: 3px;
+            }
+
+            #limpiar-filtro-btn {
+                margin: 0 5px;
+                color: orange;
+                font-size: 1.3em;
+                cursor: pointer;
+            }
+        }
+
+
+        #tabla-div {
+
+            #tabla-wrapper {
+                min-height: 50vh;
+                max-height: 55vh;
+                overflow-y: auto;
+                border-radius: 5px;
+
+                table {
+                    width: 100%;
+                    background-color: #fff;
+
+                    thead th,
+                    tbody td {
+                        padding: 5px;
+                        text-align: center;
+                    }
+
+
+                    thead {
+                        background-color: orange;
+                        color: #fff;
+                    }
+
+                    tbody {
+                        color: darkslategray;
+                    }
+
+                    tbody tr:nth-child(odd) {
+                        background-color: #fad48e;
+                    }
+                }
+            }
+        }
+
+        #msg-div {
+            width: fit-content;
+            padding: 10px;
+            margin: 0 auto;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #00000050;
+        }
+    }
+
+    footer {
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(255, 200, 97);
+        color: darkslategray;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 4vw;
+
+        .container {
+            width: 95% !important;
+        }
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1024px) {
+    body {
+        font-size: inherit;
+
+        .container {
+            width: 95% !important;
+        }
+    }
+}

@@ -352,6 +352,23 @@
                 "Bootstrap",
                 "JavaScript"
             ]
+        },
+        {
+            "id": 18,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Binance API",
+            "url": "../projects/crypto_app/index.html",
+            "thumb": "../projects/crypto_app/thumbnail.jpg",
+            "capturas": 0,
+            "descripcion": "Prueba de integracion sencilla con la API de Binance para la consulta de criptomonedas globales y sus valores actuales",
+            "estatus": "Demo activo",
+            "tipo_proyecto": "Portafolio",
+            "tecnologias": [
+                "HTML",
+                "SASS",
+                "Typescript"
+            ]
         }
     ],
     "logoSlider": [
