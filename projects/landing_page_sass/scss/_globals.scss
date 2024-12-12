@@ -140,3 +140,29 @@ h3 {
     justify-content: $alignX;
     align-items: $alignY;
 }
+
+// ===========> FUNCIONES EN SASS
+@function font_calc($size, $type) {
+    $font: 16;
+
+    @if $type==h1 {
+        $font: (
+            $size + 0.5*$size )
+    }
+
+    @if $type==h2 {
+        $font: (
+            $size + 0.2*$size )
+    }
+
+    @else {
+        $font: 16;
+    }
+
+    @return $font +px;
+}
+
+.fuente-reducida {
+    font-size: font_calc(20, h2
+    );
+}

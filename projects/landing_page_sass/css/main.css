@@ -92,6 +92,9 @@ h3 {
   background-color: slategray;
   color: #fff; }
 
+.fuente-reducida {
+  font-size: 24px; }
+
 #logo {
   width: 150px;
   height: 30px; }
