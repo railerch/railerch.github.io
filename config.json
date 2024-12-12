@@ -323,7 +323,7 @@
             "url": "../projects/carrito_compra/index.html",
             "thumb": "../projects/carrito_compra/thumbnail.jpg",
             "capturas": 0,
-            "descripcion": "Proyecto vanilla Javascript, consiste en una simulación de un carrito de compras en integracion con la plataforma de pagos STRIPE en el cual puedes seleccionar articulos con un stock limitado, estos se pueden agregar o eliminar de la compra disminuyendo o aumentando el stock respectivamente, se puede ajustar el porcentaje de descuento al inicio de la compra, realiza los calculos subtotal, descuento y total.",
+            "descripcion": "Proyecto vanilla Javascript, consiste en la simulación de un carrito de compras en integracion con la plataforma de pagos STRIPE en el cual puedes seleccionar articulos con un stock limitado, estos se pueden agregar o eliminar de la compra disminuyendo o aumentando el stock respectivamente, se puede ajustar el porcentaje de descuento al inicio de la compra, realiza los calculos subtotal, descuento y total.",
             "estatus": "Demo activo",
             "tipo_proyecto": "Portafolio",
             "tecnologias": [
