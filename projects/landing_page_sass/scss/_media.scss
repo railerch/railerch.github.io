@@ -1,0 +1,68 @@
+@media (max-width: 920px) {
+    header {
+        justify-content: center;
+
+    }
+
+    nav {
+        justify-content: center !important;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    #presentacion {
+        margin-top: 60px !important;
+        flex-wrap: wrap !important;
+
+        div,
+        figure {
+            width: 100% !important;
+            text-align: center;
+        }
+    }
+
+    #tipo-servicios {
+        flex-wrap: wrap !important;
+
+        div {
+            width: 100% !important;
+        }
+    }
+
+    #contacto {
+        flex-wrap: wrap !important;
+
+        figure {
+            width: unset !important;
+            text-align: center
+        }
+
+        #form-div {
+            width: unset !important;
+            text-align: center;
+
+            form {
+                align-items: center !important;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        ul {
+            margin-left: 2.5em !important;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    #presentacion {
+        figure {
+            width: 30% !important;
+        }
+    }
+}

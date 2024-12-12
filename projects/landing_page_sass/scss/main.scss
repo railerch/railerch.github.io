@@ -1,0 +1,141 @@
+//  IMPORTAR UN ARCHIVO PARCIAL (SCSS)
+@import "globals";
+
+
+#logo {
+    width: 150px;
+    height: 30px;
+}
+
+header {
+    @include flexbox(flex, wrap, space-between, center);
+    padding: 0.5em 5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    nav {
+        @include flexbox(flex, wrap, start, center);
+        padding: 5px 0;
+
+        ul {
+            display: flex;
+            margin-left: 2.5em;
+
+            li {
+                margin-right: 15px;
+                font-weight: bold;
+                transition: transform 200ms;
+
+                a:hover {
+                    color: darkcyan;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+    }
+
+    #in-buscar {
+        @include flexbox(flex, nowrap, center, center);
+        width: fit-content;
+        float: right;
+
+        button {
+            border: 0;
+            font-size: 0.7em;
+            background-color: transparent;
+            cursor: pointer;
+            transition: transform, 100ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+main {
+    padding: 60px 0 50px 0;
+
+    #presentacion {
+        margin-top: 25px;
+        @include flexbox(flex, nowrap, center, center);
+
+        h1 {
+            font-size: $font-h1;
+        }
+
+        div {
+            width: 50%;
+        }
+
+        #botones {
+            width: 100%;
+        }
+
+        figure {
+            width: 40%;
+            text-align: center;
+
+            img {
+                margin: 0;
+            }
+        }
+    }
+
+    #servicios {
+        text-align: center;
+        margin-top: 5rem;
+
+        h1 {
+            color: $color-0;
+        }
+
+        #tipo-servicios {
+            @include flexbox(flex, wrap, space-between, start);
+            margin-top: 5rem;
+
+            div {
+                padding: 1em;
+                width: 30%;
+            }
+        }
+    }
+
+    #contacto {
+        margin-top: 2em;
+
+        @include flexbox(flex, nowrap, center, center);
+        box-sizing: border-box;
+
+        figure {
+            width: 30%;
+            text-align: center
+        }
+
+        #form-div {
+            width: 60%;
+
+            form {
+                @include flexbox(flex, nowrap, space-around, start);
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+footer {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: $color-0;
+    color: $color-1;
+
+    p {
+        margin: 0;
+    }
+}
+
+@import "media";

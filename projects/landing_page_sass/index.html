@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Frontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <script src="js/main.js" defer></script>
+    <title>Landing page SASS</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="img/logo.svg" alt="Logo" id="logo" width="200" height="50" alt="logo">
+            </a>
+            <ul>
+                <li><a href="#presentacion">INICIO</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#contacto">CONTÁCTO</a></li>
+            </ul>
+
+        </nav>
+        <div id="in-buscar">
+            <input type="text" name="in-buscar" placeholder="Buscar...">
+            <button><i class="fa fa-search"></i></button>
+        </div>
+    </header>
+    <main>
+        <section id="presentacion">
+            <div>
+                <h1>Interfaces minimalistas que cautivan</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sint aliquid. Ex nemo, perspiciatis et
+                    ipsam ducimus omnis ut nihil necessitatibus explicabo voluptatum iste corrupti? Sit, adipisci.
+                    Mollitia deleniti cumque vitae nobis vero quo quisquam vel quidem! Nisi alias tempore cum incidunt,
+                    ipsam veniam aliquid porro eaque veritatis iure eveniet?</p>
+                <div id="botones">
+                    <button class="btn-principal">COMUNICATE</button>
+                    <button class="btn-secundario">PORTAFOLIO</button>
+                </div>
+            </div>
+            <figure>
+                <img src="img/developer.png" alt="Imagen">
+            </figure>
+        </section>
+
+        <section id="servicios">
+            <div id="titulo-servicios">
+                <h2>Experiencias maravillosas para los usuarios</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint fugit doloribus omnis
+                    quis, nisi dolores quas sequi corrupti! Cum dolorum vel modi! Vitae esse, odio magni aperiam totam
+                    quia ut
+                    architecto ipsum magnam optio. Nulla, unde fugit? Vitae fugit sapiente odio eligendi perspiciatis
+                    fuga id rem ea nemo illum.</p>
+            </div>
+            <div id="tipo-servicios">
+                <div>
+                    <i class="fa fa-laptop"></i>
+                    <h2>Diseño UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Desarrollo WEB</h2>
+                    <p>Consectetur laborum esse voluptates reiciendis suscipit, enim consequuntur.</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-shopping-basket"></i>
+                    <h2>Comercio digital</h2>
+                    <p>Suscipit aspernatur sint laboriosam officiis voluptates laudantium tempora.</p>
+                </div>
+            </div>
+        </section>
+
+        <secction id="contacto">
+            <figure>
+                <img src="img/contacto.png" alt="Imagen">
+            </figure>
+            <div id="form-div">
+                <h2>Contácto</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo quibusdam officiis quod
+                    facere sed blanditiis.</p>
+                <form action="" method="">
+                    <input type="text" name="nombre">
+                    <input type="email" name="correo">
+                    <input class="btn-principal" type="submit" name="submit">
+                </form>
+            </div>
+        </secction>
+    </main>
+
+    <footer>
+        <p>Desarrollador Railer Chalbaud, © 2024</p>
+    </footer>
+</body>
+
+</html>

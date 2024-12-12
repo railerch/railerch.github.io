@@ -369,6 +369,23 @@
                 "SASS",
                 "Typescript"
             ]
+        },
+        {
+            "id": 19,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Landing page SASS",
+            "url": "../projects/landing_page_sass/index.html",
+            "thumb": "../projects/landing_page_sass/thumbnail.jpg",
+            "capturas": 0,
+            "descripcion": "Landing page minimalista maquetada con SASS.",
+            "estatus": "Demo activo",
+            "tipo_proyecto": "Portafolio",
+            "tecnologias": [
+                "HTML",
+                "SASS",
+                "Typescript"
+            ]
         }
     ],
     "logoSlider": [
