@@ -114,28 +114,30 @@ export function servicios(config, nodoContenedor) {
     const whatsappNum = config.whatsapp_num;
     const serviciosAcctivos = [];
     servicios.forEach(srv => {
-        let contenido = "";
-        srv.contenido.forEach(x => {
-            contenido += `<li class="list-group-item">${x}<i class="bi bi-check-lg text-success float-end"></i></li>`;
-        });
+        if (srv.estaActivo) {
+            let contenido = "";
+            srv.contenido.forEach(x => {
+                contenido += `<li class="list-group-item">${x}<i class="bi bi-check-lg text-success float-end"></i></li>`;
+            });
 
-        serviciosAcctivos.push(`
-                    <div class="p-3 servicios-card rounded-3">
-                        <img class="card-img-top img-fluid" src="${srv.imagen}"
-                            alt="Card image cap" />
-                        <div class="card-body my-3">
-                            <h4 class="card-title">${srv.nombre}</h4>
-                            <p class="card-text bg-secondary rounded my-2">Costo $<span><b>${srv.costo_hora}</b></span>/Hora</p>
-                            <ul class="text-start mt-2 mb-4">
-                                ${contenido}
-                            </ul>
-                            <a href="https://api.whatsapp.com/send/?phone=${whatsappNum}&text=${srv.whatsapp_mensaje}" target="_blank" class="botones-app" role="button">
-                                <i class="bi bi-whatsapp"></i> Solicitar servicio
-                            </a>
+            serviciosAcctivos.push(`
+                        <div class="p-3 servicios-card rounded-3">
+                            <img class="card-img-top img-fluid" src="${srv.imagen}"
+                                alt="Card image cap" />
+                            <div class="card-body my-3">
+                                <h4 class="card-title">${srv.nombre}</h4>
+                                <!--p class="card-text bg-secondary rounded my-2">Costo $<span><b>${srv.costo_hora}</b></span>/Hora</p-->
+                                <ul class="text-start mt-2 mb-4">
+                                    ${contenido}
+                                </ul>
+                                <a href="https://api.whatsapp.com/send/?phone=${whatsappNum}&text=${srv.whatsapp_mensaje}" target="_blank" class="botones-app" role="button">
+                                    <i class="bi bi-whatsapp"></i> Mas información
+                                </a>
+                            </div>
                         </div>
-                    </div>
-        `);
+            `);
 
-        nodoContenedor.innerHTML = serviciosAcctivos;
+            nodoContenedor.innerHTML = serviciosAcctivos;
+        }
     });
 }

@@ -199,6 +199,7 @@ body {
 
 #main-banner {
     // background-image: url("../img/main-banner.jpg");
+    height: 100vh;
     animation: animacion-bg 20s linear infinite;
     background-size: cover;
     background-position: center;
@@ -218,10 +219,12 @@ body {
 /* ===================================================================== SECCIONES */
 
 header {
-    box-shadow: 0 3px 5px #000;
+    height: 10vh;
+    box-shadow: 0 0 5px #000;
 }
 
 section {
+    // height: 90vh;
     display: flex;
     align-items: center;
     padding: 1em;

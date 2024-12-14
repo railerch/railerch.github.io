@@ -155,6 +155,7 @@ body hr {
   }
 }
 #main-banner {
+  height: 100vh;
   animation: animacion-bg 20s linear infinite;
   background-size: cover;
   background-position: center;
@@ -172,7 +173,8 @@ body hr {
 
 /* ===================================================================== SECCIONES */
 header {
-  box-shadow: 0 3px 5px #000;
+  height: 10vh;
+  box-shadow: 0 0 5px #000;
 }
 
 section {

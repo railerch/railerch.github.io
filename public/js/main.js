@@ -42,31 +42,34 @@ Array.from(document.querySelectorAll("section")).forEach(sec => {
 })
 
 // ==========> FIJAR TAMAÑO DE IMAGENES EN SECCIONES
-document.querySelectorAll(".section-img img").forEach(img => {
-    if (window.innerWidth > 720) {
-        img.style.height = `${alturaImagenes}px`;
-        img.style.width = "auto";
-    }
-})
+// document.querySelectorAll(".section-img img").forEach(img => {
+//     if (window.innerWidth > 720) {
+//         img.style.height = `${alturaImagenes}px`;
+//         img.style.width = "auto";
+//     }
+// })
 
 // ==========> SCROLL TOP AL RECARGAR LA PAGINA
 /* Calcular la altura del body para hacer scroll hasta la parte superior */
-const pxHastaElTope = parseInt(document.querySelector("body").getBoundingClientRect().y);
-window.scrollBy(0, pxHastaElTope);
+// const pxHastaElTope = parseInt(document.querySelector("body").getBoundingClientRect().y);
+// console.log(pxHastaElTope);
+// window.scrollBy(0, pxHastaElTope);
 
 // ==========> MARGEN SUPERIOR PARA SECCIONES AL HACER SCROLL
 /* Se calcula el margen superior a cada seccion para que no se solape con el header
 al hacer scroll mediante los links del navbar */
 document.querySelectorAll("#navbarSupportedContent .nav-link").forEach(link => {
     /* Obtener la posicion del contenedor correspondiente a cada enlace para almacenarla en cada link */
-    const idContenedor = link.getAttribute("data-section");
-    const offset = document.getElementById(idContenedor).offsetTop;
-    link.setAttribute("data-scroll-to", offset);
+    setTimeout(function () {
+        const idContenedor = link.getAttribute("data-section");
+        const offset = document.getElementById(idContenedor).offsetTop;
+        link.setAttribute("data-scroll-to", offset);
+    }, 500)
 
     /* Hacer scroll hasta la seccion seleccionada */
     link.addEventListener("click", (evt) => {
         const irHasta = parseInt(evt.target.getAttribute("data-scroll-to")) - alturaHeader;
-        window.scrollTo(0, irHasta)
+        window.scrollTo(0, irHasta);
     })
 })
 
@@ -131,7 +134,6 @@ for (let i = 0; i < 13; i++) {
 }
 
 // ==========> SCROLL TOP
-window.scrollTo();
 let goTopBtn = document.getElementById("go-top");
 
 // =====> Posicion por defecto

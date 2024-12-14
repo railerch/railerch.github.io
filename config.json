@@ -467,11 +467,11 @@
     "tienda": {
         "servicios": [
             {
-                "activo": true,
-                "nombre": "Desarrollo web",
+                "estaActivo": true,
+                "nombre": "Desarrollo web JS/PHP",
                 "imagen": "public/img/services/web-development.jpg",
                 "contenido": [
-                    "Diseño y planificación",
+                    "Diseño, planificación e implementación",
                     "Tiempo minimo 7 días",
                     "Reportes de avance",
                     "Código fuente al finalizar",
@@ -481,7 +481,21 @@
                 "whatsapp_mensaje": "Hola, me gustaría recibir información sobre el servicio de 'Desarrollo web', gracias!"
             },
             {
-                "activo": true,
+                "estaActivo": false,
+                "nombre": "Desarrollo web Wordpress",
+                "imagen": "public/img/services/wordpress-development.jpg",
+                "contenido": [
+                    "Diseño e implementacion",
+                    "Ecommerce",
+                    "Catalogos en linea",
+                    "Temas personalizados",
+                    "Desarrollo de Plugins"
+                ],
+                "costo_hora": 15.00,
+                "whatsapp_mensaje": "Hola, me gustaría recibir información sobre el servicio de 'Desarrollo web Wordpress', gracias!"
+            },
+            {
+                "estaActivo": true,
                 "nombre": "Asesoría y Consultoría",
                 "imagen": "public/img/services/audit-consulting.jpg",
                 "contenido": [
@@ -491,7 +505,7 @@
                     "Buenas practicas",
                     "Implementación"
                 ],
-                "costo_hora": 15.00,
+                "costo_hora": 10.00,
                 "whatsapp_mensaje": "Hola, me gustaría recibir información sobre el servicio de 'Asesoría y Consultoría', gracias!"
             }
         ],
