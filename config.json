@@ -69,7 +69,7 @@
             "url": "../projects/mobile_ui/index.html",
             "thumb": "../projects/mobile_ui/thumbnail.jpg",
             "capturas": 0,
-            "descripcion": "Proyecto creado con la finalidad de ofrecer a los clientes de JBPassport una interfaz para realizar pagos, solicitar combustible y obtener informacion de interes, a su vez tambien funciona como portal de gestion de clientes para ejecutivos de venta de dicha compañia.",
+            "descripcion": "Proyecto creado con la finalidad de ofrecer a los clientes de JBPassport una interfaz para realizar pagos, solicitar combustible y obtener informacion de interes, a su vez tambien funciona como portal de gestion de clientes para ejecutivos de venta de dicha compañia. Inicio de sesión: => Usuario: 'admin' ó 'client' | Clave: 1234",
             "estatus": "Demo",
             "tipo_proyecto": "Cliente",
             "tecnologias": [
@@ -122,12 +122,12 @@
         {
             "id": 7,
             "mostrar": true,
-            "demo": false,
+            "demo": true,
             "nombre": "Sistema Cloud Storage",
-            "url": "../projects/drive_app/index.html",
+            "url": "http://enlacesbosto.dnsalias.com:8083/drivebosto/login.php",
             "thumb": "../projects/drive_app/thumbnail.jpg",
             "capturas": 5,
-            "descripcion": "Sistema creado para facilitar a los usuarios del cliente la gestion de archivos de forma remota, desarrollado con PHP puro en Back-end y poco Javascript en el Front-end, la intención fue mantenerlo con un codigo simple, legible y escalable siguiendo buenas practicas de programacion.",
+            "descripcion": "Sistema creado para facilitar a los usuarios del cliente la gestion de archivos de forma remota, desarrollado con PHP puro en Back-end y poco Javascript en el Front-end, la intención fue mantenerlo con un codigo simple, legible y escalable siguiendo buenas practicas de programacion. Inicio de sesión: => Usuario: root, Clave: r007",
             "estatus": "En produccion",
             "tipo_proyecto": "Laboral",
             "tecnologias": [
@@ -141,12 +141,12 @@
         {
             "id": 8,
             "mostrar": true,
-            "demo": false,
+            "demo": true,
             "nombre": "Sistema de tickets",
-            "url": "../projects/sistema_tickets/index.html",
+            "url": "http://enlacesbosto.dnsalias.com:8083/railerch/ticsys/index.php",
             "thumb": "../projects/sistema_tickets/thumbnail.jpg",
             "capturas": 8,
-            "descripcion": "Sistema multiempresa, desarrollado para la gestion de peticiones de usuarios entre departamentos, cuenta con apartado para tickets abiertos, en espera, cerrados, escalabilidad en tickets, asignacion y gestion de tareas, registro y gestion de usuarios, reporteria, chat integrado, logs.",
+            "descripcion": "Sistema multiempresa, desarrollado para la gestion de peticiones de usuarios entre departamentos, cuenta con apartado para tickets abiertos, en espera, cerrados, escalabilidad en tickets, asignacion y gestion de tareas, registro y gestion de usuarios, reporteria, chat integrado, logs. Inicio de sesión => Usuario: root, Clave: r007_[dia del mes] ejemplo: r007_01",
             "estatus": "En producción",
             "tipo_proyecto": "Laboral",
             "tecnologias": [
@@ -164,9 +164,9 @@
         {
             "id": 9,
             "mostrar": true,
-            "demo": false,
+            "demo": true,
             "nombre": "Ecommerce Bodegon Casa Mía",
-            "url": "../projects/casamia_ecommerce/index.html",
+            "url": "http://enlacesbosto.dnsalias.com:8083/railerch/casamia",
             "thumb": "../projects/casamia_ecommerce/thumbnail.jpg",
             "capturas": 7,
             "descripcion": "Portal de tipo Ecommerce, desarrollado para el bodegon Casa Mia cuando solo contaba con una sucursal (2021). Los articulos y datos que vera en las capturas son de producción ya que eran de la base de datos activa en aquel entonces",
@@ -206,9 +206,9 @@
         {
             "id": 11,
             "mostrar": true,
-            "demo": false,
+            "demo": true,
             "nombre": "Sistema de reservas",
-            "url": "../projects/sistema_arnica/index.html",
+            "url": "http://arnica.dnsalias.com:8000/dataentry",
             "thumb": "../projects/sistema_arnica/thumbnail.jpg",
             "capturas": 12,
             "descripcion": "Sistema desarrollado para la marca Rhelen-Arnica, esta pensado para ofrecer servicio de masajes en eventos deportivos, cuenta con una interfaz en modo asistente en el que los deportistas pueden reservar su cita con filtros de fechas, horarios y estaciones, tambien cuenta con un CMS mediante el cual un usuario administrador puede configurar todo lo relacionado a uno o multiples eventos.",
@@ -274,11 +274,11 @@
             "id": 14,
             "mostrar": true,
             "demo": false,
-            "nombre": "Punto de venta (API BNC)",
+            "nombre": "Portal de pagos (API BNC)",
             "url": "../projects/sistema_vpos/index.html",
             "thumb": "../projects/sistema_vpos/thumbnail.jpg",
             "capturas": 6,
-            "descripcion": "Pensado como una solución para agilizar el proceso de pago por parte de los clientes ofreciendo las modalidades C2P y VPOS, con historial y validacion de pagos, este portal se desarrollo con la asesoria y documentación brindadas por el personal de sistemas del Banco BNC.",
+            "descripcion": "Incrustado en el sitio web https://liorcosmetics.com, se desarrollo como una solución para agilizar el proceso de pago por parte de los clientes, ofreciendo las modalidades de pago como C2P, VPOS y reporte de pagos mediante transferencia o P2P desde otros bancos, con historial y validacion de pagos. Se conto con la asistencia y asesoria por parte del personal de sistemas del Banco BNC para el uso de su API.",
             "estatus": "En producción",
             "tipo_proyecto": "Laboral",
             "tecnologias": [
@@ -385,6 +385,28 @@
                 "HTML",
                 "SASS",
                 "Typescript"
+            ]
+        },
+        {
+            "id": 20,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Lior Cosmetics, C.A.",
+            "url": "https://liorcosmetics.com/",
+            "thumb": "../projects/liorcosmetics_web/thumbnail.jpg",
+            "capturas": 3,
+            "descripcion": "Portal web desarrollado para la empresa Lior Cosmetics, C.A. con la finalidad de mostrar sus productos y servicios, cuenta con un sistema de pagos para clientes a traves de la API del BNC, de esta forma los clientes pueden reportar sus pagos y la empresa puede validarlos en tiempo real.",
+            "estatus": "En producción",
+            "tipo_proyecto": "Laboral",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatables",
+                "JSON",
+                "PHP",
+                "MySQL"
             ]
         }
     ],
