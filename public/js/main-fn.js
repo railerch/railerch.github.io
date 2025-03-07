@@ -110,6 +110,7 @@ export function proyectos(config, nodoContenedor, index = false) {
 }
 
 export function servicios(config, nodoContenedor) {
+    console.log(nodoContenedor)
     const servicios = config.tienda.servicios;
     const whatsappNum = config.whatsapp_num;
     const serviciosAcctivos = [];

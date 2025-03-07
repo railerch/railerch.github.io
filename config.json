@@ -471,16 +471,6 @@
             "link": "https://www.instagram.com/railerch_dev/"
         },
         {
-            "nombre": "Telegram",
-            "icono": "bi bi-telegram",
-            "link": "https://t.me/railerch"
-        },
-        {
-            "nombre": "YouTube",
-            "icono": "bi bi-youtube",
-            "link": "https://www.youtube.com/@railerch"
-        },
-        {
             "nombre": "Whatsapp",
             "icono": "bi bi-whatsapp",
             "whatsapp_mensaje": "Hola, te escribo desde tu web para obtener mas información acerca de tus servicios, gracias!"
@@ -517,8 +507,8 @@
                 "whatsapp_mensaje": "Hola, me gustaría recibir información sobre el servicio de 'Desarrollo web Wordpress', gracias!"
             },
             {
-                "estaActivo": true,
-                "nombre": "Asesoría y Consultoría",
+                "estaActivo": false,
+                "nombre": "Asesoría para PYMEs",
                 "imagen": "public/img/services/audit-consulting.jpg",
                 "contenido": [
                     "Diseño y planificación",

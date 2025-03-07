@@ -369,10 +369,8 @@ footer {
         font-size: 2em;
         margin: 0 5px;
         cursor: pointer;
-        transition: font-size 0.5s;
 
         &:hover {
-            font-size: 1.7em;
             text-shadow: 0 0 5px #fff;
         }
     }

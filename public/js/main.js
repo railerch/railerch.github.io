@@ -29,8 +29,9 @@ fetch("modal.html")
         document.querySelector("#modal-portafolio #cerrar")
             .addEventListener("click", evt => sessionStorage.removeItem("proyectos"));
 
-        // Activar listener para el boton continuar en la ventana modal 'modal-descripcion-proyecto', esto para
-        // mostrar o no el slider de capturas si no es un demo
+        // Servicios en ventana modal
+        let seccionServicios = document.querySelector("#modal-servicios-adicionales #servicios-activos");
+        fn.servicios(config, seccionServicios);
     });
 
 // ==========> FIJAR ALTO DE SECCIONES
@@ -76,10 +77,6 @@ document.querySelectorAll("#navbarSupportedContent .nav-link").forEach(link => {
 // ==========> ENLACES Y MINIATURAS DE PROYECTOS EN PAGINA DE INICIO PORTAFOLIO
 let seccionPortafolio = document.getElementById("portafolio-sec-img");
 fn.proyectos(config, seccionPortafolio, true);
-
-// ==========> SERVICIOS
-let seccionServicios = document.getElementById("servicios-activos");
-fn.servicios(config, seccionServicios);
 
 // ==========> ENLACES Y MINIATURAS DE PROYECTOS EN VENTANA MODAL PORTAFOLIO 
 document.getElementById("btn-mas-proyectos").addEventListener("click", (evt) => {
