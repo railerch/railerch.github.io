@@ -413,45 +413,43 @@
     "logoSlider": [
         {
             "nombre": "HTML",
-            "imagen": "public/img/tech-slider/html.png",
-            "ancho": 250,
-            "alto": 100
+            "imagen": "public/img/tech-slider/html.png"
         },
         {
             "nombre": "CSS",
-            "imagen": "public/img/tech-slider/css.png",
-            "ancho": 250,
-            "alto": 100
+            "imagen": "public/img/tech-slider/css.png"
         },
         {
-            "nombre": "Javascript",
-            "imagen": "public/img/tech-slider/javascript.png",
-            "ancho": 250,
-            "alto": 100
+            "nombre": "JavaScript",
+            "imagen": "public/img/tech-slider/javascript.png"
+        },
+        {
+            "nombre": "TypeScript",
+            "imagen": "public/img/tech-slider/typescript.png"
         },
         {
             "nombre": "React",
-            "imagen": "public/img/tech-slider/react.png",
-            "ancho": 250,
-            "alto": 100
+            "imagen": "public/img/tech-slider/react.png"
+        },
+        {
+            "nombre": "Bootstrap",
+            "imagen": "public/img/tech-slider/bootstrap.png"
         },
         {
             "nombre": "Node",
-            "imagen": "public/img/tech-slider/node.png",
-            "ancho": 250,
-            "alto": 100
+            "imagen": "public/img/tech-slider/node.png"
         },
         {
             "nombre": "PHP",
-            "imagen": "public/img/tech-slider/php.png",
-            "ancho": 250,
-            "alto": 100
+            "imagen": "public/img/tech-slider/php.png"
         },
         {
             "nombre": "Laravel",
-            "imagen": "public/img/tech-slider/laravel.png",
-            "ancho": 250,
-            "alto": 100
+            "imagen": "public/img/tech-slider/laravel.png"
+        },
+        {
+            "nombre": "GitHub",
+            "imagen": "public/img/tech-slider/github.png"
         }
     ],
     "redesSociales": [
@@ -480,7 +478,7 @@
         "servicios": [
             {
                 "estaActivo": true,
-                "nombre": "Desarrollo web JS/PHP",
+                "nombre": "Desarrollo Web JavaScript",
                 "imagen": "public/img/services/web-development.jpg",
                 "contenido": [
                     "Diseño, planificación e implementación",
@@ -490,7 +488,7 @@
                     "1 semana de soporte gratuito"
                 ],
                 "costo_hora": 20.00,
-                "whatsapp_mensaje": "Hola, me gustaría recibir información sobre el servicio de 'Desarrollo web', gracias!"
+                "whatsapp_mensaje": "Hola, me gustaría recibir información sobre el servicio de 'Desarrollo Web JavaScript', gracias!"
             },
             {
                 "estaActivo": false,

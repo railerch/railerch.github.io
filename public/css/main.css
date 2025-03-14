@@ -217,7 +217,7 @@ article {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1750px);
+    transform: translateX(-2500px);
   }
 }
 .slider {
@@ -231,7 +231,7 @@ article {
 .slider .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
-  width: 3500px;
+  width: 5000px;
 }
 .slider .slide-track .slide {
   height: 100px;
