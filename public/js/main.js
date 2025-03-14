@@ -120,7 +120,7 @@ for (let i = 0; i < 20; i++) {
     img.src = logos[x].imagen;
     img.alt = logos[x].nombre;
     img.className = "h-100"
-
+    
     div.appendChild(img);
     sliderTrack.appendChild(div);
 

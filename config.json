@@ -413,43 +413,43 @@
     "logoSlider": [
         {
             "nombre": "HTML",
-            "imagen": "public/img/tech-slider/html.png"
+            "imagen": "public/img/logos-slider/html.png"
         },
         {
             "nombre": "CSS",
-            "imagen": "public/img/tech-slider/css.png"
+            "imagen": "public/img/logos-slider/css.png"
         },
         {
             "nombre": "JavaScript",
-            "imagen": "public/img/tech-slider/javascript.png"
+            "imagen": "public/img/logos-slider/javascript.png"
         },
         {
             "nombre": "TypeScript",
-            "imagen": "public/img/tech-slider/typescript.png"
+            "imagen": "public/img/logos-slider/typescript.png"
         },
         {
             "nombre": "React",
-            "imagen": "public/img/tech-slider/react.png"
+            "imagen": "public/img/logos-slider/react.png"
         },
         {
             "nombre": "Bootstrap",
-            "imagen": "public/img/tech-slider/bootstrap.png"
+            "imagen": "public/img/logos-slider/bootstrap.png"
         },
         {
             "nombre": "Node",
-            "imagen": "public/img/tech-slider/node.png"
+            "imagen": "public/img/logos-slider/node.png"
         },
         {
             "nombre": "PHP",
-            "imagen": "public/img/tech-slider/php.png"
+            "imagen": "public/img/logos-slider/php.png"
         },
         {
             "nombre": "Laravel",
-            "imagen": "public/img/tech-slider/laravel.png"
+            "imagen": "public/img/logos-slider/laravel.png"
         },
         {
             "nombre": "GitHub",
-            "imagen": "public/img/tech-slider/github.png"
+            "imagen": "public/img/logos-slider/github.png"
         }
     ],
     "redesSociales": [
