@@ -64,7 +64,7 @@ export function proyectos(config, nodoContenedor, index = false) {
                 .textContent = proyectos[i].nombre != "" ? proyectos[i].nombre : "Sin definir...";
 
             modal.querySelector("#descripcion")
-                .textContent = proyectos[i].descripcion != "" ? proyectos[i].descripcion : "Sin definir...";
+                .innerHTML = proyectos[i].descripcion != "" ? proyectos[i].descripcion : "Sin definir...";
 
             modal.querySelector("#tecnologias")
                 .textContent = proyectos[i].tecnologias != "" ? proyectos[i].tecnologias : "Sin definir...";

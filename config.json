@@ -6,6 +6,160 @@
         {
             "id": 1,
             "mostrar": true,
+            "demo": false,
+            "nombre": "Sistema CRM",
+            "url": "../projects/crm_bosto/index.html",
+            "thumb": "../projects/crm_bosto/thumbnail.jpg",
+            "capturas": 11,
+            "descripcion": "<p>Sistema CRM multiusuario diseñado y desarrollado para optimizar y centralizar la gestión administrativa de la empresa, brindando herramientas clave para mantener un control eficiente en cada operación combinando un diseño moderno con un desempeño sólido y confiable.</p><p class='resaltar'>Características Principales</p><ul><li><b>Módulo de Bancos y Conciliación:</b> Para gestionar cuentas bancarias y realizar conciliaciones rápidas y precisas.</li><li><b>Reportes de Pagos:</b> Permite a los usuarios reportar pagos de sus clientes asignados de forma rapida y precisa mediante un formulario interactivo.</li><li><b>Pedidos:</b> Permite a los usuarios registrar pedidos de manera rapida y eficiente.</li><li><b>Generación de Notas de Crédito:</b> Para automatizar la creación de notas de crédito, facilitando la gestión de transacciones.</li><li><b>Gestión de Usuarios:</b> Permite administrar perfiles, roles y permisos de forma segura y personalizada.</li><li><b>Reportería Completa:</b> Emite reportes avanzados para bancos y cobranzas, mejorando la toma de decisiones con datos precisos.</li></ul><br><p class='resaltar'>Tecnología y Arquitectura</p><ul><li><b>Bases de Datos:</b> Utiliza SQL Server para una gestión robusta y escalable de la información.</li><li><b>Auto-Hosteado:</b> Implementado en la red LAN, garantizando privacidad y control total de los datos.</li><li><b>Acceso Remoto:</b> Configuración de acceso remoto mediante servicios de DNS, permitiendo la disponibilidad desde cualquier lugar.</li></ul><br><p class='resaltar'>Ventajas Competitivas:</p><ul><li><b>Eficiencia Operativa:</b> Centraliza procesos clave y ahorra tiempo valioso en tareas administrativas de la empresa.</li><li><b>Flexibilidad y Escalabilidad:</b> Diseñado y documentado de forma que permite agregar modulos de una manera facil y rapida.</li><li><b>Acceso Seguro:</b> Ofrece un entorno de trabajo protegido y accesible para todos los usuarios autorizados.</li></ul><br><p>Este sistema no solo se conviertio en una herramienta esencial para la gestión integral en la empresa, sino que también reforzo la productividad y fortalecio la organización interna, asegurando una operación eficiente y sin contratiempos.</p>",
+            "estatus": "En producción",
+            "tipo_proyecto": "Laboral",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatables",
+                "JSON",
+                "PHP",
+                "SQL"
+            ]
+        },
+        {
+            "id": 2,
+            "mostrar": true,
+            "demo": false,
+            "nombre": "Portal de pagos (API BNC)",
+            "url": "../projects/sistema_vpos/index.html",
+            "thumb": "../projects/sistema_vpos/thumbnail.jpg",
+            "capturas": 6,
+            "descripcion": "<p>El Portal de Pagos Lior fue concebido como una solución estratégica para transformar y simplificar el proceso de pago de los clientes, combinando tecnología avanzada con una experiencia intuitiva y fluida. Este sistema ofrece varias modalidades de pago que se adaptan a las necesidades actuales de los clientes, incluyendo:</p><ul><li><b>C2P (Consumer to Payment):</b> Pagos directos con una experiencia optimizada para los usuarios.</li><li><b>VPOS (Virtual Point of Sale):</b> Una alternativa digital práctica y segura.</li><li><b>Transferencias y P2P:</b> Permite a los clientes reportar pagos desde otros bancos, integrando todas las transacciones en un único sistema.</li></ul><br><p class='resaltar'>Características Sobresalientes</p><ul><li><b>Historial de Transacciones:</b> Los usuarios pueden consultar y gestionar un registro completo de sus operaciones, garantizando transparencia y control.</li><li><b>Extracción de movimientos:</b> El sistema permite tanto a clientes como usuarios administrativos exportar el historial de transacciones realizadas en formato XLS o CSV.</li><li><b>Validación en Tiempo Real:</b> Cada pago es verificado inmediatamente, minimizando errores y mejorando la eficacia del sistema.</li><li><b>Sistema Integrado:</b> Centraliza todas las modalidades de pago y los reportes, asegurando una gestión simple y organizada.</li></ul><br><p class='resaltar'>Colaboración Estratégica</p><p>El desarrollo del portal contó con la asesoría técnica del personal especializado del Banco BNC, quienes facilitaron el acceso y la implementación de su API, asegurando una integración robusta y segura. Una vez finalizado el desarrollo del sistema este fue validado y certificado por escrito por la gente del banco BNC.</p><p>El portal no solo modernizo el proceso de pagos en la empresa, sino que también reforzo la confianza y comodidad de los clientes al ofrecer una plataforma confiable, adaptable y de alto rendimiento. Con esta herramienta, la empresa dio un gran paso hacia la digitalización y la eficiencia operativa, manteniéndose a la vanguardia y un paso adelante ante sus competidores.</p>",
+            "estatus": "En producción",
+            "tipo_proyecto": "Laboral",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatables",
+                "BNC-API",
+                "JSON",
+                "PHP",
+                "MySQL"
+            ]
+        },
+        {
+            "id": 3,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Sistema de reservas",
+            "url": "http://arnica.dnsalias.com:8000/dataentry",
+            "thumb": "../projects/sistema_arnica/thumbnail.jpg",
+            "capturas": 12,
+            "descripcion": "<p>Sistema de reservas para atletas Desarrollado con Node.js, Vanilla JavaScript, Bootstrap y MySQL, este innovador sistema permite a los atletas realizar reservas para sesiones de masajes en eventos deportivos de manera rápida y sencilla. Diseñado específicamente para el stand de la marca Rhelen Árnica, la plataforma combina funcionalidad, eficiencia y una experiencia de usuario impecable.</p><p>El sistema ofrece una interfaz guiada que se presenta como un asistente dividido en cuatro pantallas, facilitando el proceso de registro. Este asistente interactivo valida minuciosamente los datos del usuario, las fechas de reserva, horarios disponibles, estaciones asignadas y la vinculación con eventos específicos, asegurando que cada atleta disfrute de un proceso fluido y personalizado.</p><p class='resaltar'>Sistema de gestion</p><p>Cuenta con un robusto CMS que permite a los administradores gestionar todos los aspectos del sistema, incluyendo:</p><ul><li><b>Eventos deportivos:</b>Agrega, edita y organiza eventos relevantes.</li><li><b>Estaciones de masajes:</b>Configura áreas de atención específicas.</li><li><b>Horarios y descansos:</b>Optimiza la agenda de los masajistas y establece pausas según la carga de trabajo. </li><li><b>Registros de usuarios:</b>Controla y analiza las reservas realizadas por los atletas.</li></ul><br><p>Este sistema no solo mejora la logística y administración en el stand, sino que también garantiza una experiencia superior para los participantes, fortaleciendo la imagen de la marca en el ámbito deportivo.</p>",
+            "estatus": "En producción",
+            "tipo_proyecto": "Laboral",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatables",
+                "Node",
+                "PM2",
+                "MySQL"
+            ]
+        },
+        {
+            "id": 4,
+            "mostrar": true,
+            "demo": false,
+            "nombre": "Portal de pedidos (Profit)",
+            "url": "../projects/portal_pedidos_intervit/index.html",
+            "thumb": "../projects/portal_pedidos_intervit/thumbnail.jpg",
+            "capturas": 2,
+            "descripcion": "<p>Aplicación de Toma y Carga de Pedidos Diseñada especialmente para los vendedores de <strong>Intervit, C.A.</strong>, esta aplicación revoluciona la gestión de pedidos al integrarse con el sistema <strong>Profit</strong>, asegurando una experiencia eficiente, precisa y accesible desde cualquier dispositivo.</p><p class='resaltar'>Características Destacadas</h2><ul><li>Emulación y mejora del sistema original, con acceso completo a la lista de clientes y productos. </li><li>Precisión en cálculos hasta <strong>5 decimales</strong>.</li><li>Soporte para trabajo <strong>multimoneda</strong>, adaptándose a operaciones internacionales. </li><li>Carga masiva de artículos a partir de un archivo de texto.</li><li>Historial de pedidos en cola editable hasta el momento del procesamiento.</li><li>Sistema de inicio de sesión con <strong>tokens de seguridad</strong>, personalizando opciones según el usuario.</li></ul><br><p class='resaltar'>Ventajas Clave</h2><p>La toma de pedidos no afecta el <strong>stock</strong>hasta su procesamiento, optimizando los flujos de inventario. Además, la aplicación está completamente adaptada para su uso en equipos de escritorio y dispositivos móviles, garantizando una experiencia flexible y accesible para los vendedores.</p>",
+            "estatus": "En producción",
+            "tipo_proyecto": "Laboral",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatables",
+                "JSON",
+                "PHP",
+                "MySQL",
+                "SQL"
+            ]
+        },
+        {
+            "id": 5,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Sistema de tickets",
+            "url": "http://enlacesbosto.dnsalias.com:8083/railerch/ticsys/index.php",
+            "thumb": "../projects/sistema_tickets/thumbnail.jpg",
+            "capturas": 8,
+            "descripcion": "<p>Este sistema fue diseñado para mejorar la gestión de solicitudes técnicas en ADMINISTRADORA 1718, C.A. empresa encargada de la administracion general de tiendas Seven's, facilitando las labores de soporte técnico de manera eficiente y organizada al eliminar el uso de canales informales como WhatsApp o la comunicación oral, proporcionando una herramienta de trabajo profesional y confiable.</p><p>Con su diseño <strong>multiusuario</strong>, este sistema se adapta perfectamente a las necesidades empresariales modernas, optimizando los procesos de resolución de problemas y asegurando la mejor experiencia tanto para los usuarios como para los equipos técnicos.</p><p class='resaltar'>Funciones Principales</p><ul><li><strong>Gestión de tickets:</strong> Clasificación en abiertos, en espera y cerrados.</li><li><strong>Asignación de tareas:</strong> Modulo de asignación de tareas para analistas técnicos con sistema de puntos para la gestion de meritos.</li><li><strong>Historial:</strong> Registro detallado de solicitudes para seguimiento y control.</li><li><strong>Gestión de usuarios:</strong> Registro y control de usuarios para el acceso al panel administrativo o creación de tickets.</li><li><strong>Gestión de sedes:</strong> Creación de sedes y despartamentos asociados a la empresa.</li><li><strong>Gestion de respaldos de BD:</strong> Respaldo, listado y descarga de la base de datos de trabajo desde el panel administrativo.</li><li><strong>Chat integrado:</strong> Comunicación directa y rápida entre usuarios.</li><li><strong>Registro de actividad:</strong> Registro completo de acciones y eventos del sistema.</li><li><strong>Modulo de reportes:</strong> Emisión de reportes de tickets y tareas por técnico, tickets generados por sedes y reporte global.</li><li><strong>Dashboard interactivo:</strong> Gráficas para conteo de tickets e indicadores mensuales.</li></ul><br><p class='resaltar'>Ventajas del Sistema:</p><ul><li>Este sistema no solo simplifica el soporte técnico, sino que también mejora la transparencia y la organización dentro de la empresa.</li><li>Con herramientas de reportería y análisis gráfico, ofrece a los administradores una visión clara del desempeño y las áreas que requieren mejoras.</li><li>Diseñado para ser una solución integral, garantiza una experiencia eficiente y profesional para todos los usuarios.</li></ul><br> <p><span class='resaltar'>Datos de prueba:</span> Usuario: root | Clave: r007_[dia del mes] ejemplo: r007_01</p>",
+            "estatus": "En producción",
+            "tipo_proyecto": "Laboral",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "jQuery",
+                "Datatabless",
+                "Ajax",
+                "PHP",
+                "MySQL"
+            ]
+        },
+        {
+            "id": 6,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Sistema Cloud Storage",
+            "url": "http://enlacesbosto.dnsalias.com:8083/railerch/clouddrive/login.php",
+            "thumb": "../projects/drive_app/thumbnail.jpg",
+            "capturas": 5,
+            "descripcion": "<p>Este sistema fue diseñado para satisfacer necesidad de una herramienta estable y confiable que permitiera la gestión remota y centralizada de archivos dentro de una empresa. Su funcionalidad se inspira en plataformas como Google Drive y Dropbox pero con un enfoque personalizado y adaptado a las necesidades específicas corporativas, eliminando la dependencia de una conexión RDP de Windows.</p><p>Ofrece una solución robusta, fácil de usar y perfectamente integrada para optimizar el manejo de archivos y directorios, mejorando la eficiencia y asegurando el acceso desde cualquier lugar.</p><p class='resaltar'>Funciones Destacadas</p><ul><li><strong>Gestión de cuentas:</strong> Los usuarios pueden registrarse, gestionar y eliminar sus cuentas según sus necesidades.</li><li><strong>Directorios y archivos:</strong> Creación y eliminación de directorios, subdirectorios y archivos de texto plano.</li><li><strong>Soporte para múltiples formatos:</strong> Carga y descarga de archivos en formatos como JPG, PNG, XLSX, DOCX, PPTX, PDF, entre otros.</li><li><strong>Acceso remoto:</strong> Gestión centralizada accesible sin depender de conexiones específicas. </li><li><strong>Interfaz intuitiva:</strong> Diseñado para proporcionar una experiencia de usuario fluida y adaptada. </li></ul><br><p class='resaltar'>Ventajas Clave</p><ul><li>Permite una gestión eficiente de archivos corporativos.</li><li>Su diseño multiusuario garantiza que todos los empleados puedan acceder a la herramienta sin limitaciones</li><li>Al estar centralizada en un servidor web dedicado elimina la dependencia de conexiones específicas como Windows RDP desde un computador de escritorio, esto facilita el acceso a la información desde cualquier dispositivo en el momento que se necesite.</li></ul><br> <p><span class='resaltar'>Datos de prueba:</span> Usuario: root, Clave: r007</p>",
+            "estatus": "En produccion",
+            "tipo_proyecto": "Laboral",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "PHP"
+            ]
+        },
+        {
+            "id": 7,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Web Lior Cosmetics, C.A.",
+            "url": "https://liorcosmetics.com/",
+            "thumb": "../projects/liorcosmetics_web/thumbnail.jpg",
+            "capturas": 3,
+            "descripcion": "Portal web desarrollado para la empresa Lior Cosmetics, C.A. con la finalidad de mostrar sus productos y servicios, cuenta con un sistema de pagos para clientes a traves de la API del BNC, de esta forma los clientes pueden reportar sus pagos y la empresa puede validarlos en tiempo real.",
+            "estatus": "En producción",
+            "tipo_proyecto": "Laboral",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatables",
+                "JSON",
+                "PHP",
+                "MySQL"
+            ]
+        },
+        {
+            "id": 8,
+            "mostrar": true,
             "demo": true,
             "nombre": "Web Olympia Empresas Unidas, C.A.",
             "url": "https://olympiaeu.com/inicio.php",
@@ -25,147 +179,10 @@
             ]
         },
         {
-            "id": 2,
-            "mostrar": true,
-            "demo": true,
-            "nombre": "Web APP (PWA)",
-            "url": "../projects/demo_pwa/index.html",
-            "thumb": "../projects/demo_pwa/thumbnail.jpg",
-            "capturas": 0,
-            "descripcion": "Demo interactivo, instalable, con consumo de API rest, gestion de cache y actividad offline.",
-            "estatus": "Demo interacivo",
-            "tipo_proyecto": "Portafolio",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "JSON",
-                "Service Worker API"
-            ]
-        },
-        {
-            "id": 3,
-            "mostrar": true,
-            "demo": true,
-            "nombre": "Demo tablero Kanban",
-            "url": "../projects/drag_drop/index.html",
-            "thumb": "../projects/drag_drop/thumbnail.jpg",
-            "capturas": 0,
-            "descripcion": "La finalidad de este demo es mostrar una version minimalista de un panel de tareas estilo Kanban mediante el uso de la interfaz Drag & Drop de Javascript",
-            "estatus": "Demo interactivo",
-            "tipo_proyecto": "Práctica",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ]
-        },
-        {
-            "id": 4,
-            "mostrar": true,
-            "demo": true,
-            "nombre": "UI APP movil",
-            "url": "../projects/mobile_ui/index.html",
-            "thumb": "../projects/mobile_ui/thumbnail.jpg",
-            "capturas": 0,
-            "descripcion": "Proyecto creado con la finalidad de ofrecer a los clientes de JBPassport una interfaz para realizar pagos, solicitar combustible y obtener informacion de interes, a su vez tambien funciona como portal de gestion de clientes para ejecutivos de venta de dicha compañia. Inicio de sesión: => Usuario: 'admin' ó 'client' | Clave: 1234",
-            "estatus": "Demo",
-            "tipo_proyecto": "Cliente",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "Datatables",
-                "JSON"
-            ]
-        },
-        {
-            "id": 5,
-            "mostrar": true,
-            "demo": true,
-            "nombre": "CRUD en navegador",
-            "url": "../projects/crud_indexeddb/index.html",
-            "thumb": "../projects/crud_indexeddb/thumbnail.jpg",
-            "capturas": 0,
-            "descripcion": "Proyecto creado con la intencion de mostrar el potencial de la IndexedDB API integrada en el navegador.",
-            "estatus": "Demo activo",
-            "tipo_proyecto": "Práctica",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "JSON",
-                "IndexedDB API"
-            ]
-        },
-        {
-            "id": 6,
-            "mostrar": true,
-            "demo": true,
-            "nombre": "Generador QR",
-            "url": "../projects/generador_qr/index.html",
-            "thumb": "../projects/generador_qr/thumbnail.jpg",
-            "capturas": 0,
-            "descripcion": "Generador de codigo QR de uso personal 100% funcional.",
-            "estatus": "Activo",
-            "tipo_proyecto": "Portafolio",
-            "tecnologias": [
-                "HTML",
-                "SCSS",
-                "Bootstrap",
-                "JavaScript"
-            ]
-        },
-        {
-            "id": 7,
-            "mostrar": true,
-            "demo": true,
-            "nombre": "Sistema Cloud Storage",
-            "url": "http://enlacesbosto.dnsalias.com:8083/drivebosto/login.php",
-            "thumb": "../projects/drive_app/thumbnail.jpg",
-            "capturas": 5,
-            "descripcion": "Sistema creado para facilitar a los usuarios del cliente la gestion de archivos de forma remota, desarrollado con PHP puro en Back-end y poco Javascript en el Front-end, la intención fue mantenerlo con un codigo simple, legible y escalable siguiendo buenas practicas de programacion. Inicio de sesión: => Usuario: root, Clave: r007",
-            "estatus": "En produccion",
-            "tipo_proyecto": "Laboral",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "PHP"
-            ]
-        },
-        {
-            "id": 8,
-            "mostrar": true,
-            "demo": true,
-            "nombre": "Sistema de tickets",
-            "url": "http://enlacesbosto.dnsalias.com:8083/railerch/ticsys/index.php",
-            "thumb": "../projects/sistema_tickets/thumbnail.jpg",
-            "capturas": 8,
-            "descripcion": "Sistema multiempresa, desarrollado para la gestion de peticiones de usuarios entre departamentos, cuenta con apartado para tickets abiertos, en espera, cerrados, escalabilidad en tickets, asignacion y gestion de tareas, registro y gestion de usuarios, reporteria, chat integrado, logs. Inicio de sesión => Usuario: root, Clave: r007_[dia del mes] ejemplo: r007_01",
-            "estatus": "En producción",
-            "tipo_proyecto": "Laboral",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "jQuery",
-                "Datatabless",
-                "Ajax",
-                "PHP",
-                "MySQL"
-            ]
-        },
-        {
             "id": 9,
             "mostrar": true,
             "demo": true,
-            "nombre": "Ecommerce Bodegon Casa Mía",
+            "nombre": "Ecommerce Casa Mía Bodegon, C.A.",
             "url": "http://enlacesbosto.dnsalias.com:8083/railerch/casamia",
             "thumb": "../projects/casamia_ecommerce/thumbnail.jpg",
             "capturas": 7,
@@ -190,7 +207,7 @@
             "url": "../projects/consulta_cne/index.html",
             "thumb": "../projects/consulta_cne/thumbnail.jpg",
             "capturas": 1,
-            "descripcion": "Sistema creado para consultar datos de usuarios de forma individual o masiva en el CNE",
+            "descripcion": "Sistema simple creado para consultar datos de usuarios de forma individual o masiva en el CNE",
             "estatus": "En produccion",
             "tipo_proyecto": "Laboral",
             "tecnologias": [
@@ -205,96 +222,6 @@
         },
         {
             "id": 11,
-            "mostrar": true,
-            "demo": true,
-            "nombre": "Sistema de reservas",
-            "url": "http://arnica.dnsalias.com:8000/dataentry",
-            "thumb": "../projects/sistema_arnica/thumbnail.jpg",
-            "capturas": 12,
-            "descripcion": "Sistema desarrollado para la marca Rhelen-Arnica, esta pensado para ofrecer servicio de masajes en eventos deportivos, cuenta con una interfaz en modo asistente en el que los deportistas pueden reservar su cita con filtros de fechas, horarios y estaciones, tambien cuenta con un CMS mediante el cual un usuario administrador puede configurar todo lo relacionado a uno o multiples eventos.",
-            "estatus": "En producción",
-            "tipo_proyecto": "Laboral",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "Datatables",
-                "Node",
-                "PM2",
-                "MySQL"
-            ]
-        },
-        {
-            "id": 12,
-            "mostrar": true,
-            "demo": false,
-            "nombre": "Sistema CRM",
-            "url": "../projects/crm_bosto/index.html",
-            "thumb": "../projects/crm_bosto/thumbnail.jpg",
-            "capturas": 11,
-            "descripcion": "Desarrollado para la empresa Lior Cosmetics. C.A, la intencion fue agilizar y automatizar actividades administrativas, cuenta como modulo de bancos, conciliación, gestion de pedidos, cobranza, gestion de usuarios, generacion de NDC, etc.",
-            "estatus": "En producción",
-            "tipo_proyecto": "Laboral",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "Datatables",
-                "JSON",
-                "PHP",
-                "SQL"
-            ]
-        },
-        {
-            "id": 13,
-            "mostrar": true,
-            "demo": false,
-            "nombre": "Portal de pedidos (Profit)",
-            "url": "../projects/portal_pedidos_intervit/index.html",
-            "thumb": "../projects/portal_pedidos_intervit/thumbnail.jpg",
-            "capturas": 2,
-            "descripcion": "Aplicación desarrollada para facilitar la toma y carga de pedidos de forma remota en el sistema profit por parte de vendedroes de la empresa Intervit, C.A. evitando asi retrasos en las ventas. Este portal emula y mejora el comportamiento de la pantalla original permitiendo el acceso a la lista de clientes y productos de la empresa, realiza calculos con una precision de 5 decimales, trabajo multimoneda, carga masiva de articulos a partir de un archivo de texto, la toma del pedido no toca el stock a menos que sea procesado, guarda un historial de pedidos en cola que pueden ser editados en cualquier momento hasta el momento de procesarlos, tambien cuenta un sistema de inicio de sesion que hace uso de tokens de seguridad para limitar las opciones y acciones disponibles segun el vendedor, esta diseñado para ser visualizado en equipos de escritorio y dispositivos moviles.",
-            "estatus": "En producción",
-            "tipo_proyecto": "Laboral",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "Datatables",
-                "JSON",
-                "PHP",
-                "MySQL",
-                "SQL"
-            ]
-        },
-        {
-            "id": 14,
-            "mostrar": true,
-            "demo": false,
-            "nombre": "Portal de pagos (API BNC)",
-            "url": "../projects/sistema_vpos/index.html",
-            "thumb": "../projects/sistema_vpos/thumbnail.jpg",
-            "capturas": 6,
-            "descripcion": "Incrustado en el sitio web https://liorcosmetics.com, se desarrollo como una solución para agilizar el proceso de pago por parte de los clientes, ofreciendo las modalidades de pago como C2P, VPOS y reporte de pagos mediante transferencia o P2P desde otros bancos, con historial y validacion de pagos. Se conto con la asistencia y asesoria por parte del personal de sistemas del Banco BNC para el uso de su API.",
-            "estatus": "En producción",
-            "tipo_proyecto": "Laboral",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "Datatables",
-                "BNC-API",
-                "JSON",
-                "PHP",
-                "MySQL"
-            ]
-        },
-        {
-            "id": 15,
             "mostrar": true,
             "demo": false,
             "nombre": "Sistema de tokens",
@@ -316,7 +243,65 @@
             ]
         },
         {
-            "id": 16,
+            "id": 12,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Web APP (PWA)",
+            "url": "../projects/demo_pwa/index.html",
+            "thumb": "../projects/demo_pwa/thumbnail.jpg",
+            "capturas": 0,
+            "descripcion": "Demo interactivo, instalable, con consumo de API rest, gestion de cache y actividad offline.",
+            "estatus": "Demo interacivo",
+            "tipo_proyecto": "Portafolio",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "JSON",
+                "Service Worker API"
+            ]
+        },
+        {
+            "id": 13,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "UI APP movil",
+            "url": "../projects/mobile_ui/index.html",
+            "thumb": "../projects/mobile_ui/thumbnail.jpg",
+            "capturas": 0,
+            "descripcion": "Proyecto creado con la finalidad de ofrecer a los clientes de JBPassport una interfaz para realizar pagos, solicitar combustible y obtener informacion de interes, a su vez tambien funciona como portal de gestion de clientes para ejecutivos de venta de dicha compañia. Inicio de sesión: => Usuario: 'admin' ó 'client' | Clave: 1234",
+            "estatus": "Demo",
+            "tipo_proyecto": "Cliente",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "Datatables",
+                "JSON"
+            ]
+        },
+        {
+            "id": 14,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Generador QR",
+            "url": "../projects/generador_qr/index.html",
+            "thumb": "../projects/generador_qr/thumbnail.jpg",
+            "capturas": 0,
+            "descripcion": "Generador de codigo QR de uso personal 100% funcional.",
+            "estatus": "Activo",
+            "tipo_proyecto": "Portafolio",
+            "tecnologias": [
+                "HTML",
+                "SCSS",
+                "Bootstrap",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": 15,
             "mostrar": true,
             "demo": true,
             "nombre": "Carrito de compra",
@@ -336,7 +321,44 @@
             ]
         },
         {
+            "id": 16,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "Demo tablero Kanban",
+            "url": "../projects/drag_drop/index.html",
+            "thumb": "../projects/drag_drop/thumbnail.jpg",
+            "capturas": 0,
+            "descripcion": "La finalidad de este demo es mostrar una version minimalista de un panel de tareas estilo Kanban mediante el uso de la interfaz Drag & Drop de Javascript",
+            "estatus": "Demo interactivo",
+            "tipo_proyecto": "Práctica",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
             "id": 17,
+            "mostrar": true,
+            "demo": true,
+            "nombre": "CRUD en navegador",
+            "url": "../projects/crud_indexeddb/index.html",
+            "thumb": "../projects/crud_indexeddb/thumbnail.jpg",
+            "capturas": 0,
+            "descripcion": "Proyecto creado con la intencion de mostrar el potencial de la IndexedDB API integrada en el navegador.",
+            "estatus": "Demo activo",
+            "tipo_proyecto": "Práctica",
+            "tecnologias": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "JSON",
+                "IndexedDB API"
+            ]
+        },
+        {
+            "id": 18,
             "mostrar": true,
             "demo": true,
             "nombre": "View-timeline CSS",
@@ -354,7 +376,7 @@
             ]
         },
         {
-            "id": 18,
+            "id": 19,
             "mostrar": true,
             "demo": true,
             "nombre": "Binance API",
@@ -371,7 +393,7 @@
             ]
         },
         {
-            "id": 19,
+            "id": 20,
             "mostrar": true,
             "demo": true,
             "nombre": "Landing page SASS",
@@ -385,28 +407,6 @@
                 "HTML",
                 "SASS",
                 "Typescript"
-            ]
-        },
-        {
-            "id": 20,
-            "mostrar": true,
-            "demo": true,
-            "nombre": "Lior Cosmetics, C.A.",
-            "url": "https://liorcosmetics.com/",
-            "thumb": "../projects/liorcosmetics_web/thumbnail.jpg",
-            "capturas": 3,
-            "descripcion": "Portal web desarrollado para la empresa Lior Cosmetics, C.A. con la finalidad de mostrar sus productos y servicios, cuenta con un sistema de pagos para clientes a traves de la API del BNC, de esta forma los clientes pueden reportar sus pagos y la empresa puede validarlos en tiempo real.",
-            "estatus": "En producción",
-            "tipo_proyecto": "Laboral",
-            "tecnologias": [
-                "HTML",
-                "CSS",
-                "Bootstrap",
-                "JavaScript",
-                "Datatables",
-                "JSON",
-                "PHP",
-                "MySQL"
             ]
         }
     ],
