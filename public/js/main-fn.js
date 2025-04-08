@@ -17,6 +17,7 @@ export function proyectos(config, nodoContenedor, index = false) {
         div.classList.add("col-5");
         div.classList.add("col-md-2");
         div.classList.add("portafolio-card");
+        L == 4 ? div.classList.add("card-animated") : null;
 
         // =====> Imagen
         let figure = document.createElement("figure");

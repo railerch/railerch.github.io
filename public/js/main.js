@@ -1,4 +1,5 @@
 "use stric"
+import { animate, inView, stagger } from './motion.js';
 import * as fn from "./main-fn.js"
 import config from "../../../config.json" with { type: "json"};
 
@@ -120,7 +121,7 @@ for (let i = 0; i < 20; i++) {
     img.src = logos[x].imagen;
     img.alt = logos[x].nombre;
     img.className = "h-100"
-    
+
     div.appendChild(img);
     sliderTrack.appendChild(div);
 
@@ -164,4 +165,30 @@ goTopBtn.addEventListener("click", function () {
         R++;
 
     }, 10)
+})
+
+// ==========> ANIMACIONES
+// Imagenes
+const imgs = document.querySelectorAll(".sec-img");
+imgs.forEach(img => {
+    inView(img, img => {
+        animate(img, { rotateY: 360 }, { duration: 1.2 });
+        return () => animate(img, { rotateY: 0 });
+    })
+})
+
+// Textos
+const texts = document.querySelectorAll(".txt-animated");
+texts.forEach(txt => {
+    inView(txt, txt => {
+        animate(txt, { opacity: 1, y: [80, 0] }, { duration: 0.5 });
+        return () => animate(txt, { opacity: 0, y: 0 }, { duration: 1.2, easing: [0.17, 0.55, 0.55, 1] })
+    })
+})
+
+// Tarjetas de proyectos
+const portfolioSecImg = document.getElementById("portafolio-sec-img");
+inView(portfolioSecImg, div => {
+    animate(".card-animated", { opacity: 1 }, { delay: stagger(0.2) })
+    return () => animate(".card-animated", { opacity: 0 });
 })

@@ -301,6 +301,12 @@ footer {
   text-shadow: 0 0 5px #fff;
 }
 
+/* ===================================================================== SECCIONES ANIMADAS */
+.txt-animated,
+.card-animated {
+  opacity: 0;
+}
+
 /* ===================================================================== MEDIA QUERIES */
 @media (max-width: 480px) {
   /* =================== VENTANAS MODAL */
